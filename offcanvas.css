@@ -1,0 +1,111 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  min-height: 300px;
+  padding-top: 30px;
+}
+footer {
+  padding: 30px 0;
+}
+
+.tutTitle {
+  font-weight: bold;
+  color: #330099;
+}
+
+.tutValue {
+  font-weight: normal;
+  color: #000000;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+
+
+.flag {
+	width: 25px;
+	height: 15px;
+	background:url(./flags.png) no-repeat
+}
+
+.flag.flag-ar {background-position: -25px 0}
+.flag.flag-au {background-position: -50px 0}
+.flag.flag-ba {background-position: -75px 0}
+.flag.flag-be {background-position: -100px 0}
+.flag.flag-br {background-position: -125px 0}
+.flag.flag-ch {background-position: 0 -15px}
+.flag.flag-ci {background-position: -25px -15px}
+.flag.flag-cl {background-position: -50px -15px}
+.flag.flag-cm {background-position: -75px -15px}
+.flag.flag-co {background-position: -100px -15px}
+.flag.flag-cr {background-position: -125px -15px}
+.flag.flag-de {background-position: 0 -30px}
+.flag.flag-dz {background-position: -25px -30px}
+.flag.flag-ec {background-position: -50px -30px}
+.flag.flag-es {background-position: -75px -30px}
+.flag.flag-fr {background-position: -100px -30px}
+.flag.flag-gb {background-position: -125px -30px}
+.flag.flag-gh {background-position: 0 -45px}
+.flag.flag-gr {background-position: -25px -45px}
+.flag.flag-hn {background-position: -50px -45px}
+.flag.flag-hr {background-position: -75px -45px}
+.flag.flag-ir {background-position: -100px -45px}
+.flag.flag-it {background-position: -125px -45px}
+.flag.flag-jp {background-position: 0 -60px}
+.flag.flag-kr {background-position: -25px -60px}
+.flag.flag-mx {background-position: -50px -60px}
+.flag.flag-ng {background-position: -75px -60px}
+.flag.flag-nl {background-position: -100px -60px}
+.flag.flag-pt {background-position: -125px -60px}
+.flag.flag-ru {background-position: 0 -75px}
+.flag.flag-us {background-position: -25px -75px}
+.flag.flag-uy {background-position: -50px -75px}
