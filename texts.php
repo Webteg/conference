@@ -5,9 +5,9 @@ $suffixh="_" . $lang .".html";
 
 	$menu["en"]=array();
 	$menu["en"]["tracks"]=array(
-							array("name"=>"1. SET", "longName"=>"Software Engineering and Tools", "url"=>"./tracks/track1","leader"=>"NN","email"=>"","image"=>"1cr.jpg"),
-							array("name"=>"2. WER","longName"=>" ", "url"=>"./tracks/track2","leader"=>"NN","email"=>"","image"=>"2rc.jpg"),
-              array("name"=>"3. ESELAW","longName"=>" ", "url"=>"./tracks/track3","leader"=>"NN","email"=>"","image"=>"3rc.jpg"));
+							array("name"=>"1. SET", "longName"=>"Software Engineering and Tools", "url"=>"track1","leader"=>"NN","email"=>"","image"=>"1cr.jpg"),
+							array("name"=>"2. WER","longName"=>" ", "url"=>"track2","leader"=>"NN","email"=>"","image"=>"2rc.jpg"),
+              array("name"=>"3. ESELAW","longName"=>" ", "url"=>"track3","leader"=>"NN","email"=>"","image"=>"3rc.jpg"));
 	$menu["en"]["trackst"]=array("name"=>"Tracks","url"=>"tracks");
   $menu["en"]["tutorials"]=array("name"=>"Tutorials","url"=>"tutorials");
 	$menu["en"]["simposio"]=array("name"=>"Doctoral Symposium","url"=>"simposio");
@@ -25,7 +25,11 @@ $suffixh="_" . $lang .".html";
 
   $menu["en"]["conference"]=array("name"=>"Conference","url"=>"conference");
 	$menu["en"]["cfp"]=array("name"=>"Call for papers","url"=>"cfp");
-	$menu["en"]["dates"]=array("name"=>"Important dates","url"=>"dates");
+	$menu["en"]["dates"]=array("name"=>"Important dates","url"=>"dates",
+															"abstract"=>"Abstract deadline:",
+															"submission"=>"Paper deadline:",
+															"notification"=>"Notification:",
+															"camera"=>"Camera Ready:");
 
 	$menu["en"]["program"]=array("name"=>"Program","url"=>"conference");
 	$menu["en"]["calendar"]=array("name"=>"Program outline","url"=>"outline");
@@ -60,7 +64,11 @@ $suffixh="_" . $lang .".html";
 
 	$menu["sp"]["conference"]=array("name"=>"Conferencia","url"=>"conference");
 	$menu["sp"]["cfp"]=array("name"=>"Llamado de trabajos","url"=>"cfp");
-	$menu["sp"]["dates"]=array("name"=>"Fechas importantes","url"=>"dates");
+	$menu["sp"]["dates"]=array("name"=>"Fechas importantes","url"=>"dates",
+															"abstract"=>"Deadline abstract:",
+															"submission"=>"Deadline art&iacute;culo:",
+															"notification"=>"Notificaci&oacute;n:",
+															"camera"=>"Camera Ready:");
 
 	$menu["sp"]["program"]=array("name"=>"Programa","url"=>"conference");
 	$menu["sp"]["calendar"]=array("name"=>"Programa global","url"=>"outline");

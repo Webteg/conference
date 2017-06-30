@@ -29,7 +29,7 @@
         	<?php include("texts/track" . ($trackNumber+1)."_text" .$suffixh); ?>
         </div>
       </div>
-
+			<!--
       <div class="row">
         <div class="col-xs-6 col-lg-4">
 			    <div style="font-weight: bold;"><?php echo $chaired[$lang]; ?> </div>
@@ -45,7 +45,14 @@
             	<p><a href="mailto:<?php echo $menu[$lang]["tracks"][$trackNumber]["email"]; ?>"><?php echo $menu[$lang]["tracks"][$trackNumber]["email"]; ?></a></p>
           </div>
       	</div>
-      </div>
+      </div>  -->
+
+			<div class="row">
+      	<div class="col-xs-6 col-lg-4">
+			  	<div style="font-weight: bold;"><?php echo $menu[$lang]["dates"]["name"]; ?></div>
+			  	<div><ul><?php include("texts/dates" . ($trackNumber+1)."_text.html"); ?> </ul></div>
+			 	</div>
+			</div>
 
       <div class="row">
       	<div class="col-xs-6 col-lg-4">
@@ -62,7 +69,7 @@
 
       <hr>
 
-      <? php include("./components/footer.php"); ?>
+      <?php include("./components/footer.php"); ?>
 
     </div><!--/.container-->
 
@@ -72,9 +79,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-
-
-
 
 	<?php include("./components/google.html"); ?>
 
