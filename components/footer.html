@@ -1,0 +1,13 @@
+<footer class="row">
+  <a href="https://twitter.com/CibseConf" class="twitter-follow-button" data-show-count="false">Follow @CibseConf</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <p id="footer">
+    <script>
+      document.getElementById("footer").innerHTML =
+                  " " + menu["shortTitle"] + " " + menu["date"]["edition"] + " "
+                  + menu[lang]["title"] + " - " +
+                  " <a title=" + menu[lang]["university"]["name"] + " href=" +
+                  menu[lang]["university"]["web"] + "> " + menu[lang]["university"]["name"] +
+                  "  </a>,  " + year;
+    </script>
+  </p>
+</footer>
