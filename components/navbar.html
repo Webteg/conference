@@ -52,9 +52,8 @@ function changeLanguage(element) {
                   document.getElementById("calendar").href = menu[lang]["calendar"]["url"] + suffixh;
                 </script>
               </a>
-
             </li>
-				  <li class="divider"></li>
+				    <li class="divider"></li>
             <li>
               <a id="accepted" href="">
                 <script>
@@ -65,6 +64,41 @@ function changeLanguage(element) {
             </li>
           </ul>
         </li>
+        <!-- TRACKS -->
+        <li class="dropdown">
+          <a id="dropdownTracks" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          	<script>
+        		  document.getElementById("dropdownTracks").innerHTML = "Main Tracks";
+        		</script>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a id="track1" href="">
+                <script>
+                  document.getElementById("track1").innerHTML = menu[lang]["tracks"]["1"]["name"];
+                  document.getElementById("track1").href = menu[lang]["tracks"]["1"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+            <li>
+              <a id="track2" href="">
+                <script>
+                  document.getElementById("track2").innerHTML = menu[lang]["tracks"]["2"]["name"];
+                  document.getElementById("track2").href = menu[lang]["tracks"]["2"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+            <li>
+              <a id="track3" href="">
+                <script>
+                  document.getElementById("track3").innerHTML = menu[lang]["tracks"]["3"]["name"];
+                  document.getElementById("track3").href = menu[lang]["tracks"]["3"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
 
     </div><!-- /.nav-collapse -->

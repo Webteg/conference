@@ -6,9 +6,9 @@ var page = "index";
 var menu = {
 	"en": {
 		"tracks": {
-			"1": {"name": "1. SET", "longName":"Software Engineering and Tools", "url":"track1","leader":"NN","email":"","image":"1cr.jpg"},
-			"2": {"name":"2. WER","longName":"Requirements Engineering", "url":"track2","leader":"NN","email":"","image":"2rc.jpg"},
-			"3": {"name":"3. ESELAW","longName":"Experimental Software Engineering", "url":"track3","leader":"NN","email":"","image":"3rc.jpg"}
+			"1": {"name": "SET", "longName":"Software Engineering and Tools", "url":"track1","leader":"NN","email":"","image":"1cr.jpg"},
+			"2": {"name":"WER","longName":"Requirements Engineering", "url":"track2","leader":"NN","email":"","image":"2rc.jpg"},
+			"3": {"name":"ESELAW","longName":"Experimental Software Engineering", "url":"track3","leader":"NN","email":"","image":"3rc.jpg"}
 		},
 		"trackst": {"name":"Tracks","url":"tracks"},
 		"tutorials":{"name":"Tutorials","url":"tutorials"},
