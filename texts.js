@@ -34,7 +34,7 @@ var menu = {
 		"accepted": {"name":"Accepted papers","url":"accepted"},
 		"sponsors": {"name":"Sponsors","url":"sponsors"},
 		"chaired": "Chaired by:",
-		"pc": "Program committee",
+		"pc": "Program Committee",
 		"viewDetails": "View details",
 		"title": "Ibero-American Conference on Software Engineering",
 		"organizers": "Organizers",
@@ -45,10 +45,10 @@ var menu = {
 		"month": "April"
 	},
 	"sp": {
-		"title": "Conferencia Ibero-americana en Software Engineering"
+		"title": "Ibero-American Conference on Software Engineering"
 	},
 	"br": {
-		"title": ""
+		"title": "Ibero-American Conference on Software Engineering"
 	},
 	"shortTitle": "CIbSE",
 	"date": {"year":"2018", "days":"26-30", "edition": "XXI"}
