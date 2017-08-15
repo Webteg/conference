@@ -1,15 +1,26 @@
-<div w3-include-html="./../components.header.html"></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<script>
+			$(function() {
+				$("#header").load("./../components/header.html");
+				$("#footer").load("./../components/footer.html");
+			})
+		</script>
+	</head>
+
 
 <body>
+	<div id="header"> </div>
 	<div id="navbar">
     <script>
       $(function(){
-        $("#navbar").load("./components/navbar.html");
+        $("#navbar").load("./../components/navbar.html");
       });
     </script>
   </div>
 
-<div class="container">
+	<div class="container">
 
   <div id="banner" class="row row-offcanvas row-offcanvas-right">
 
@@ -102,13 +113,7 @@
 
       <hr>
 
-			<div id="footer">
-	    	<script>
-	      	$(function() {
-	        	$("#footer").load("./components/footer.html");
-	      	});
-	    	</script>
-	  	</div>
+			<div id="footer">	</div>
 
     </div><!--/.container-->
 
