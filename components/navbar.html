@@ -39,6 +39,14 @@ function changeLanguage(element) {
 
           <ul class="dropdown-menu" role="menu">
             <li>
+              <a id="cfp" href="">
+                <script>
+                  document.getElementById("programdl").innerHTML = menu[lang]["cfp"]["name"];
+                  document.getElementById("calendar").href = menu[lang]["cfp"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+            <li>
               <a id="programdl" href="program.pdf">
                 <script>
                   document.getElementById("programdl").innerHTML = menu[lang]["programdl"]["name"];
@@ -93,6 +101,31 @@ function changeLanguage(element) {
                 <script>
                   document.getElementById("track3").innerHTML = menu[lang]["tracks"]["3"]["name"];
                   document.getElementById("track3").href = menu[lang]["tracks"]["3"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a id="track4" href="">
+                <script>
+                  document.getElementById("track4").innerHTML = menu[lang]["tracks"]["4"]["name"];
+                  document.getElementById("track4").href = menu[lang]["tracks"]["4"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+            <li>
+              <a id="track5" href="">
+                <script>
+                  document.getElementById("track5").innerHTML = menu[lang]["tracks"]["5"]["name"];
+                  document.getElementById("track5").href = menu[lang]["tracks"]["5"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+            <li>
+              <a id="track6" href="">
+                <script>
+                  document.getElementById("track6").innerHTML = menu[lang]["tracks"]["6"]["name"];
+                  document.getElementById("track6").href = menu[lang]["tracks"]["6"]["url"] + suffixh;
                 </script>
               </a>
             </li>
