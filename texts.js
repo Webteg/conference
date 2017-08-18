@@ -11,7 +11,7 @@ var menu = {
 			"3": {"name":"ESELAW","longName":"Experimental Software Engineering", "url":"track3","leader":"NN","email":"","image":"3rc.jpg"},
 			"4": {"name":"Industry","longName":"Industry Presentations", "url":"track4","leader":"NN","email":"","image":"4rc.jpg"},
 			"5": {"name":"Tools","longName":"Tools and Demos Track", "url":"track5","leader":"NN","email":"","image":"5rc.jpg"},
-			"6": {"name":"DS","longName":"Doctoral Symposyum", "url":"track6","leader":"NN","email":"","image":"6rc.jpg"}
+			"6": {"name":"Doc Symp","longName":"Doctoral Symposyum", "url":"track6","leader":"NN","email":"","image":"6rc.jpg"}
 		},
 		"trackst": {"name":"Tracks","url":"tracks"},
 		"tutorials":{"name":"Tutorials","url":"tutorials"},
@@ -45,7 +45,8 @@ var menu = {
 		"depto": {"name":"Systems and Computing Engineering Department","url":"http://sistemas.uniandes.edu.co"},
 		"venue": {"name":"Venue","url":"venue"},
 		"city": {"name":"Bogot&aacute;","url":"bogota"},
-		"month": "April"
+		"month": "April",
+		"topics":{"name":"Topics"}
 	},
 	"sp": {
 		"title": "Ibero-American Conference on Software Engineering"
