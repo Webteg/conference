@@ -18,7 +18,7 @@ var menu = {
 		"simposio": {"name":"Doctoral Symposium","url":"simposio"},
 		"home": {"name":"Home","url":"index.html"},
 		"committees": {"name":"Committees","url":"committees"},
-		"keynotes": {"name":"Keynotes","url":"keynotes"},
+		"keynotes": {"name":"Keynotes","url":"keyNotes"},
 		"attending": {"name":"Attending","url":"attending"},
 		"registration": {"name":"Registration","url":"registration"},
 		"social": {"name":"Social Events", "url":"social"},
@@ -31,22 +31,41 @@ var menu = {
 							"submission":"Paper deadline:",
 							"notification":"Notification:",
 							"camera":"Camera Ready:"},
+		"topics":{"name":"Topics"},
+		"pchairs":{"name":"Program chairs"},
 		"program": {"name":"Program","url":"conference"},
 		"calendar": {"name":"Program outline","url":"outline"},
 		"programdl": {"name":"Complete Program","url":"outline"},
 		"accepted": {"name":"Accepted papers","url":"accepted"},
+		"timetable": {"name":"Time table","url":"timetable"},
 		"sponsors": {"name":"Sponsors","url":"sponsors"},
 		"chair": "Chair",
 		"pc": "Program Committee",
 		"viewDetails": "View details",
 		"title": "Ibero-American Conference on Software Engineering",
 		"organizers": "Organizers",
-		"university": {"name":"Universidad de los Andes","web":"https://uniandes.edu.co", "url":"university"},
+		"university": {"name":"Universidad de los Andes","web":"https://uniandes.edu.co/en", "url":"university"},
 		"depto": {"name":"Systems and Computing Engineering Department","url":"http://sistemas.uniandes.edu.co"},
 		"venue": {"name":"Venue","url":"venue"},
 		"city": {"name":"Bogot&aacute;","url":"bogota"},
 		"month": "April",
-		"topics":{"name":"Topics"}
+		"calls": {"name":"Calls"},
+		"foundationsTracks": {"name":"Foundations tracks","url":"foundationstracks"},
+		"categories": {"name":"Categories"},
+		"submissions": {"name":"Submissions"},
+		"evaluationProcess": {"name":"Evaluation process"},
+		"organization": {"name":"Organization", "url":"organization"},
+		"committee": {"name":"Committee", "url":"committee"},
+		"sponsors": {"name":"Sponsors", "url":"sponsors"},
+		"registration":{"name":"Registration", "url":"registration"},
+		"school":{"name":"School", "url":"school"},
+		"socialEvents":{"name":"Social events", "url":"socialEvents"},
+		"venue":{"name":"Venue"},
+		"conferenceVenue":{"name":"Conference venue", "url":"conferenceVenue"},
+		"contact":{"name":"Contact", "url":"contact"},
+		"importantDates":{"name":"Important dates", "url":"importantDatesMain"},
+		"datesSubmi":{"name":"Submissions"},
+		"datesConf":{"name":"Conference Major Events"}
 	},
 	"sp": {
 		"title": "Ibero-American Conference on Software Engineering"
@@ -115,4 +134,6 @@ var country = "Colombia";
 */
 	//General
 var universityURl = "http://uniandes.edu.co";
+var universityURl_en = "http://uniandes.edu.co/en";
 var easyChairURL = "http://easychair.com";
+var cibseURL = "http://cibseconference.org"

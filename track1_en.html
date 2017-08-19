@@ -65,7 +65,7 @@
 									.toString()]["name"];
 						</script>
 					</div>
-					<div class="col-xs-10 col-lg-2">
+					<div class="col-xs-10 col-lg-3">
 						<h2 id="track_title">
 							<script>
 								document.getElementById("track_title").innerHTML = menu[lang]["tracks"][trackNumber
@@ -93,10 +93,10 @@
 						</script>
 					</h3>
 					<div>
-						<ul id="track_dates">
+						<ul id="track_topics">
 							<script>
 								$(function() {
-									$("#topics").load(
+									$("#track_topics").load(
 											"./texts/topics" + trackNumber
 													+ "_text_" + lang + ".html")
 								});
@@ -105,17 +105,17 @@
 					</div>
 				</div>
 				<div class="jumbotron">
-					<h3 id="dates">
+					<h3 id="pchairs">
 						<script>
-							document.getElementById("dates").innerHTML = menu[lang]["dates"]["name"];
+							document.getElementById("pchairs").innerHTML = menu[lang]["pchairs"]["name"];
 						</script>
 					</h3>
 					<div>
-						<ul id="track_dates">
+						<ul id="track_pchairs">
 							<script>
 								$(function() {
-									$("#track_dates").load(
-											"./texts/dates" + trackNumber
+									$("#track_pchairs").load(
+											"./texts/pchairs" + trackNumber
 													+ "_text.html")
 								});
 							</script>

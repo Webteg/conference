@@ -14,7 +14,7 @@ function changeLanguage(element) {
         <span class="icon-bar"></span>
       </button>
       <a id="en" class="navbar-brand" href="index.html" onclick="changeLanguage(this);"><img src="blank.gif" class="flag flag-us" alt="English"></a>
-      <a id="sp" class="navbar-brand" href="index.html" onclick="changeLanguage(this);"><img src="blank.gif" class="flag flag-es" alt="Español" /></a>
+      <a id="sp" class="navbar-brand" href="index.html" onclick="changeLanguage(this);"><img src="blank.gif" class="flag flag-es" alt="EspaÃ±ol" /></a>
       <a id="br" class="navbar-brand" href="index.html" onclick="changeLanguage(this);"><img src="blank.gif" class="flag flag-br" alt="Portugues" /></a>
     </div>
 
@@ -28,6 +28,40 @@ function changeLanguage(element) {
             document.getElementById("activeMenu").href = menu[lang]["home"]["url"];
         	</script>
         </li>
+        <li >
+          <a id="dropdownCalls" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          <script>
+            document.getElementById("dropdownCalls").innerHTML = menu[lang]["calls"]["name"];
+            </script>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a id="foundationstracks" href="">
+                <script>
+                  document.getElementById("foundationstracks").innerHTML = menu[lang]["foundationsTracks"]["name"];
+                  document.getElementById("foundationstracks").href = menu[lang]["foundationsTracks"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+            <li>
+              <a id="docsymp" href="">
+                <script>
+                  document.getElementById("docsymp").innerHTML = menu[lang]["simposio"]["name"];
+                  document.getElementById("docsymp").href = menu[lang]["tracks"]["6"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+            <li>
+              <a id="imp" href="">
+                <script>
+                  document.getElementById("imp").innerHTML = menu[lang]["importantDates"]["name"];
+                  document.getElementById("imp").href = menu[lang]["importantDates"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+           </ul>
+        </li>
         <!-- PROGRAM -->
         <li class="dropdown">
           <a id="dropdownProgram" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -38,39 +72,83 @@ function changeLanguage(element) {
           </a>
 
           <ul class="dropdown-menu" role="menu">
+<!-- 				    <li class="divider"></li> -->
             <li>
-              <a id="cfp" href="">
+              <a id="keynote" href="">.
                 <script>
-                  document.getElementById("programdl").innerHTML = menu[lang]["cfp"]["name"];
-                  document.getElementById("calendar").href = menu[lang]["cfp"]["url"] + suffixh;
+                  document.getElementById("keynote").innerHTML = menu[lang]["keynotes"]["name"];
+                  document.getElementById("keynote").href = menu[lang]["keynotes"]["url"] + suffixh;
                 </script>
               </a>
             </li>
             <li>
-              <a id="programdl" href="program.pdf">
+              <a id="timetable" href="">.
                 <script>
-                  document.getElementById("programdl").innerHTML = menu[lang]["programdl"]["name"];
+                  document.getElementById("timetable").innerHTML = menu[lang]["timetable"]["name"];
+                  document.getElementById("timetable").href = menu[lang]["timetable"]["url"] + suffixh;
                 </script>
               </a>
             </li>
             <li>
-              <a id="calendar" href="">.
+              <a id="socialEvents" href="">.
                 <script>
-                  document.getElementById("calendar").innerHTML = menu[lang]["calendar"]["name"];
-                  document.getElementById("calendar").href = menu[lang]["calendar"]["url"] + suffixh;
+                  document.getElementById("socialEvents").innerHTML = menu[lang]["socialEvents"]["name"];
+                  document.getElementById("socialEvents").href = menu[lang]["socialEvents"]["url"] + suffixh;
                 </script>
               </a>
             </li>
-				    <li class="divider"></li>
-            <li>
-              <a id="accepted" href="">
-                <script>
-                  document.getElementById("accepted").innerHTML = menu[lang]["accepted"]["name"];
-                  document.getElementById("accepted").href = menu[lang]["accepted"]["url"] + suffixh;
-                </script>
-              </a>
-            </li>
+<!--             <li> -->
+<!--               <a id="accepted" href=""> -->
+<!--                 <script> -->
+<!--                    document.getElementById("accepted").innerHTML = menu[lang]["accepted"]["name"]; -->
+<!--                    document.getElementById("accepted").href = menu[lang]["accepted"]["url"] + suffixh; -->
+<!--                 </script> -->
+<!--               </a> -->
+<!--             </li> -->
           </ul>
+        </li>
+        <!-- ORGANIZATION -->
+        <li >
+          <a id="dropdownOrganization" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          <script>
+            document.getElementById("dropdownOrganization").innerHTML = menu[lang]["organization"]["name"];
+            </script>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+<!--             <li> -->
+<!--               <a id="ft" href=""> -->
+<!--                 <script> -->
+<!-- //                   document.getElementById("programdl").innerHTML = menu[lang]["cfp"]["name"]; -->
+<!-- //                   document.getElementById("calendar").href = menu[lang]["cfp"]["url"] + suffixh; -->
+<!--                 </script> -->
+<!--               </a> -->
+<!--             </li> -->
+            <li>
+              <a id="committee" href="">
+                <script>
+                  document.getElementById("committee").innerHTML = menu[lang]["committee"]["name"];
+                  document.getElementById("committee").href = menu[lang]["committee"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+            <li>
+              <a id="sponsors" href="">
+                <script>
+                  document.getElementById("sponsors").innerHTML = menu[lang]["sponsors"]["name"];
+                  document.getElementById("sponsors").href = menu[lang]["sponsors"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+            <li>
+              <a id="registration" href="">
+                <script>
+                  document.getElementById("registration").innerHTML = menu[lang]["registration"]["name"];
+                  document.getElementById("registration").href = menu[lang]["registration"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+           </ul>
         </li>
         <!-- TRACKS -->
         <li class="dropdown">
@@ -130,6 +208,41 @@ function changeLanguage(element) {
               </a>
             </li>
           </ul>
+        </li>
+        <!-- VENUE -->
+        <li >
+          <a id="dropdownVenue" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          <script>
+            document.getElementById("dropdownVenue").innerHTML = menu[lang]["venue"]["name"];
+            </script>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu">
+<!--             <li> -->
+<!--               <a id="ft" href=""> -->
+<!--                 <script> -->
+<!-- //                   document.getElementById("programdl").innerHTML = menu[lang]["cfp"]["name"]; -->
+<!-- //                   document.getElementById("calendar").href = menu[lang]["cfp"]["url"] + suffixh; -->
+<!--                 </script> -->
+<!--               </a> -->
+<!--             </li> -->
+            <li>
+              <a id="conferenceVenue" href="">
+                <script>
+                  document.getElementById("conferenceVenue").innerHTML = menu[lang]["conferenceVenue"]["name"];
+                  document.getElementById("conferenceVenue").href = menu[lang]["conferenceVenue"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+           </ul>
+        </li>
+         <!-- CONTACT -->
+        <li id="contact" >
+          <a id="contactMenu" href=""> </a>
+          <script>
+            document.getElementById("contactMenu").innerHTML = menu[lang]["contact"]["name"];
+            document.getElementById("contactMenu").href = menu[lang]["contact"]["url"]+ suffixh;
+        	</script>
         </li>
       </ul>
 
