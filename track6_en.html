@@ -87,13 +87,24 @@
 					</div>
 				</div>
 
-				<!-- 			<div class="jumbotron"> -->
-				<!-- 			 	<h3 id="dates"> <script>document.getElementById("dates").innerHTML = menu[lang]["dates"]["name"]; </script></h3> -->
-				<!-- 			 	<div> -->
-				<!-- 					<ul id="track_dates"> -->
-				<!-- 						<script> $(function(){$("#track_dates").load("./texts/dates" + trackNumber + "_text.html")}); </script> </ul> -->
-				<!-- 				</div> -->
-				<!-- 			</div> -->
+				<div class="jumbotron">
+					<h3 id="dates">
+						<script>
+							document.getElementById("dates").innerHTML = menu[lang]["importantDates"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="track_dates">
+							<script>
+								$(function() {
+									$("#track_dates").load(
+											"./texts/impDates" + trackNumber
+													+"_"+ lang +".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
 
 				<div class="jumbotron">
 					<h3 id="track_pc">

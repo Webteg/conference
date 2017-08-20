@@ -37,7 +37,7 @@ var menu = {
 		"calendar": {"name":"Program outline","url":"outline"},
 		"programdl": {"name":"Complete Program","url":"outline"},
 		"accepted": {"name":"Accepted papers","url":"accepted"},
-		"timetable": {"name":"Time table","url":"timetable"},
+		"timetable": {"name":"Timetable","url":"timetable"},
 		"sponsors": {"name":"Sponsors","url":"sponsors"},
 		"chair": "Chair",
 		"pc": "Program Committee",
