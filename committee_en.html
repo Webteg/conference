@@ -55,89 +55,155 @@
 			<div class="col-xs-12 col-md-9">
 
 				<div class="jumbotron">
-					<div class="col-xs-2 col-lg-2">
-						<img id="track_img" src="" alt="" width="90"
-							style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
-						<script>
- 							document.getElementById("track_img").src = "trackicons/track" 
- 									+ trackNumber + ".png"; 
- 							document.getElementById("track_img").alt = menu[lang]["tracks"][trackNumber 
- 									.toString()]["name"]; 
-					</script>
-					</div>
-					<div class="col-xs-10 col-lg-3">
+<!-- 					<div class="col-xs-2 col-lg-2"> -->
+<!-- 						<img id="track_img" src="" alt="" width="90" -->
+<!-- 							style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" /> -->
+<!-- 						<script> -->
+<!-- // 							document.getElementById("track_img").src = "trackicons/track" -->
+<!-- // 									+ trackNumber + ".png"; -->
+<!-- // 							document.getElementById("track_img").alt = menu[lang]["tracks"][trackNumber -->
+<!-- // 									.toString()]["name"]; -->
+<!-- 						</script> -->
+<!-- 					</div> -->
+					<div class="col-xs-10 col-lg-7">
 						<h2 id="committee_title">
 							<script>
-								document.getElementById("committee_title").innerHTML = menu[lang]["committee"]["name"];
+								document.getElementById("committee_title").innerHTML = menu[lang]["generalCommittee"]["name"];
 							</script>
 						</h2>
 					</div>
 
 					<div id="committeeText" class="jumbotron">
-						<script>
-							$(function() {
-								$("#committeeText").load(
-										"./texts/committee" +"_text_" + lang + ".html");
-							});
-						</script>
+<!-- 						<script> -->
+<!-- // 							$(function() { -->
+<!-- // 								$("#committeeText").load( -->
+<!-- // 										"./texts/committee" + "_text_" + lang -->
+<!-- // 												+ ".html"); -->
+<!-- // 							}); -->
+<!-- 						</script> -->
 					</div>
 				</div>
-<!-- 				<div class="jumbotron"> -->
-<!-- 					<h3 id="topics"> -->
-<!-- 						<script> -->
-<!-- // 							document.getElementById("topics").innerHTML = menu[lang]["topics"]["name"]; -->
-<!-- 						</script> -->
-<!-- 					</h3> -->
-<!-- 					<div> -->
-<!-- 						<ul id="track_topics"> -->
-<!-- 							<script> -->
-<!-- // 								$(function() { -->
-<!-- // 									$("#track_topics").load( -->
-<!-- // 											"./texts/topics" + trackNumber -->
-<!-- // 													+ "_text_" + lang + ".html") -->
-<!-- // 								}); -->
-<!-- 							</script> -->
-<!-- 						</ul> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-<!-- 				<div class="jumbotron"> -->
-<!-- 					<h3 id="pchairs"> -->
-<!-- 						<script> -->
-<!-- // 							document.getElementById("pchairs").innerHTML = menu[lang]["pchairs"]["name"]; -->
-<!-- 						</script> -->
-<!-- 					</h3> -->
-<!-- 					<div> -->
-<!-- 						<ul id="track_pchairs"> -->
-<!-- 							<script> -->
-<!-- // 								$(function() { -->
-<!-- // 									$("#track_pchairs").load( -->
-<!-- // 											"./texts/pchairs" + trackNumber -->
-<!-- // 													+ "_text.html") -->
-<!-- // 								}); -->
-<!-- 							</script> -->
-<!-- 						</ul> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-
-<!-- 				<div class="jumbotron"> -->
-<!-- 					<h3 id="track_pc"> -->
-<!-- 						<script> -->
-<!-- // 							document.getElementById("track_pc").innerHTML = menu[lang]["pc"]; -->
-<!-- 						</script> -->
-<!-- 					</h3> -->
-<!-- 					<div> -->
-<!-- 						<ul id="track_pc_members"> -->
-<!-- 							<script> -->
-<!-- // 								$(function() { -->
-<!-- // 									$("#track_pc_members").load( -->
-<!-- // 											"./texts/pc" + trackNumber -->
-<!-- // 													+ "_text.html"); -->
-<!-- // 								}); -->
-<!-- 							</script> -->
-<!-- 						</ul> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-
+				<div class="jumbotron">
+					<h3 id="generalConferenceChairs_st">
+						<script>
+							document
+									.getElementById("generalConferenceChairs_st").innerHTML = menu[lang]["genConfeChairs"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="generalConferenceChairs">
+							<script>
+								$(function() {
+									$("#generalConferenceChairs").load(
+											"./texts/committee_gcc" + ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h3 id="iberoAmericanSchoolChair_st">
+						<script>
+							document
+									.getElementById("iberoAmericanSchoolChair_st").innerHTML = menu[lang]["iberoASchoolChair"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="iberoAmericanSchoolChair">
+							<script>
+								$(function() {
+									$("#iberoAmericanSchoolChair").load(
+											"./texts/committee_iasc" + ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h3 id="toolsPaperChair_st">
+						<script>
+							document.getElementById("toolsPaperChair_st").innerHTML = menu[lang]["toolsPaperChair"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="toolsPaperChair">
+							<script>
+								$(function() {
+									$("#toolsPaperChair").load(
+											"./texts/committee_tpc" + ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h3 id="proceedingsStuVolChair_st">
+						<script>
+							document.getElementById("proceedingsStuVolChair_st").innerHTML = menu[lang]["proStuVolunChair"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="proceedingsStuVolChair">
+							<script>
+								$(function() {
+									$("#proceedingsStuVolChair").load(
+											"./texts/committee_psvc" + ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h3 id="publicityCoChair_st">
+						<script>
+							document.getElementById("publicityCoChair_st").innerHTML = menu[lang]["publicityCoChairs"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="publicityCoChair">
+							<script>
+								$(function() {
+									$("#publicityCoChair").load(
+											"./texts/committee_pcc" + ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h3 id="industryExhibitionChairs_st">
+						<script>
+							document.getElementById("industryExhibitionChairs_st").innerHTML = menu[lang]["industryExhibition"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="industryExhibitionChairs">
+							<script>
+								$(function() {
+									$("#industryExhibitionChairs").load(
+											"./texts/committee_iec" + ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h3 id="webChair_st">
+						<script>
+							document.getElementById("webChair_st").innerHTML = menu[lang]["webChair"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="webChair">
+							<script>
+								$(function() {
+									$("#webChair").load(
+											"./texts/committee_wc" + ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<!--/.col-xs-12.col-sm-9-->
 
