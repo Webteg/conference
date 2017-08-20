@@ -1,11 +1,7 @@
 <p id="ceroParagraph" align="justify">
 	<script>
-		document.getElementById('firstParagraph').innerHTML = 
-			"21st Iberoamerican Conference on Software Engineering ("+menu["shortTitle"] + year +")" 
-			+ "<br/>" + menu["en"]["city"]["name"]+"," + country + ", April 23 - 27," + year  
-			+ "<br/>" + "<a href=" + cibseURL + ">" + cibseURL + "</a>"
-			+ "<br/><br/> Welcome to " + menu["shortTitle"] +" "+ year;
-		
+		document.getElementById('firstParagraph').innerHTML = "<strong> Welcome to "
+				+ menu["shortTitle"] + " " + year + "!</strong>";
 	</script>
 </p>
 <br />
@@ -25,7 +21,7 @@
 		document.getElementById('secondParagraph').innerHTML = menu["shortTitle"]
 				+ " "
 				+ year
-				+ " will be held at Universidad de los Andes in "
+				+ " will be held at <a href=https://uniandes.edu.co/en>Universidad de los Andes </a> in "
 				+ menu["en"]["city"]["name"]
 				+ ", one of the most"
 				+ " vibrant cities in South America and beating heart of Colombia. The event will include"
@@ -56,16 +52,7 @@
 <br />
 <p id="fourthParagraph" align="justify">
 	<script>
-		document.getElementById('fourthParagraph').innerHTML = "Papers can be submitted in any of the three available categories (i.e., Technical, Emerging "
-				+ "ideas, and Tools) and the CIbSE official languages: English, Spanish, and Portuguese."
-				+ "Below, you will find the details of each track and the general organization committee.";
-	</script>
-</p>
-<br />
-<p id="fifthParagraph" align="justify">
-	<script>
-		document.getElementById('fifthParagraph').innerHTML = "For more information go to CibSE 2018 website (http://cibseconference.org), or contact"
-				+ "us through e-mail (info.cibse@gmail.com) or any of our social media outlets (Twitter and"
-				+ "Facebook).";
+		document.getElementById('fourthParagraph').innerHTML = "Papers can be submitted in any of the three available categories (i.e., Technical, (NEW!) Emerging "
+				+ "ideas, and (NEW!) Tools) and the CIbSE official languages: English, Spanish, and Portuguese.";
 	</script>
 </p>

@@ -28,6 +28,7 @@ function changeLanguage(element) {
             document.getElementById("activeMenu").href = menu[lang]["home"]["url"];
         	</script>
         </li>
+        <!-- CALLS -->
         <li >
           <a id="dropdownCalls" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
           <script>
@@ -52,15 +53,74 @@ function changeLanguage(element) {
                 </script>
               </a>
             </li>
+<!--             <li> -->
+<!--               <a id="imp" href=""> -->
+<!--                 <script> -->
+<!-- //                   document.getElementById("imp").innerHTML = menu[lang]["importantDates"]["name"]; -->
+<!-- //                   document.getElementById("imp").href = menu[lang]["importantDates"]["url"] + suffixh; -->
+<!--                 </script> -->
+<!--               </a> -->
+<!--             </li> -->
+           </ul>
+        </li>
+        <!-- TRACKS -->
+        <li class="dropdown">
+          <a id="dropdownTracks" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          	<script>
+        		  document.getElementById("dropdownTracks").innerHTML = "Tracks";
+        		</script>
+          </a>
+          <ul class="dropdown-menu" role="menu">
             <li>
-              <a id="imp" href="">
+              <a id="track1" href="">
                 <script>
-                  document.getElementById("imp").innerHTML = menu[lang]["importantDates"]["name"];
-                  document.getElementById("imp").href = menu[lang]["importantDates"]["url"] + suffixh;
+                  document.getElementById("track1").innerHTML = menu[lang]["tracks"]["1"]["name"];
+                  document.getElementById("track1").href = menu[lang]["tracks"]["1"]["url"] + suffixh;
                 </script>
               </a>
             </li>
-           </ul>
+            <li>
+              <a id="track2" href="">
+                <script>
+                  document.getElementById("track2").innerHTML = menu[lang]["tracks"]["2"]["name"];
+                  document.getElementById("track2").href = menu[lang]["tracks"]["2"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+            <li>
+              <a id="track3" href="">
+                <script>
+                  document.getElementById("track3").innerHTML = menu[lang]["tracks"]["3"]["name"];
+                  document.getElementById("track3").href = menu[lang]["tracks"]["3"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+<!--             <li class="divider"></li> -->
+<!--             <li> -->
+<!--               <a id="track4" href=""> -->
+<!--                 <script> -->
+<!-- //                   document.getElementById("track4").innerHTML = menu[lang]["tracks"]["4"]["name"]; -->
+<!-- //                   document.getElementById("track4").href = menu[lang]["tracks"]["4"]["url"] + suffixh; -->
+<!--                 </script> -->
+<!--               </a> -->
+<!--             </li> -->
+<!--             <li> -->
+<!--               <a id="track5" href=""> -->
+<!--                 <script> -->
+<!--                    document.getElementById("track5").innerHTML = menu[lang]["tracks"]["5"]["name"]; -->
+<!--                    document.getElementById("track5").href = menu[lang]["tracks"]["5"]["url"] + suffixh; -->
+<!--                 </script> -->
+<!--               </a> -->
+<!--             </li> -->
+<!--             <li> -->
+<!--               <a id="track6" href=""> -->
+<!--                 <script> -->
+<!-- //                   document.getElementById("track6").innerHTML = menu[lang]["tracks"]["6"]["name"]; -->
+<!-- //                   document.getElementById("track6").href = menu[lang]["tracks"]["6"]["url"] + suffixh; -->
+<!--                 </script> -->
+<!--               </a> -->
+<!--             </li> -->
+          </ul>
         </li>
         <!-- PROGRAM -->
         <li class="dropdown">
@@ -86,6 +146,14 @@ function changeLanguage(element) {
                 <script>
                   document.getElementById("timetable").innerHTML = menu[lang]["timetable"]["name"];
                   document.getElementById("timetable").href = menu[lang]["timetable"]["url"] + suffixh;
+                </script>
+              </a>
+            </li>
+            <li>
+              <a id="school" href="">.
+                <script>
+                  document.getElementById("school").innerHTML = menu[lang]["school"]["name"];
+                  document.getElementById("school").href = menu[lang]["school"]["url"] + suffixh;
                 </script>
               </a>
             </li>
@@ -149,65 +217,6 @@ function changeLanguage(element) {
               </a>
             </li>
            </ul>
-        </li>
-        <!-- TRACKS -->
-        <li class="dropdown">
-          <a id="dropdownTracks" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-          	<script>
-        		  document.getElementById("dropdownTracks").innerHTML = "Main Tracks";
-        		</script>
-          </a>
-          <ul class="dropdown-menu" role="menu">
-            <li>
-              <a id="track1" href="">
-                <script>
-                  document.getElementById("track1").innerHTML = menu[lang]["tracks"]["1"]["name"];
-                  document.getElementById("track1").href = menu[lang]["tracks"]["1"]["url"] + suffixh;
-                </script>
-              </a>
-            </li>
-            <li>
-              <a id="track2" href="">
-                <script>
-                  document.getElementById("track2").innerHTML = menu[lang]["tracks"]["2"]["name"];
-                  document.getElementById("track2").href = menu[lang]["tracks"]["2"]["url"] + suffixh;
-                </script>
-              </a>
-            </li>
-            <li>
-              <a id="track3" href="">
-                <script>
-                  document.getElementById("track3").innerHTML = menu[lang]["tracks"]["3"]["name"];
-                  document.getElementById("track3").href = menu[lang]["tracks"]["3"]["url"] + suffixh;
-                </script>
-              </a>
-            </li>
-            <li class="divider"></li>
-            <li>
-              <a id="track4" href="">
-                <script>
-                  document.getElementById("track4").innerHTML = menu[lang]["tracks"]["4"]["name"];
-                  document.getElementById("track4").href = menu[lang]["tracks"]["4"]["url"] + suffixh;
-                </script>
-              </a>
-            </li>
-<!--             <li> -->
-<!--               <a id="track5" href=""> -->
-<!--                 <script> -->
-<!--                    document.getElementById("track5").innerHTML = menu[lang]["tracks"]["5"]["name"]; -->
-<!--                    document.getElementById("track5").href = menu[lang]["tracks"]["5"]["url"] + suffixh; -->
-<!--                 </script> -->
-<!--               </a> -->
-<!--             </li> -->
-            <li>
-              <a id="track6" href="">
-                <script>
-                  document.getElementById("track6").innerHTML = menu[lang]["tracks"]["6"]["name"];
-                  document.getElementById("track6").href = menu[lang]["tracks"]["6"]["url"] + suffixh;
-                </script>
-              </a>
-            </li>
-          </ul>
         </li>
         <!-- VENUE -->
         <li >
