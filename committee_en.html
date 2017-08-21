@@ -102,6 +102,24 @@
 					</div>
 				</div>
 				<div class="jumbotron">
+					<h3 id="generalProgramChairs_st">
+						<script>
+							document
+									.getElementById("generalProgramChairs_st").innerHTML = menu[lang]["genProgChairs"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="generalProgramChairs">
+							<script>
+								$(function() {
+									$("#generalProgramChairs").load(
+											"./texts/committee_gpc" + ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
 					<h3 id="iberoAmericanSchoolChair_st">
 						<script>
 							document
