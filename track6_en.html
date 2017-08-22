@@ -86,7 +86,60 @@
 						</script>
 					</div>
 				</div>
-
+				<div class="jumbotron">
+					<h3 id="dsScope_title">
+						<script>
+							document.getElementById("dsScope_title").innerHTML = menu[lang]["scope"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="dsScope_text">
+							<script>
+								$(function() {
+									$("#dsScope_text").load(
+											"./texts/dsScope" + "_text_" + lang
+													+ ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h3 id="dsEvalProcess_title">
+						<script>
+							document.getElementById("dsEvalProcess_title").innerHTML = menu[lang]["evaluationProcess"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="dsEvalProcess_text">
+							<script>
+								$(function() {
+									$("#dsEvalProcess_text").load(
+											"./texts/dsEvalProcess" + "_text_"
+													+ lang + ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h3 id="dsSubmission_title">
+						<script>
+							document.getElementById("dsSubmission_title").innerHTML = menu[lang]["submission"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="dsSubmission_text">
+							<script>
+								$(function() {
+									$("#dsSubmission_text").load(
+											"./texts/dsSubmi" + "_text_"
+													+ lang + ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
 				<div class="jumbotron">
 					<h3 id="dates">
 						<script>
@@ -99,31 +152,30 @@
 								$(function() {
 									$("#track_dates").load(
 											"./texts/impDates" + trackNumber
-													+"_"+ lang +".html")
+													+ "_" + lang + ".html")
 								});
 							</script>
 						</ul>
 					</div>
 				</div>
-
-				<div class="jumbotron">
-					<h3 id="track_pc">
-						<script>
-							document.getElementById("track_pc").innerHTML = menu[lang]["pc"];
-						</script>
-					</h3>
-					<div>
-						<ul id="track_pc_members">
-							<script>
-								$(function() {
-									$("#track_pc_members").load(
-											"./texts/pc" + trackNumber
-													+ "_text.html");
-								});
-							</script>
-						</ul>
-					</div>
-				</div>
+<!-- 				<div class="jumbotron"> -->
+<!-- 					<h3 id="track_pc"> -->
+<!-- 						<script> -->
+<!-- // 							document.getElementById("track_pc").innerHTML = menu[lang]["pc"]; -->
+<!-- 						</script> -->
+<!-- 					</h3> -->
+<!-- 					<div> -->
+<!-- 						<ul id="track_pc_members"> -->
+<!-- 							<script> -->
+<!-- // 								$(function() { -->
+<!-- // 									$("#track_pc_members").load( -->
+<!-- // 											"./texts/pc" + trackNumber -->
+<!-- // 													+ "_text.html"); -->
+<!-- // 								}); -->
+<!-- 							</script> -->
+<!-- 						</ul> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
 
 			</div>
 			<!--/.col-xs-12.col-sm-9-->

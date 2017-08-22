@@ -53,6 +53,7 @@ var menu = {
 		"foundationsTracks": {"name":"Foundations tracks","url":"foundationstracks"},
 		"categories": {"name":"Categories"},
 		"submissions": {"name":"Submissions"},
+		"submission": {"name":"Submission"},
 		"evaluationProcess": {"name":"Evaluation process"},
 		"organization": {"name":"Organization", "url":"organization"},
 		"committee": {"name":"Committee", "url":"committee"},
@@ -74,16 +75,19 @@ var menu = {
 		"contact":{"name":"Contact", "url":"contact"},
 		"importantDates":{"name":"Important dates", "url":"importantDatesMain"},
 		"datesSubmi":{"name":"Submissions"},
-		"datesConf":{"name":"Conference Major Events"}
+		"datesConf":{"name":"Conference Major Events"},
+		"scope":{"name":"Scope"}
 	},
 	"sp": {
-		"title": "Ibero-American Conference on Software Engineering"
+		"title": "Ibero-American Conference on Software Engineering",
+		"home": {"name":"Inicio","url":"index.html"}
 	},
 	"br": {
 		"title": "Ibero-American Conference on Software Engineering"
 	},
 	"shortTitle": "CIbSE",
-	"date": {"year":"2018", "days":"26-30", "edition": "XXI"}
+	"date": {"year":"2018", "days":"26-30", "edition": "XXI"},
+
 };
 
 

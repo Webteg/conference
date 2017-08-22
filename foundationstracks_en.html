@@ -86,7 +86,7 @@
 				<div class="jumbotron">
 					<h3 id="ft_tracks">
 						<script>
-							document.getElementById("ft_tracks").innerHTML = menu[lang]["trackst"]["name"];
+							document.getElementById("ft_tracks").innerHTML = menu[lang]["scope"]["name"];
 						</script>
 					</h3>
 					<div>
@@ -114,6 +114,23 @@
 									$("#ft_categories").load(
 											"./texts/ftcategories_" + lang
 													+ ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h3 id="ftDates">
+						<script>
+							document.getElementById("ftDates").innerHTML = menu[lang]["importantDates"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="ftDatesText">
+							<script>
+								$(function() {
+									$("#ftDatesText").load(
+											"./texts/ftDates_"+ [ lang ] + ".html");
 								});
 							</script>
 						</ul>

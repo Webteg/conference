@@ -1,6 +1,36 @@
 <script>
+// 	$(document).ready(function(){
+// 		var idiom = document.cookie;
+// 		lang = getIdiom();
+// 		if (lang === undefined){
+// 			setCookie("language", lang, 1);
+// 		}
+// 		alert("idioma cargado: " + lang);
+// 	});
 	function changeLanguage(element) {
 		lang = $(element).attr("id");
+		setCookie("language", lang, 1);
+		alert("idioma seleccionado: " + document.cookie);
+	};
+	function getCookie(name){
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for (var i = 0; i < ca.length; i++){
+			var c = ca[i];
+			while (c.charAt(0) == ' '){
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0){
+				return c.substring(lan.length, c.lenght);
+			}
+		}
+	};
+	function setCookie(cname, cvalue, exdays){
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires=" + d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";";
 	}
 </script>
 
@@ -16,13 +46,13 @@
 			</button>
 			<a id="en" class="navbar-brand" href="index.html"
 				onclick="changeLanguage(this);"><img src="blank.gif"
-				class="flag flag-us" alt="English"></a> <a id="sp"
+				class="flag flag-us" alt="English"> </a> <a id="sp"
+				class="navbar-brand" href="index.html"
+				onclick="changeLanguage(this)"><img src="blank.gif"
+				class="flag flag-es" alt="Español" /> </a> <a id="br"
 				class="navbar-brand" href="index.html"
 				onclick="changeLanguage(this);"><img src="blank.gif"
-				class="flag flag-es" alt="EspaÃ±ol" /></a> <a id="br"
-				class="navbar-brand" href="index.html"
-				onclick="changeLanguage(this);"><img src="blank.gif"
-				class="flag flag-br" alt="Portugues" /></a>
+				class="flag flag-br" alt="Portugues" /> </a>
 		</div>
 
 		<div id="navbar" class="navbar-collapse collapse">
