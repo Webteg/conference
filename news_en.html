@@ -60,24 +60,24 @@
 <!-- 							style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" /> -->
 <!-- 						<script> -->
 <!-- //  							document.getElementById("track_img").src = "trackicons/track"  -->
-<!-- // 									+ trackNumber + ".png";  -->
-<!-- // 							document.getElementById("track_img").alt = menu[lang]["tracks"][trackNumber -->
-<!-- // 									.toString()]["name"];  -->
-<!-- 						</script>  -->
+<!-- //  									+ trackNumber + ".png";  -->
+<!-- //  							document.getElementById("track_img").alt = menu[lang]["tracks"][trackNumber  -->
+<!-- //  									.toString()]["name"];  -->
+<!-- 					</script> -->
 <!-- 					</div> -->
 					<div class="col-xs-10 col-lg-3">
-						<h2 id="timeTable_title">
+						<h2 id="news_title">
 							<script>
-								document.getElementById("timeTable_title").innerHTML = menu[lang]["generalProgram"]["name"];
+								document.getElementById("news_title").innerHTML = menu[lang]["news"]["name"];
 							</script>
 						</h2>
 					</div>
 
-					<div id="timeTableText" class="jumbotron">
+					<div id="newsText" class="jumbotron">
 						<script>
 							$(function() {
-								$("#timeTableText").load(
-										"./texts/timeTable" + "_text_" + lang + ".html");
+								$("#newsText").load(
+										"./texts/news" +"_text_" + lang + ".html");
 							});
 						</script>
 					</div>
@@ -133,7 +133,7 @@
 <!-- // 											"./texts/pc" + trackNumber -->
 <!-- // 													+ "_text.html"); -->
 <!-- // 								}); -->
-<!-- <!-- 							</script> --> 
+<!-- 							</script> -->
 <!-- 						</ul> -->
 <!-- 					</div> -->
 <!-- 				</div> -->

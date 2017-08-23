@@ -96,9 +96,12 @@
 						<ul id="track_topics">
 							<script>
 								$(function() {
-									$("#track_topics").load(
-											"./texts/topics" + trackNumber
-													+ "_text_" + lang + ".html")
+									$("#track_topics")
+											.load(
+													"./texts/topics"
+															+ trackNumber
+															+ "_text_" + lang
+															+ ".html")
 								});
 							</script>
 						</ul>
@@ -126,7 +129,7 @@
 				<div class="jumbotron">
 					<h3 id="track_pc">
 						<script>
-							document.getElementById("track_pc").innerHTML = menu[lang]["pc"];
+							document.getElementById("track_pc").innerHTML = menu[lang]["pc"]["name"];
 						</script>
 					</h3>
 					<div>
@@ -136,6 +139,24 @@
 									$("#track_pc_members").load(
 											"./texts/pc" + trackNumber
 													+ "_text.html");
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h3 id="track_submissionsTitle">
+						<script>
+							document.getElementById("track_submissionsTitle").innerHTML = menu[lang]["submissions"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="track_sumissionsText">
+							<script>
+								$(function() {
+									$("#track_sumissionsText").load(
+											"./texts/ftSubmi" + "_text_"
+													+ lang + ".html");
 								});
 							</script>
 						</ul>

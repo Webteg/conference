@@ -15,8 +15,9 @@ var menu = {
 		},
 		"trackst": {"name":"Tracks","url":"tracks"},
 		"tutorials":{"name":"Tutorials","url":"tutorials"},
-		"simposio": {"name":"Doctoral Symposium","url":"simposio"},
+		"simposio": {"name":"Doctoral Symposium","url":"docSymp"},
 		"home": {"name":"Home","url":"index.html"},
+		"news": {"name":"News","url":"news"},
 		"committees": {"name":"Committees","url":"committees"},
 		"keynotes": {"name":"Keynotes","url":"keyNotes"},
 		"attending": {"name":"Attending","url":"attending"},
@@ -38,9 +39,10 @@ var menu = {
 		"programdl": {"name":"Complete Program","url":"outline"},
 		"accepted": {"name":"Accepted papers","url":"accepted"},
 		"timetable": {"name":"Timetable","url":"timeTable"},
+		"generalProgram": {"name":"General program","url":"timeTable"},
 		"sponsors": {"name":"Sponsors","url":"sponsors"},
 		"chair": "Chair",
-		"pc": "Program Committee",
+		"pc": {"name":"Program Committee"},
 		"viewDetails": "View details",
 		"title": "Ibero-American Conference on Software Engineering",
 		"organizers": "Organizers",
@@ -76,7 +78,8 @@ var menu = {
 		"importantDates":{"name":"Important dates", "url":"importantDatesMain"},
 		"datesSubmi":{"name":"Submissions"},
 		"datesConf":{"name":"Conference Major Events"},
-		"scope":{"name":"Scope"}
+		"scope":{"name":"Scope"},
+		"download":{"name":"Downloadable versions"}
 	},
 	"sp": {
 		"title": "Ibero-American Conference on Software Engineering",

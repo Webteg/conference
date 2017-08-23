@@ -87,17 +87,17 @@
 					</div>
 				</div>
 				<div class="jumbotron">
-					<h3 id="dsScope_title">
+					<h3 id="track6_title">
 						<script>
-							document.getElementById("dsScope_title").innerHTML = menu[lang]["scope"]["name"];
+							document.getElementById("track6_title").innerHTML = menu[lang]["topics"]["name"];
 						</script>
 					</h3>
 					<div>
-						<ul id="dsScope_text">
+						<ul id="topics6_text">
 							<script>
 								$(function() {
-									$("#dsScope_text").load(
-											"./texts/dsScope" + "_text_" + lang
+									$("#topics6_text").load(
+											"./texts/topics6" + "_text_" + lang
 													+ ".html")
 								});
 							</script>
@@ -105,18 +105,35 @@
 					</div>
 				</div>
 				<div class="jumbotron">
-					<h3 id="dsEvalProcess_title">
+					<h3 id="pchairs6_title">
 						<script>
-							document.getElementById("dsEvalProcess_title").innerHTML = menu[lang]["evaluationProcess"]["name"];
+							document.getElementById("pchairs6_title").innerHTML = menu[lang]["pchairs"]["name"];
 						</script>
 					</h3>
 					<div>
-						<ul id="dsEvalProcess_text">
+						<ul id="pchairs6_text">
 							<script>
 								$(function() {
-									$("#dsEvalProcess_text").load(
-											"./texts/dsEvalProcess" + "_text_"
-													+ lang + ".html")
+									$("#pchairs6_text").load(
+											"./texts/pchairs" + trackNumber
+													+ "_text" + ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h3 id="pCommi_title">
+						<script>
+							document.getElementById("pCommi_title").innerHTML = menu[lang]["pc"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="pCommi_text">
+							<script>
+								$(function() {
+									$("#pCommi_text").load(
+											"./texts/pc" +trackNumber+ "_text" + ".html")
 								});
 							</script>
 						</ul>
@@ -135,24 +152,6 @@
 									$("#dsSubmission_text").load(
 											"./texts/dsSubmi" + "_text_"
 													+ lang + ".html")
-								});
-							</script>
-						</ul>
-					</div>
-				</div>
-				<div class="jumbotron">
-					<h3 id="dates">
-						<script>
-							document.getElementById("dates").innerHTML = menu[lang]["importantDates"]["name"];
-						</script>
-					</h3>
-					<div>
-						<ul id="track_dates">
-							<script>
-								$(function() {
-									$("#track_dates").load(
-											"./texts/impDates" + trackNumber
-													+ "_" + lang + ".html")
 								});
 							</script>
 						</ul>

@@ -24,9 +24,9 @@
 	document.title = menu[lang]["title"]
 </script>
 <script>
-	var page = "track1";
+	var page = "track6";
 	var lang = "en";
-	var trackNumber = 4;
+	var trackNumber = 6;
 	$(function() {
 		$("#footer").load("./components/footer.html");
 	});
@@ -66,147 +66,118 @@
 						</script>
 					</div>
 					<div class="col-xs-10 col-lg-3">
-						<h2 id="ft_title">
+						<h2 id="track_title">
 							<script>
-								document.getElementById("ft_title").innerHTML = menu[lang]["foundationsTracks"]["name"];
+								document.getElementById("track_title").innerHTML = menu[lang]["tracks"][trackNumber
+										.toString()]["name"]
+										+ " - "
+										+ menu[lang]["tracks"][trackNumber]["longName"];
 							</script>
 						</h2>
 					</div>
 
-					<div id="ftText" class="jumbotron">
+					<div id="trackText" class="jumbotron">
 						<script>
 							$(function() {
-								$("#ftText").load(
-										"./texts/foundationstracks" + "_text_"
-												+ lang + ".html");
+								$("#trackText").load(
+										"./texts/ds" 
+												+ "_text_" + lang + ".html");
 							});
 						</script>
 					</div>
 				</div>
 				<div class="jumbotron">
-					<h3 id="ftScope_title">
+					<h3 id="dsScope_title">
 						<script>
-							document.getElementById("ftScope_title").innerHTML = menu[lang]["scope"]["name"];
+							document.getElementById("dsScope_title").innerHTML = menu[lang]["scope"]["name"];
 						</script>
 					</h3>
 					<div>
-						<ul id="ftScope_text">
+						<ul id="dsScope_text">
 							<script>
 								$(function() {
-									$("#ftScope_text").load(
-											"./texts/ftScope" +"_text_"+ lang
+									$("#dsScope_text").load(
+											"./texts/dsScope" + "_text_" + lang
 													+ ".html")
 								});
 							</script>
 						</ul>
 					</div>
-					<h4 id="ftTracks_subtitle" style ="text-indent:40px">
-						<script>
-							document.getElementById("ftTracks_subtitle").innerHTML = menu[lang]["trackst"]["name"];
-						</script>
-					</h4>
-					<div>
-						<ul id="ftTracks_text">
-							<script>
-								$(function() {
-									$("#ftTracks_text").load(
-											"./texts/fttracks_" + lang
-													+ ".html")
-								});
-							</script>
-						</ul>
-					</div>
-<!-- 					<div class="jumbotron"> -->
-					<h4 id="categories" style ="text-indent:40px">
-						<script>
-							document.getElementById("categories").innerHTML = menu[lang]["categories"]["name"];
-						</script>
-					</h4>
-					<div>
-						<ul id="ft_categories">
-							<script>
-								$(function() {
-									$("#ft_categories").load(
-											"./texts/ftcategories_" + lang
-													+ ".html")
-								});
-							</script>
-						</ul>
-					</div>
-<!-- 				</div> -->
 				</div>
-				
 				<div class="jumbotron">
-					<h3 id="ftDates">
+					<h3 id="dates">
 						<script>
-							document.getElementById("ftDates").innerHTML = menu[lang]["importantDates"]["name"];
+							document.getElementById("dates").innerHTML = menu[lang]["importantDates"]["name"];
 						</script>
 					</h3>
 					<div>
-						<ul id="ftDatesText">
+						<ul id="track_dates">
 							<script>
 								$(function() {
-									$("#ftDatesText").load(
-											"./texts/ftDates_"+ [ lang ] + ".html");
+									$("#track_dates").load(
+											"./texts/impDates" + trackNumber
+													+ "_" + lang + ".html")
 								});
 							</script>
 						</ul>
 					</div>
 				</div>
 				<div class="jumbotron">
-					<h3 id="ftSubmissions">
+					<h3 id="dsEvalProcess_title">
 						<script>
-							document.getElementById("ftSubmissions").innerHTML = menu[lang]["submissions"]["name"];
+							document.getElementById("dsEvalProcess_title").innerHTML = menu[lang]["evaluationProcess"]["name"];
 						</script>
 					</h3>
 					<div>
-						<ul id="submissionsText">
+						<ul id="dsEvalProcess_text">
 							<script>
 								$(function() {
-									$("#submissionsText").load(
-											"./texts/ftsubmi" + "_text_"
-													+ [ lang ] + ".html");
+									$("#dsEvalProcess_text").load(
+											"./texts/dsEvalProcess" + "_text_"
+													+ lang + ".html")
 								});
 							</script>
 						</ul>
 					</div>
 				</div>
 				<div class="jumbotron">
-					<h3 id="ftEvalProc">
+					<h3 id="dsSubmission_title">
 						<script>
-							document.getElementById("ftEvalProc").innerHTML = menu[lang]["evaluationProcess"]["name"];
+							document.getElementById("dsSubmission_title").innerHTML = menu[lang]["submission"]["name"];
 						</script>
 					</h3>
 					<div>
-						<ul id="evalProcText">
+						<ul id="dsSubmission_text">
 							<script>
 								$(function() {
-									$("#evalProcText").load(
-											"./texts/ftevalprocess" + "_text_"
-													+ [ lang ] + ".html");
+									$("#dsSubmission_text").load(
+											"./texts/dsSubmi" + "_text_"
+													+ lang + ".html")
 								});
 							</script>
 						</ul>
 					</div>
 				</div>
 				<div class="jumbotron">
-					<h3 id="ftDownloadPdf">
+					<h3 id="dsDownloadable_title">
 						<script>
-							document.getElementById("ftDownloadPdf").innerHTML = menu[lang]["download"]["name"];
+							document.getElementById("dsDownloadable_title").innerHTML = menu[lang]["download"]["name"];
 						</script>
 					</h3>
 					<div>
-						<ul id="evalProcText">
+						<ul id="dsDownloadable_text">
 							<script>
 								$(function() {
-									$("#evalProcText").load(
-											"./texts/ftDownload" + "_text_"
-													+ [ lang ] + ".html");
+									$("#dsDownloadable_text").load(
+											"./texts/dsDownload" + "_text_"
+													+ lang + ".html")
 								});
 							</script>
 						</ul>
 					</div>
 				</div>
+
+
 			</div>
 			<!--/.col-xs-12.col-sm-9-->
 
