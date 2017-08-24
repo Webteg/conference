@@ -100,7 +100,7 @@
 				<li class="dropdown"><a id="dropdownTracks"
 					class="dropdown-toggle" data-toggle="dropdown" role="button"
 					aria-expanded="false"> <script>
-						document.getElementById("dropdownTracks").innerHTML = "Tracks";
+						document.getElementById("dropdownTracks").innerHTML = menu[lang]["trackst"]["name"];
 					</script>
 				</a>
 					<ul class="dropdown-menu" role="menu">
@@ -164,23 +164,23 @@
 
 					<ul class="dropdown-menu" role="menu">
 						<!-- 				    <li class="divider"></li> -->
-						<li><a id="keynote" href="">. <script>
+						<li><a id="keynote" href=""><script>
 							document.getElementById("keynote").innerHTML = menu[lang]["keynotes"]["name"];
 							document.getElementById("keynote").href = menu[lang]["keynotes"]["url"]
 									+ suffixh;
 						</script>
 						</a></li>
-						<li><a id="timetable" href="">. <script>
+						<li><a id="timetable" href=""><script>
 							document.getElementById("timetable").innerHTML = menu[lang]["generalProgram"]["name"];
-							document.getElementById("timetable").href = menu[lang]["timetable"]["url"]
+							document.getElementById("timetable").href = menu[lang]["generalProgram"]["url"]
 									+ suffixh;
 						</script>
 						</a></li>
-						<li><a id="school" href="">. <script>
-							document.getElementById("school").innerHTML = menu[lang]["school"]["name"];
-							document.getElementById("school").href = menu[lang]["school"]["url"]
+						<li><a id="school" href=""><script>
+ 							document.getElementById("school").innerHTML = menu[lang]["school"]["name"];
+							document.getElementById("school").href = menu[lang]["school"]["url"] 
 									+ suffixh;
-						</script>
+						</script> 
 						</a></li>
 						<li><a id="track4" href=""> <script>
 							document.getElementById("track4").innerHTML = menu[lang]["tracks"]["4"]["name"];
@@ -188,7 +188,7 @@
 									+ suffixh;
 						</script>
 						</a></li>
-						<li><a id="socialEvents" href="">. <script>
+						<li><a id="socialEvents" href=""><script>
 							document.getElementById("socialEvents").innerHTML = menu[lang]["socialEvents"]["name"];
 							document.getElementById("socialEvents").href = menu[lang]["socialEvents"]["url"]
 									+ suffixh;

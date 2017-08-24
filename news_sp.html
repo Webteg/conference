@@ -66,18 +66,18 @@
 <!-- 					</script> -->
 <!-- 					</div> -->
 					<div class="col-xs-10 col-lg-3">
-						<h2 id="keyNotes_title">
+						<h2 id="news_title">
 							<script>
-								document.getElementById("keyNotes_title").innerHTML = menu[lang]["keynotes"]["name"];
+								document.getElementById("news_title").innerHTML = menu[lang]["news"]["name"];
 							</script>
 						</h2>
 					</div>
 
-					<div id="keyNotesText" class="jumbotron">
+					<div id="newsText" class="jumbotron">
 						<script>
 							$(function() {
-								$("#keyNotesText").load(
-										"./texts/" + lang + "/keynotes" +"_text_" + lang + ".html");
+								$("#newsText").load(
+										"./texts/news" +"_text_" + lang + ".html");
 							});
 						</script>
 					</div>

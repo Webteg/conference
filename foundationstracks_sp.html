@@ -25,7 +25,7 @@
 </script>
 <script>
 	var page = "track1";
-	var lang = "en";
+	var lang = "sp";
 	var trackNumber = 4;
 	$(function() {
 		$("#footer").load("./components/footer.html");
@@ -102,7 +102,7 @@
 					</div>
 					<h4 id="ftTracks_subtitle" style ="text-indent:40px">
 						<script>
-							document.getElementById("ftTracks_subtitle").innerHTML = "<strong>" + menu[lang]["trackst"]["name"] + "</strong>";
+							document.getElementById("ftTracks_subtitle").innerHTML = menu[lang]["trackst"]["name"];
 						</script>
 					</h4>
 					<div>
@@ -119,7 +119,7 @@
 <!-- 					<div class="jumbotron"> -->
 					<h4 id="categories" style ="text-indent:40px">
 						<script>
-							document.getElementById("categories").innerHTML = "<strong>" +  menu[lang]["categories"]["name"] + "</strong>"  ;
+							document.getElementById("categories").innerHTML = menu[lang]["categories"]["name"];
 						</script>
 					</h4>
 					<div>
@@ -196,10 +196,10 @@
 						</script>
 					</h3>
 					<div>
-						<ul id="ftDownloadPdfText">
+						<ul id="evalProcText">
 							<script>
 								$(function() {
-									$("#ftDownloadPdfText").load(
+									$("#evalProcText").load(
 											"./texts/" + lang +"/ftDownload" + "_text_"
 													+ [ lang ] + ".html");
 								});

@@ -1,19 +1,19 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <p id="ceroParagraph" align="justify">
 	<script>
-		document.getElementById('ceroParagraph').innerHTML = "<strong> Welcome to "
+		document.getElementById('ceroParagraph').innerHTML = "<strong>Bienvenidos a  "
 				+ menu["shortTitle"] + " " + year + "!</strong>";
 	</script>
 </p>
 <br />
-<p id="firstParagraph1" align="justify">
+<p id="firstParagraph" align="justify">
 	<script>
-	document.getElementById('firstParagraph1').innerHTML = menu["shortTitle"]
-	+ "es el foro de investigación de Ingeniería de Software (Software Engineering) líder " 
-	+ "en Iberoamérica. El principal objetivo de esta conferencia es promover la investigación "
+	document.getElementById('firstParagraph').innerHTML = menu["shortTitle"]
+	+ " es el foro de investigación de Ingeniería de Software (Software Engineering) líder" 
+	+ " en Iberoamérica. El principal objetivo de esta conferencia es promover la investigación"
 	+ "científica de alta calidad para dar soporte a los investigadores en esta comunidad en la "
 	+ "publicación y discusión de su trabajo. Además, la conferencia fomenta la colaboración y "
-	+ "la producción científica entre los académicos, estudiantes y la industria del software.;
+	+ "la producción científica entre los académicos, estudiantes y la industria del software.";
 	</script>
 </p>
 <br />
@@ -40,8 +40,12 @@
 	</script>
 </p>
 <br />
-<p>Invitamos a enviar trabajos a una o más líneas temática de
-	menu["shortTitle"]
+<p id="fourthParagraph" align="justify">
+	<script>
+		document.getElementById('fourthParagraph').innerHTML = 
+			"Invitamos a enviar trabajos a una o más líneas temática de " + menu["shortTitle"];
+		</script>
+</p>
 <ul style="text-ident: 20%">
 	<li>SET - Línea temática de Ingeniería de Software</li>
 	<li>WER - Línea temática de Ingeniería de Requisitos</li>
@@ -49,12 +53,12 @@
 </ul>
 </p>
 <br />
-<p id="fourthParagraph" align="justify">
+<p id="fifthParagraph" align="justify">
 	<script>
-		document.getElementById('fourthParagraph').innerHTML = 
+		document.getElementById('fifthParagraph').innerHTML = 
 			"Los trabajos pueden ser enviados en cualquiera de las categorías disponibles" 
-			+ " (p.e., trabajos técnicos, ideas emergentes, y herramientas) y en los lenguajes oficiales de CIbse: "
-			+ "Inglés, Español, y Portugués. Más abajo se encuentran detalles de cada línea temática y el" 
+			+ " (p.e., trabajos técnicos, ideas emergentes, y herramientas) y en los lenguajes oficiales de "+ menu["shortTitle"]
+			+ ": Inglés, Español, y Portugués. Más abajo se encuentran detalles de cada línea temática y el" 
 			+ " comité general de organización de la conferencia.";
 	</script>
 </p>

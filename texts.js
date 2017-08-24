@@ -42,7 +42,7 @@ var menu = {
 		"generalProgram": {"name":"General program","url":"timeTable"},
 		"sponsors": {"name":"Sponsors","url":"sponsors"},
 		"chair": "Chair",
-		"pc": {"name":"Program Committee"},
+		"pc": {"name":"Program committee"},
 		"viewDetails": "View details",
 		"title": "Ibero-American Conference on Software Engineering",
 		"organizers": "Organizers",
@@ -83,7 +83,38 @@ var menu = {
 	},
 	"sp": {
 		"title": "Ibero-American Conference on Software Engineering",
-		"home": {"name":"Inicio","url":"index.html"}
+		"home": {"name":"Inicio","url":"index.html"},
+		"news": {"name":"Noticias","url":"news"},
+		"calls": {"name":"Llamadas"},
+			"foundationsTracks": {"name":"Líneas temáticas","url":"foundationstracks"},
+			"simposio": {"name":"Simposio doctoral","url":"docSymp"},
+		"trackst": {"name":"Temáticas","url":"tracks"},
+			"tracks": {
+				"1": {"name": "SET", "longName":"Linea temática de ingeniería de software", "url":"track1","leader":"NN","email":"","image":"1cr.jpg"},
+				"2": {"name":"WER","longName":"Línea temática de ingeniería de requisitos", "url":"track2","leader":"NN","email":"","image":"2rc.jpg"},
+				"3": {"name":"ESELAW","longName":"Línea temática de ingeniería de software experimental", "url":"track3","leader":"NN","email":"","image":"3rc.jpg"},
+				"4": {"name":"Industria","longName":"Industry Presentations", "url":"track4","leader":"NN","email":"","image":"4rc.jpg"},
+				"6": {"name":"Simp Doc","longName":"Simposio doctoral", "url":"track6","leader":"NN","email":"","image":"6rc.jpg"}
+			},
+		"program": {"name":"Programa","url":"conference"},
+			"keynotes": {"name":"Keynotes","url":"keyNotes"},
+			"generalProgram": {"name":"Programa general","url":"timeTable"},
+			"school":{"name":"Escuela", "url":"school"},
+			"socialEvents":{"name":"Social events", "url":"socialEvents"},
+		"organization": {"name":"Organización", "url":"organization"},
+			"committee": {"name":"Committee", "url":"committee"},
+			"sponsors": {"name":"Sponsors", "url":"sponsors"},
+			"registration":{"name":"Registration", "url":"registration"},
+		"venue": {"name":"Lugar","url":"venue"},
+			"conferenceVenue":{"name":"Lugar de la conferencia", "url":"conferenceVenue"},
+		"contact":{"name":"Contactenos", "url":"contact"},
+		
+		"scope":{"name":"Alcance"},
+		"importantDates":{"name":"Fechas importantes"},
+		"submissions": {"name":"Envío de trabajos"},
+		"submission": {"name":"Envío de trabajo"},
+		"evaluationProcess": {"name":"Proceso de evaluación"}
+		
 	},
 	"br": {
 		"title": "Ibero-American Conference on Software Engineering"
