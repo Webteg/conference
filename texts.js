@@ -1,7 +1,45 @@
-var lang = "en";
-var suffix = "_" + lang + ".js";
-var suffixh = "_" + lang + ".html";
+var lang;
 var page = "index";
+var suffix;
+var suffixh;
+var sufhtml = ".html";
+
+	$(document).ready(function(){
+		if (localStorage.getItem('lang') == null){
+			localStorage.setItem('lang', 'en');
+		}
+		lang = localStorage.getItem('lang');
+		suffixh = "_" + lang + ".html";
+		suffix = "_" + lang + ".js";
+	});
+	function changeLanguage(element) {
+		localStorage.setItem('lang', $(element).attr("id"));
+		lang = localStorage.getItem('lang');
+		suffixh = "_" + lang + ".html";
+		suffix = "_" + lang + ".js";
+	};
+//	function getCookie(name) {
+//		var name = cname + "=";
+//		var decodedCookie = decodeURIComponent(document.cookie);
+//		var ca = decodedCookie.split(';');
+//		for (var i = 0; i < ca.length; i++) {
+//			var c = ca[i];
+//			while (c.charAt(0) == ' ') {
+//				c = c.substring(1);
+//			}
+//			if (c.indexOf(name) == 0) {
+//				console.log("cookie " + name + " = " + c.substring(lan.length, c.lenght));
+//				return c.substring(lan.length, c.lenght);
+//			}
+//		}
+//	};
+//	function setCookie(cname, cvalue, exdays) {
+//		var d = new Date();
+//		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+//		var expires = "expires=" + d.toUTCString();
+//		console.log("cookie to be set: " + cname + "=" + cvalue + ";" + expires + ";");
+//		document.cookie = cname + "=" + cvalue + ";" + expires + ";";
+//	}
 
 var menu = {
 	"en": {
@@ -79,10 +117,11 @@ var menu = {
 		"datesSubmi":{"name":"Submissions"},
 		"datesConf":{"name":"Conference Major Events"},
 		"scope":{"name":"Scope"},
-		"download":{"name":"Downloadable versions"}
+		"download":{"name":"Downloadable version"},
+		"eibais":{"name":"EIbAIS","url":"eibais"}
 	},
 	"sp": {
-		"title": "Ibero-American Conference on Software Engineering",
+		"title": "Conferencia Iberoamericana de Ingeniería de Software",
 		"home": {"name":"Inicio","url":"index.html"},
 		"news": {"name":"Noticias","url":"news"},
 		"calls": {"name":"Llamadas"},
@@ -100,24 +139,95 @@ var menu = {
 			"keynotes": {"name":"Keynotes","url":"keyNotes"},
 			"generalProgram": {"name":"Programa general","url":"timeTable"},
 			"school":{"name":"Escuela", "url":"school"},
-			"socialEvents":{"name":"Social events", "url":"socialEvents"},
+			"socialEvents":{"name":"Eventos sociales", "url":"socialEvents"},
 		"organization": {"name":"Organización", "url":"organization"},
-			"committee": {"name":"Committee", "url":"committee"},
+			"committee": {"name":"Comité", "url":"committee"},
 			"sponsors": {"name":"Sponsors", "url":"sponsors"},
-			"registration":{"name":"Registration", "url":"registration"},
+			"registration":{"name":"Registro", "url":"registration"},
 		"venue": {"name":"Lugar","url":"venue"},
 			"conferenceVenue":{"name":"Lugar de la conferencia", "url":"conferenceVenue"},
 		"contact":{"name":"Contactenos", "url":"contact"},
 		
 		"scope":{"name":"Alcance"},
-		"importantDates":{"name":"Fechas importantes"},
+		"importantDates":{"name":"Fechas importantes", "url":"importantDatesMain"},
 		"submissions": {"name":"Envío de trabajos"},
 		"submission": {"name":"Envío de trabajo"},
-		"evaluationProcess": {"name":"Proceso de evaluación"}
+		"evaluationProcess": {"name":"Proceso de evaluación"},
+		"datesSubmi":{"name":"Submissions"},
+		"datesConf":{"name":"Conference Major Events"},
+		"university": {"name":"Universidad de los Andes","web":"https://uniandes.edu.co", "url":"university"},
+		"depto": {"name":"Departamento de ingeniería de sistemas y computación","url":"http://sistemas.uniandes.edu.co"},
+		"organizers": "Organizadores",
+		"topics":{"name":"Temas"},
+		"categories": {"name":"Categorías"},
+		"pchairs":{"name":"Coordinadores del programa"},
+		"pc": {"name":"Comité del programa"},
+		"generalCommittee": {"name":"Comité general de organización"},
+		"genConfeChairs": {"name":"Coordinadores generales de la conferencia"},
+		"genProgChairs": {"name":"Coordinadores generales del programa"},
+		"iberoASchoolChair": {"name":"Coordinador de la escuela Ibero-Americana"},
+		"toolsPaperChair": {"name":"Coordinadores de trabajos de herramientas"},
+		"proStuVolunChair": {"name":"Coordinador de actas y estudiantes voluntarios"},
+		"publicityCoChairs": {"name":"Coordinadores de difusión"},
+		"industryExhibition": {"name":"Coordinador de exhibición industrial"},
+		"webChair": {"name":"Coordinador Web"},
+		"download":{"name":"Versión descargable"},
+		"eibais":{"name":"EIbAIS","url":"eibais"}
 		
 	},
 	"br": {
-		"title": "Ibero-American Conference on Software Engineering"
+		"title": "Congresso Ibero-Americano de Engenharia de Software",
+		"home": {"name":"Inicio","url":"index.html"},
+		"news": {"name":"Notícias","url":"news"},
+		"calls": {"name":"Chamadas"},
+			"foundationsTracks": {"name":"Trilhas Principais","url":"foundationstracks"},
+			"simposio": {"name":"Simpósio doutoral","url":"docSymp"},
+		"trackst": {"name":"Trilhas","url":"tracks"},
+			"tracks": {
+				"1": {"name": "SET", "longName":"Tilha de Engenharia de Software", "url":"track1","leader":"NN","email":"","image":"1cr.jpg"},
+				"2": {"name":"WER","longName":"Engenharia de Requisitos", "url":"track2","leader":"NN","email":"","image":"2rc.jpg"},
+				"3": {"name":"ESELAW","longName":"Línea temática de ingeniería de software experimental", "url":"track3","leader":"NN","email":"","image":"3rc.jpg"},
+				"4": {"name":"Indústria","longName":"Industry Presentations", "url":"track4","leader":"NN","email":"","image":"4rc.jpg"},
+				"6": {"name":"Simp Doc","longName":"Simposio doctoral", "url":"track6","leader":"NN","email":"","image":"6rc.jpg"}
+			},
+		"program": {"name":"Programa","url":"conference"},
+			"keynotes": {"name":"Keynotes","url":"keyNotes"},
+			"generalProgram": {"name":"Programa Geral","url":"timeTable"},
+			"school":{"name":"Escola", "url":"school"},
+			"socialEvents":{"name":"Eventos sociais", "url":"socialEvents"},
+		"organization": {"name":"Organização", "url":"organization"},
+			"committee": {"name":"Comité", "url":"committee"},
+			"sponsors": {"name":"Patrocinador", "url":"sponsors"},
+			"registration":{"name":"Registro", "url":"registration"},
+		"venue": {"name":"Lugar","url":"venue"},
+			"conferenceVenue":{"name":"Lugar da conferência", "url":"conferenceVenue"},
+		"contact":{"name":"Contactenos", "url":"contact"},
+		
+		"scope":{"name":"Alcance"},
+		"importantDates":{"name":"Datas importantes", "url":"importantDatesMain"},
+		"submissions": {"name":"Envío de trabajos"},
+		"submission": {"name":"Envío de trabajo"},
+		"evaluationProcess": {"name":"Proceso de evaluación"},
+		"datesSubmi":{"name":"Submissions"},
+		"datesConf":{"name":"Conference Major Events"},
+		"university": {"name":"Universidad de los Andes","web":"https://uniandes.edu.co", "url":"university"},
+		"depto": {"name":"Departamento de ingeniería de sistemas y computación","url":"http://sistemas.uniandes.edu.co"},
+		"organizers": "Organizadores",
+		"topics":{"name":"Tópicos"},
+		"categories": {"name":"Categorias"},
+		"pchairs":{"name":"Coordenadores do comitê de programa"},
+		"pc": {"name":"Coordenadores do comitê de programa"},
+		"generalCommittee": {"name":"Comitê geral de oranização"},
+		"genConfeChairs": {"name":"Coordenadores do Comitê Geral"},
+		"genProgChairs": {"name":"Coordenação de Programa Geral"},
+		"iberoASchoolChair": {"name":"Coordenação da 1a Escola Ibero-americana de Engenharia de Software"},
+		"toolsPaperChair": {"name":"Coordenação dos Trabalhos de Ferramentas"},
+		"proStuVolunChair": {"name":"Coordenação dos Estudantes Voluntários e dos Anais"},
+		"publicityCoChairs": {"name":"Coordenação da Publicidade"},
+		"industryExhibition": {"name":"Coordenação dos Expositores da Indústria"},
+		"webChair": {"name":"Coordenação da WEB"},
+		"download":{"name":"Downloadable versions"},
+		"eibais":{"name":"EIbAIS","url":"eibais"}
 	},
 	"shortTitle": "CIbSE",
 	"date": {"year":"2018", "days":"26-30", "edition": "XXI"},
