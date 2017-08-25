@@ -146,7 +146,7 @@ var menu = {
 			"registration":{"name":"Registro", "url":"registration"},
 		"venue": {"name":"Lugar","url":"venue"},
 			"conferenceVenue":{"name":"Lugar de la conferencia", "url":"conferenceVenue"},
-		"contact":{"name":"Contactenos", "url":"contact"},
+		"contact":{"name":"Contacto", "url":"contact"},
 		
 		"scope":{"name":"Alcance"},
 		"importantDates":{"name":"Fechas importantes", "url":"importantDatesMain"},
@@ -201,7 +201,7 @@ var menu = {
 			"registration":{"name":"Registro", "url":"registration"},
 		"venue": {"name":"Lugar","url":"venue"},
 			"conferenceVenue":{"name":"Lugar da conferência", "url":"conferenceVenue"},
-		"contact":{"name":"Contactenos", "url":"contact"},
+		"contact":{"name":"Contato", "url":"contact"},
 		
 		"scope":{"name":"Alcance"},
 		"importantDates":{"name":"Datas importantes", "url":"importantDatesMain"},
