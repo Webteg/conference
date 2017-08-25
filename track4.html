@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+	content="CIBCSE XXI 2018 -  Bogota, Colombia 2018 April 23 to 27">
+<meta name="keywords" content="CIBSE">
+<meta name="author"
+	content="Universidad de los Andes - Departamento de Ingenieria de Sistemas y Computacion">
+<link rel="icon" href="favicon.ico">
+
+<!-- Bootstrap core CSS -->
+<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="offcanvas.css" rel="stylesheet">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./texts.js"></script>
+	
+<script>
+	document.title = menu[lang]["title"]
+</script>
+<script>
+	var page = "track4";
+	var lang = localStorage.getItem('lang');
+	var trackNumber = 4;
+	$(function() {
+		$("#footer").load("./components/footer.html");
+	});
+</script>
+</head>
+
+<body>
+	<div id="navbar_t1">
+		<script>
+			$(function() {
+				$("#navbar_t1").load("./components/navbar.html");
+			});
+		</script>
+	</div>
+
+	<div class="container">
+		<div class="row row-offcanvas row-offcanvas-right">
+			<div id="banner" class="container-fluid">
+				<script>
+					$(function() {
+						$("#banner").load("./banner/banner_en.html");
+					});
+				</script>
+			</div>
+
+			<div class="col-xs-12 col-md-9">
+
+				<div class="jumbotron">
+					<div class="col-xs-2 col-lg-2">
+						<img id="track_img" src="" alt="" width="90"
+							style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
+						<script>
+							document.getElementById("track_img").src = "trackicons/track"
+									+ trackNumber + ".png";
+							document.getElementById("track_img").alt = menu[lang]["tracks"][trackNumber
+									.toString()]["name"];
+						</script>
+					</div>
+					<div class="col-xs-10 col-lg-4">
+						<h2 id="track_title">
+							<script>
+								document.getElementById("track_title").innerHTML = menu[lang]["tracks"][trackNumber
+										.toString()]["name"]
+										+ " - "
+										+ menu[lang]["tracks"][trackNumber]["longName"];
+							</script>
+						</h2>
+					</div>
+
+					<div id="trackText" class="jumbotron">
+						<script>
+							$(function() {
+								$("#trackText").load(
+										"./texts/" + lang + "/track" + trackNumber
+												+ "_text_" + lang + ".html");
+							});
+						</script>
+					</div>
+				</div>
+
+
+ 				<div class="jumbotron">
+ 					<h3 id="track_pc">
+ 						<script>
+ 							document.getElementById("track_pc").innerHTML = menu[lang]["pchairs"]["name"];
+ 						</script>
+ 					</h3>
+ 					<div>
+ 						<ul id="track_pc_members">
+ 							<script>
+ 								$(function() {
+ 									$("#track_pc_members").load(
+ 											"./texts/pc" + trackNumber + "_text.html");
+ 								});
+ 							</script>
+ 						</ul>
+ 					</div>
+ 				</div>
+
+			</div>
+			<!--/.col-xs-12.col-sm-9-->
+
+			<div id="sidebar">
+				<script>
+					$(function() {
+						$("#sidebar").load("./components/sidebar.html");
+					});
+				</script>
+			</div>
+		</div>
+		<!--/row-->
+
+		<hr>
+
+		<div id="footer"></div>
+
+	</div>
+	<!--/.container-->
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+	<div id="google">
+		<script>
+			$(function() {
+				$("#google").load("./components/google.html");
+			});
+		</script>
+	</div>
+</body>
+</html>

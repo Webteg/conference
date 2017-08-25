@@ -1,38 +1,4 @@
-<script>
-	// 	$(document).ready(function(){
-	// 		var idiom = document.cookie;
-	// 		lang = getIdiom();
-	// 		if (lang === undefined){
-	// 			setCookie("language", lang, 1);
-	// 		}
-	// 		alert("idioma cargado: " + lang);
-	// 	});
-	function changeLanguage(element) {
-		lang = $(element).attr("id");
-		setCookie("language", lang, 1);
-	};
-	function getCookie(name) {
-		var name = cname + "=";
-		var decodedCookie = decodeURIComponent(document.cookie);
-		var ca = decodedCookie.split(';');
-		for (var i = 0; i < ca.length; i++) {
-			var c = ca[i];
-			while (c.charAt(0) == ' ') {
-				c = c.substring(1);
-			}
-			if (c.indexOf(name) == 0) {
-				return c.substring(lan.length, c.lenght);
-			}
-		}
-	};
-	function setCookie(cname, cvalue, exdays) {
-		var d = new Date();
-		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-		var expires = "expires=" + d.toUTCString();
-		document.cookie = cname + "=" + cvalue + ";" + expires + ";";
-	}
-</script>
-
+<script type="text/javascript" src="./texts.js"></script>
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
@@ -65,7 +31,7 @@
 				<!-- NEWS -->
 				<li id="news"><a id="newsMenu" href=""> </a> <script>
 					document.getElementById("newsMenu").innerHTML = menu[lang]["news"]["name"];
-					document.getElementById("newsMenu").href = menu[lang]["news"]["url"]+ suffixh;
+					document.getElementById("newsMenu").href = menu[lang]["news"]["url"]+ sufhtml;
 				</script></li>
 				<!-- CALLS -->
 				<li><a id="dropdownCalls" class="dropdown-toggle"
@@ -77,13 +43,13 @@
 						<li><a id="foundationstracks" href=""> <script>
 							document.getElementById("foundationstracks").innerHTML = menu[lang]["foundationsTracks"]["name"];
 							document.getElementById("foundationstracks").href = menu[lang]["foundationsTracks"]["url"]
-									+ suffixh;
+									+ sufhtml;
 						</script>
 						</a></li>
 						<li><a id="docsymp" href=""> <script>
 							document.getElementById("docsymp").innerHTML = menu[lang]["simposio"]["name"];
 							document.getElementById("docsymp").href = menu[lang]["simposio"]["url"]
-									+ suffixh;
+									+ sufhtml;
 						</script>
 						</a></li>
 						<!--             <li> -->
@@ -106,25 +72,25 @@
 						<li><a id="track1" href=""> <script>
 							document.getElementById("track1").innerHTML = menu[lang]["tracks"]["1"]["name"];
 							document.getElementById("track1").href = menu[lang]["tracks"]["1"]["url"]
-									+ suffixh;
+									+ sufhtml;
 						</script>
 						</a></li>
 						<li><a id="track2" href=""> <script>
 							document.getElementById("track2").innerHTML = menu[lang]["tracks"]["2"]["name"];
 							document.getElementById("track2").href = menu[lang]["tracks"]["2"]["url"]
-									+ suffixh;
+							+ sufhtml;
 						</script>
 						</a></li>
 						<li><a id="track3" href=""> <script>
 							document.getElementById("track3").innerHTML = menu[lang]["tracks"]["3"]["name"];
 							document.getElementById("track3").href = menu[lang]["tracks"]["3"]["url"]
-									+ suffixh;
+							+ sufhtml;
 						</script>
 						</a></li>
 						<li><a id="docSymp" href=""> <script>
-							document.getElementById("docSymp").innerHTML = menu[lang]["tracks"]["6"]["name"];
+							document.getElementById("docSymp").innerHTML = menu[lang]["tracks"]["6"]["longName"];
 							document.getElementById("docSymp").href = menu[lang]["tracks"]["6"]["url"]
-									+ suffixh;
+							+ sufhtml;
 						</script>
 						</a></li>
 						<!--             <li class="divider"></li> -->
@@ -153,6 +119,11 @@
 						<!--               </a> -->
 						<!--             </li> -->
 					</ul></li>
+					<!-- EIbAIS -->
+				<li id="eibais"><a id="eibaisMenu" href=""> </a> <script>
+					document.getElementById("eibaisMenu").innerHTML = menu[lang]["eibais"]["name"];
+					document.getElementById("eibaisMenu").href = menu[lang]["eibais"]["url"]+ sufhtml;
+				</script></li>
 				<!-- PROGRAM -->
 				<li class="dropdown"><a id="dropdownProgram"
 					class="dropdown-toggle" data-toggle="dropdown" role="button"
@@ -166,31 +137,31 @@
 						<li><a id="keynote" href=""><script>
 							document.getElementById("keynote").innerHTML = menu[lang]["keynotes"]["name"];
 							document.getElementById("keynote").href = menu[lang]["keynotes"]["url"]
-									+ suffixh;
+									+ sufhtml;
 						</script>
 						</a></li>
 						<li><a id="timetable" href=""><script>
 							document.getElementById("timetable").innerHTML = menu[lang]["generalProgram"]["name"];
 							document.getElementById("timetable").href = menu[lang]["generalProgram"]["url"]
-									+ suffixh;
+									+ sufhtml;
 						</script>
 						</a></li>
-						<li><a id="school" href=""><script>
- 							document.getElementById("school").innerHTML = menu[lang]["school"]["name"];
-							document.getElementById("school").href = menu[lang]["school"]["url"] 
-									+ suffixh;
-						</script> 
-						</a></li>
+<!-- 						<li><a id="school" href=""><script> -->
+<!-- //  							document.getElementById("school").innerHTML = menu[lang]["school"]["name"]; -->
+<!-- // 							document.getElementById("school").href = menu[lang]["school"]["url"]  -->
+<!-- // 									+ sufhtml; -->
+<!-- 						</script>  -->
+<!-- 						</a></li> -->
 						<li><a id="track4" href=""> <script>
-							document.getElementById("track4").innerHTML = menu[lang]["tracks"]["4"]["name"];
+							document.getElementById("track4").innerHTML = menu[lang]["tracks"]["4"]["longName"];
 							document.getElementById("track4").href = menu[lang]["tracks"]["4"]["url"]
-									+ suffixh;
+									+ sufhtml;
 						</script>
 						</a></li>
 						<li><a id="socialEvents" href=""><script>
 							document.getElementById("socialEvents").innerHTML = menu[lang]["socialEvents"]["name"];
 							document.getElementById("socialEvents").href = menu[lang]["socialEvents"]["url"]
-									+ suffixh;
+									+ sufhtml;
 						</script>
 						</a></li>
 						<!--             <li> -->
@@ -220,19 +191,19 @@
 						<li><a id="committee" href=""> <script>
 							document.getElementById("committee").innerHTML = menu[lang]["committee"]["name"];
 							document.getElementById("committee").href = menu[lang]["committee"]["url"]
-									+ suffixh;
+									+ sufhtml;
 						</script>
 						</a></li>
 						<li><a id="sponsors" href=""> <script>
 							document.getElementById("sponsors").innerHTML = menu[lang]["sponsors"]["name"];
 							document.getElementById("sponsors").href = menu[lang]["sponsors"]["url"]
-									+ suffixh;
+									+ sufhtml;
 						</script>
 						</a></li>
 						<li><a id="registration" href=""> <script>
 							document.getElementById("registration").innerHTML = menu[lang]["registration"]["name"];
 							document.getElementById("registration").href = menu[lang]["registration"]["url"]
-									+ suffixh;
+									+ sufhtml;
 						</script>
 						</a></li>
 					</ul></li>
@@ -254,7 +225,7 @@
 						<li><a id="conferenceVenue" href=""> <script>
 							document.getElementById("conferenceVenue").innerHTML = menu[lang]["conferenceVenue"]["name"];
 							document.getElementById("conferenceVenue").href = menu[lang]["conferenceVenue"]["url"]
-									+ suffixh;
+									+ sufhtml;
 						</script>
 						</a></li>
 					</ul></li>
@@ -262,7 +233,7 @@
 				<li id="contact"><a id="contactMenu" href=""> </a> <script>
 					document.getElementById("contactMenu").innerHTML = menu[lang]["contact"]["name"];
 					document.getElementById("contactMenu").href = menu[lang]["contact"]["url"]
-							+ suffixh;
+							+ sufhtml;
 				</script></li>
 			</ul>
 
