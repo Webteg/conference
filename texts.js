@@ -129,7 +129,7 @@ var menu = {
 			"simposio": {"name":"Simposio doctoral","url":"docSymp"},
 		"trackst": {"name":"Temáticas","url":"tracks"},
 			"tracks": {
-				"1": {"name": "SET", "longName":"Linea temática de ingeniería de software", "url":"track1","leader":"NN","email":"","image":"1cr.jpg"},
+				"1": {"name": "SET", "longName":"Línea temática de ingeniería de software", "url":"track1","leader":"NN","email":"","image":"1cr.jpg"},
 				"2": {"name":"WER","longName":"Línea temática de ingeniería de requisitos", "url":"track2","leader":"NN","email":"","image":"2rc.jpg"},
 				"3": {"name":"ESELAW","longName":"Línea temática de ingeniería de software experimental", "url":"track3","leader":"NN","email":"","image":"3rc.jpg"},
 				"4": {"name":"Industria","longName":"Industry Presentations", "url":"track4","leader":"NN","email":"","image":"4rc.jpg"},
