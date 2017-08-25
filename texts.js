@@ -187,8 +187,8 @@ var menu = {
 				"1": {"name": "SET", "longName":"Tilha de Engenharia de Software", "url":"track1","leader":"NN","email":"","image":"1cr.jpg"},
 				"2": {"name":"WER","longName":"Engenharia de Requisitos", "url":"track2","leader":"NN","email":"","image":"2rc.jpg"},
 				"3": {"name":"ESELAW","longName":"Línea temática de ingeniería de software experimental", "url":"track3","leader":"NN","email":"","image":"3rc.jpg"},
-				"4": {"name":"Indústria","longName":"Industry Presentations", "url":"track4","leader":"NN","email":"","image":"4rc.jpg"},
-				"6": {"name":"Simp Doc","longName":"Simposio doctoral", "url":"track6","leader":"NN","email":"","image":"6rc.jpg"}
+				"4": {"name":"Indústria","longName":"Apresentações do setor", "url":"track4","leader":"NN","email":"","image":"4rc.jpg"},
+				"6": {"name":"Simp Doc","longName":"Simpósio doutoral", "url":"track6","leader":"NN","email":"","image":"6rc.jpg"}
 			},
 		"program": {"name":"Programa","url":"conference"},
 			"keynotes": {"name":"Keynotes","url":"keyNotes"},
@@ -205,9 +205,9 @@ var menu = {
 		
 		"scope":{"name":"Alcance"},
 		"importantDates":{"name":"Datas importantes", "url":"importantDatesMain"},
-		"submissions": {"name":"Envío de trabajos"},
-		"submission": {"name":"Envío de trabajo"},
-		"evaluationProcess": {"name":"Proceso de evaluación"},
+		"submissions": {"name":"Submissões"},
+		"submission": {"name":"Submissão"},
+		"evaluationProcess": {"name":"Revisão de trabalhos"},
 		"datesSubmi":{"name":"Submissions"},
 		"datesConf":{"name":"Conference Major Events"},
 		"university": {"name":"Universidad de los Andes","web":"https://uniandes.edu.co", "url":"university"},
@@ -226,7 +226,7 @@ var menu = {
 		"publicityCoChairs": {"name":"Coordenação da Publicidade"},
 		"industryExhibition": {"name":"Coordenação dos Expositores da Indústria"},
 		"webChair": {"name":"Coordenação da WEB"},
-		"download":{"name":"Downloadable versions"},
+		"download":{"name":"Versão para download"},
 		"eibais":{"name":"EIbAIS","url":"eibais"}
 	},
 	"shortTitle": "CIbSE",
