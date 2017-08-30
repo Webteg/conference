@@ -18,28 +18,6 @@ var sufhtml = ".html";
 		suffixh = "_" + lang + ".html";
 		suffix = "_" + lang + ".js";
 	};
-//	function getCookie(name) {
-//		var name = cname + "=";
-//		var decodedCookie = decodeURIComponent(document.cookie);
-//		var ca = decodedCookie.split(';');
-//		for (var i = 0; i < ca.length; i++) {
-//			var c = ca[i];
-//			while (c.charAt(0) == ' ') {
-//				c = c.substring(1);
-//			}
-//			if (c.indexOf(name) == 0) {
-//				console.log("cookie " + name + " = " + c.substring(lan.length, c.lenght));
-//				return c.substring(lan.length, c.lenght);
-//			}
-//		}
-//	};
-//	function setCookie(cname, cvalue, exdays) {
-//		var d = new Date();
-//		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-//		var expires = "expires=" + d.toUTCString();
-//		console.log("cookie to be set: " + cname + "=" + cvalue + ";" + expires + ";");
-//		document.cookie = cname + "=" + cvalue + ";" + expires + ";";
-//	}
 
 var menu = {
 	"en": {
@@ -91,7 +69,7 @@ var menu = {
 		"city": {"name":"Bogot&aacute;","url":"bogota"},
 		"month": "April",
 		"calls": {"name":"Calls"},
-		"foundationsTracks": {"name":"Foundations tracks","url":"foundationstracks"},
+		"foundationsTracks": {"name":"Foundations Tracks","url":"foundationstracks"},
 		"categories": {"name":"Categories"},
 		"submissions": {"name":"Submissions"},
 		"submission": {"name":"Submission"},
@@ -148,7 +126,7 @@ var menu = {
 		"venue": {"name":"Lugar","url":"venue"},
 			"conferenceVenue":{"name":"Lugar de la conferencia", "url":"conferenceVenue"},
 		"contact":{"name":"Contacto", "url":"contact"},
-		
+
 		"scope":{"name":"Alcance"},
 		"importantDates":{"name":"Fechas importantes", "url":"importantDatesMain"},
 		"submissions": {"name":"Envío de trabajos"},
@@ -175,7 +153,7 @@ var menu = {
 		"webChair": {"name":"Coordinador Web"},
 		"download":{"name":"Versión descargable"},
 		"eibais":{"name":"EIbAIS","url":"eibais"}
-		
+
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -204,7 +182,7 @@ var menu = {
 		"venue": {"name":"Lugar","url":"venue"},
 			"conferenceVenue":{"name":"Lugar da conferência", "url":"conferenceVenue"},
 		"contact":{"name":"Contato", "url":"contact"},
-		
+
 		"scope":{"name":"Alcance"},
 		"importantDates":{"name":"Datas importantes", "url":"importantDatesMain"},
 		"submissions": {"name":"Submissões"},
