@@ -166,7 +166,7 @@ var menu = {
 				"1": {"name": "SET", "longName":"Tilha de Engenharia de Software", "url":"track1","leader":"NN","email":"","image":"1cr.jpg"},
 				"2": {"name":"WER","longName":"Engenharia de Requisitos", "url":"track2","leader":"NN","email":"","image":"2rc.jpg"},
 				"3": {"name":"ESELAW","longName":"Línea temática de ingeniería de software experimental", "url":"track3","leader":"NN","email":"","image":"3rc.jpg"},
-				"4": {"name":"Indústria","longName":"Apresentações do setor", "url":"track4","leader":"NN","email":"","image":"4rc.jpg"},
+				"4": {"name":"Indústria","longName":"Apresentações Industriais", "url":"track4","leader":"NN","email":"","image":"4rc.jpg"},
 				"6": {"name":"Simp Doc","longName":"Simpósio doutoral", "url":"track6","leader":"NN","email":"","image":"6rc.jpg"}
 			},
 		"program": {"name":"Programa","url":"conference"},
