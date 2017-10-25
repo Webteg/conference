@@ -29,6 +29,7 @@ var menu = {
 			"5": {"name":"Tools","longName":"Tools and Demos Track", "url":"track5","leader":"NN","email":"","image":"5rc.jpg"},
 			"6": {"name":"Doc Symp","longName":"Doctoral Symposium", "url":"track6","leader":"NN","email":"","image":"6rc.jpg"}
 		},
+		"about_bogota":{"name":"About Bogotá", "url":"about_bogota"},
 		"trackst": {"name":"Tracks","url":"tracks"},
 		"tutorials":{"name":"Tutorials","url":"tutorials"},
 		"simposio": {"name":"Doctoral Symposium","url":"docSymp"},

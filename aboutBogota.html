@@ -56,20 +56,27 @@
 
 				<div class="jumbotron">
 					<div class="col-xs-2 col-lg-2">
-						<img id="track_img" src="" alt="" width="90" class="img-circle img-responsive"
-							style="margin-top: 20%; margin-bottom: auto; vertical-align: middle;" />
+						<img id="confeVenue_img" src="" alt="" width="90"
+							style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
 						<script>
- 							document.getElementById("track_img").src = "trackicons/icono13" 
-									+ ".png"; 
-							document.getElementById("track_img").alt = menu[lang]["contact"]["name"]; 
-						</script> 
+  							document.getElementById("confeVenue_img").src = "trackicons/icono6"
+  									 + ".png";
+ 							document.getElementById("confeVenue_img").alt = menu[lang]["about_bogota"]["name"];
+					</script>
+					</div>
+					<div class="col-xs-10 col-lg-3">
+						<h2 id="conferenceVenue_title">
+							<script>
+								document.getElementById("conferenceVenue_title").innerHTML = menu[lang]["about_bogota"]["name"];
+							</script>
+						</h2>
 					</div>
 
-					<div id="contactText" class="jumbotron" style="text-align: center;margin-left: 10%;">
+					<div id="conferenceVenueText" class="jumbotron">
 						<script>
 							$(function() {
-								$("#contactText").load(
-										"./texts/" + lang + "/contact" + "_text_" + lang + ".html");
+								$("#conferenceVenueText").load(
+										"./texts/" + lang + "/about_bogota" +"_text_" + lang + ".html");
 							});
 						</script>
 					</div>
@@ -125,7 +132,7 @@
 <!-- // 											"./texts/pc" + trackNumber -->
 <!-- // 													+ "_text.html"); -->
 <!-- // 								}); -->
-<!-- <!-- 							</script> --> 
+<!-- 							</script> -->
 <!-- 						</ul> -->
 <!-- 					</div> -->
 <!-- 				</div> -->
