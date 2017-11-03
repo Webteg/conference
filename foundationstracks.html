@@ -206,6 +206,22 @@
 						</ul>
 					</div>
 				</div>
+				<div class="jumbotron container-fluid">
+						<h3 id="track_pc">
+								<script>
+									document.getElementById("track_pc").innerHTML = menu[lang]["pc"]["name"];
+								</script>
+						</h3>
+						<div id="program">
+							<script>
+								$(function(){
+									$("#program").load(
+										"./texts/" + lang +"/ftprogramCommitte" + "_text_" + lang + ".html"
+									);
+								});
+							</script>
+						</div>
+				</div>
 			</div>
 			<!--/.col-xs-12.col-sm-9-->
 

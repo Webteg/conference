@@ -89,6 +89,7 @@ var menu = {
 		"registration":{"name":"Registration", "url":"registration"},
 		"school":{"name":"School", "url":"school"},
 		"socialEvents":{"name":"Social Events", "url":"socialEvents"},
+		"hackaton":{"name":"Hackaton", "url":"hackaton"},
 		"venue":{"name":"Venue"},
 		"conferenceVenue":{"name":"Conference venue", "url":"conferenceVenue"},
 		"contact":{"name":"Contact", "url":"contact"},

@@ -113,10 +113,28 @@
 						<!--             </li> -->
 					</ul></li>
 					<!-- EIbAIS -->
-				<li id="eibais"><a id="eibaisMenu" href=""> </a> <script>
-					document.getElementById("eibaisMenu").innerHTML = menu[lang]["eibais"]["name"];
-					document.getElementById("eibaisMenu").href = menu[lang]["eibais"]["url"]+ sufhtml;
-				</script></li>
+					<li class="dropdown"><a id="dropdownEibais"
+						class="dropdown-toggle" data-toggle="dropdown" role="button"
+						aria-expanded="false"> <script>
+							document.getElementById("dropdownEibais").innerHTML = menu[lang]["eibais"]["name"];
+						</script> <span class="caret"></span>
+					</a>
+	
+						<ul class="dropdown-menu" role="menu">
+								<li id="eibais"><a id="eibaisMenu" href=""> </a> <script>
+										document.getElementById("eibaisMenu").innerHTML = menu[lang]["eibais"]["name"];
+										document.getElementById("eibaisMenu").href = menu[lang]["eibais"]["url"]+ sufhtml;
+									</script>
+								</li>
+								<li>
+									<a id="eibaisPresentation">Presentation</a>
+								</li>
+								<li>
+									<a id="eibaisTutorials" href="./eibaisTutorials.html">Tutorials</a>
+								</li>
+								
+						</ul>
+					</li>
 				<!-- PROGRAM -->
 				<li class="dropdown"><a id="dropdownProgram"
 					class="dropdown-toggle" data-toggle="dropdown" role="button"
@@ -154,6 +172,12 @@
 						<li><a id="socialEvents" href=""><script>
 							document.getElementById("socialEvents").innerHTML = menu[lang]["socialEvents"]["name"];
 							document.getElementById("socialEvents").href = menu[lang]["socialEvents"]["url"]
+									+ sufhtml;
+						</script>
+						</a></li>
+						<li><a id="hackaton" href=""><script>
+							document.getElementById("hackaton").innerHTML = menu[lang]["hackaton"]["name"];
+							document.getElementById("hackaton").href = menu[lang]["hackaton"]["url"]
 									+ sufhtml;
 						</script>
 						</a></li>

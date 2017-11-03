@@ -55,50 +55,32 @@
 			<div class="col-xs-12 col-md-9">
 
 				<div class="jumbotron">
-					<div class="col-xs-2 col-lg-2">
-						<a href="https://uniandes.edu.co/"><img id="confeVenue_img" src="" alt="" width="120"
-							style="margin-top: 30%; margin-bottom: auto; vertical-align: middle;" /></a>
+ 					<div class="col-xs-2 col-lg-2">
+						<img id="icono_img" src="" alt="" width="90"
+							style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
 						<script>
-  							document.getElementById("confeVenue_img").src = "logos/logoUniversityWhite"
-  									 + ".png";
- 							document.getElementById("confeVenue_img").alt = menu[lang]["conferenceVenue"]["name"];
+  							document.getElementById("icono_img").src = "trackicons/icono11" 
+  									+ ".png";
+  							document.getElementById("icono_img").alt = menu[lang]["hackaton"]["name"];
 					</script>
 					</div>
 					<div class="col-xs-10 col-lg-3">
-						<h2 id="conferenceVenue_title">
+						<h2 id="hackaton_title">
 							<script>
-								document.getElementById("conferenceVenue_title").innerHTML = menu[lang]["conferenceVenue"]["name"];
+								document.getElementById("hackaton_title").innerHTML = menu[lang]["hackaton"]["name"];
 							</script>
 						</h2>
 					</div>
 
-					<div id="conferenceVenueText" class="jumbotron">
+					<div id="hackatonText" class="jumbotron">
 						<script>
 							$(function() {
-								$("#conferenceVenueText").load(
-										"./texts/" + lang + "/conferenceVenue" +"_text_" + lang + ".html");
+								$("#hackatonText").load(
+										"./texts/" + lang + "/hackaton" +"_text_" + lang + ".html");
 							});
 						</script>
 					</div>
 				</div>
-<!-- 				<div class="jumbotron"> -->
-<!-- 					<h3 id="topics"> -->
-<!-- 						<script> -->
-<!-- // 							document.getElementById("topics").innerHTML = menu[lang]["topics"]["name"]; -->
-<!-- 						</script> -->
-<!-- 					</h3> -->
-<!-- 					<div> -->
-<!-- 						<ul id="track_topics"> -->
-<!-- 							<script> -->
-<!-- // 								$(function() { -->
-<!-- // 									$("#track_topics").load( -->
-<!-- // 											"./texts/topics" + trackNumber -->
-<!-- // 													+ "_text_" + lang + ".html") -->
-<!-- // 								}); -->
-<!-- 							</script> -->
-<!-- 						</ul> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
 <!-- 				<div class="jumbotron"> -->
 <!-- 					<h3 id="pchairs"> -->
 <!-- 						<script> -->
