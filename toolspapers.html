@@ -16,6 +16,7 @@
 
 <!-- Custom styles for this template -->
 <link href="offcanvas.css" rel="stylesheet">
+
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="./texts.js"></script>
@@ -23,9 +24,9 @@
 	document.title = menu[lang]["title"]
 </script>
 <script>
-	var page = "track2";
+	var page = "track1";
 	var lang = localStorage.getItem('lang');
-	var trackNumber = 2;
+	var trackNumber = 1;
 	$(function() {
 		$("#footer").load("./components/footer.html");
 	});
@@ -59,7 +60,7 @@
 							style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
 						<script>
 							document.getElementById("track_img").src = "trackicons/icono7"
-									+ ".png";
+                                + ".png";
 							document.getElementById("track_img").alt = menu[lang]["tracks"][trackNumber
 									.toString()]["name"];
 						</script>
@@ -74,12 +75,12 @@
 							</script>
 						</h2>
 					</div>-->
-					<br />
+					<br>
 					<div id="trackText" class="jumbotron container-fluid col-xs-10">
 						<script>
 							$(function() {
 								$("#trackText").load(
-										"./texts/" + lang +"/werReviewers"
+										"./texts/" + lang + "/toolsPapersReviewers"
 												+ "_text_" + lang + ".html");
 							});
 						</script>
@@ -97,8 +98,7 @@
 								$(function() {
 									$("#track_topics")
 											.load(
-													"./texts/" +lang + "/topics"
-															+ trackNumber
+													"./texts/" +lang+"/topics" +  trackNumber
 															+ "_text_" + lang
 															+ ".html")
 								});
@@ -154,13 +154,14 @@
 							<script>
 								$(function() {
 									$("#track_sumissionsText").load(
-											"./texts/" + lang + "/ftsubmi" + "_text_" + lang
-													+ ".html");
+											"./texts/"+ lang + "/ftsubmi" + "_text_"
+													+ lang + ".html");
 								});
 							</script>
 						</ul>
 					</div>
 				</div>-->
+
 			</div>
 			<!--/.col-xs-12.col-sm-9-->
 

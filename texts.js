@@ -39,6 +39,7 @@ var menu = {
 		"keynotes": {"name":"Keynotes","url":"keyNotes"},
 		"attending": {"name":"Attending","url":"attending"},
 		"registration": {"name":"Registration","url":"registration"},
+		"accomodation":{"name":"Accomodation", "url":"accomodation"},
 		"social": {"name":"Social Events", "url":"social"},
 		"accommodation": {"name":"Accommodation","url":"accommodation"},
 		"contact": {"name":"Contact","url":"contact"},
@@ -76,6 +77,7 @@ var menu = {
 		"submission": {"name":"Submission"},
 		"evaluationProcess": {"name":"Evaluation process"},
 		"organization": {"name":"Organization", "url":"organization"},
+		"volunteers": {"name":"Volunteers", "url":"volunteers"},
 		"committee": {"name":"Committee", "url":"committee"},
 		"generalCommittee": {"name":"General Organization Committee"},
 		"genConfeChairs": {"name":"General Conference Chairs"},
@@ -98,7 +100,12 @@ var menu = {
 		"datesConf":{"name":"Conference Major Events"},
 		"scope":{"name":"Scope"},
 		"download":{"name":"Downloadable version"},
-		"eibais":{"name":"EIbAIS","url":"eibais"}
+		"eibais":{"name":"EIbAIS","url":"eibais"},
+		"eibaisTutorials":{"name":"EIbAIS Tutorials"},
+		"eibaisTutorials1":{"name": "Automated testing"},
+		"eibaisTutorials2":{"name": "Technical debt"},
+		"eibaisTutorials3":{"name": "Modeling"},
+		"eibaisTutorials4":{"name": "Qualitative case studies in industry"}
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
