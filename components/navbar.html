@@ -113,10 +113,25 @@
 						<!--             </li> -->
 					</ul></li>
 					<!-- EIbAIS -->
-				<li id="eibais"><a id="eibaisMenu" href=""> </a> <script>
-					document.getElementById("eibaisMenu").innerHTML = menu[lang]["eibais"]["name"];
-					document.getElementById("eibaisMenu").href = menu[lang]["eibais"]["url"]+ sufhtml;
-				</script></li>
+					<li class="dropdown"><a id="dropdownEibais"
+						class="dropdown-toggle" data-toggle="dropdown" role="button"
+						aria-expanded="false"> <script>
+							document.getElementById("dropdownEibais").innerHTML = menu[lang]["eibais"]["name"];
+						</script> <span class="caret"></span>
+					</a>
+	
+						<ul class="dropdown-menu" role="menu">
+								<li id="eibais"><a id="eibaisMenu" href=""> </a> <script>
+										document.getElementById("eibaisMenu").innerHTML = 'Presentation';
+										document.getElementById("eibaisMenu").href = menu[lang]["eibais"]["url"]+ sufhtml;
+									</script>
+								</li>
+								<li>
+									<a id="eibaisTutorials" href="./eibaisTutorials.html">Tutorials</a>
+								</li>
+								
+						</ul>
+					</li>
 				<!-- PROGRAM -->
 				<li class="dropdown"><a id="dropdownProgram"
 					class="dropdown-toggle" data-toggle="dropdown" role="button"
@@ -148,6 +163,12 @@
 						<li><a id="track4" href=""> <script>
 							document.getElementById("track4").innerHTML = menu[lang]["tracks"]["4"]["longName"];
 							document.getElementById("track4").href = menu[lang]["tracks"]["4"]["url"]
+									+ sufhtml;
+						</script>
+						</a></li>
+						<li><a id="hackaton" href=""><script>
+							document.getElementById("hackaton").innerHTML = menu[lang]["hackaton"]["name"];
+							document.getElementById("hackaton").href = menu[lang]["hackaton"]["url"]
 									+ sufhtml;
 						</script>
 						</a></li>
@@ -199,7 +220,24 @@
 									+ sufhtml;
 						</script>
 						</a></li>
-						<li><a href="">Accomodation</a></li>
+						<li>
+							<a id="accomodation" href="">
+								<script>
+									document.getElementById("accomodation").innerHTML = menu[lang]["accomodation"]["name"];
+									document.getElementById("accomodation").href = menu[lang]["accomodation"]["url"]
+									+ sufhtml;
+								</script>
+							</a>
+						</li>
+						<li>
+							<a id="volunteers" href="">
+								<script>
+									document.getElementById("volunteers").innerHTML = menu[lang]["volunteers"]["name"];
+									document.getElementById("volunteers").href = menu[lang]["volunteers"]["url"]
+									+ sufhtml;
+								</script>
+							</a>
+						</li>
 					</ul></li>
 				<!-- VENUE -->
 				<li><a id="dropdownVenue" class="dropdown-toggle"
