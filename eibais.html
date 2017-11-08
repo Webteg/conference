@@ -81,14 +81,14 @@
 						</script>
 					</div>
 				</div>
-<div class="jumbotron">
+				<div class="jumbotron">
 					<h3 id="pchair_title">
 						<script>
  							document.getElementById("pchair_title").innerHTML = menu[lang]["pchair"]["name"];
  						</script> 
 					</h3>
 					<div>
-						<ul id="pchair_text">
+						<table id="pchair_text" style="width: 100%">
 							<script>
  								$(function() { 
  									$("#pchair_text").load( 
@@ -96,7 +96,7 @@
  													+ "_text_" + lang  + ".html") 
  								}); 
 							</script>
-						</ul>
+						</table>
 					</div>
 				</div>
 <!-- 				<div class="jumbotron"> -->
