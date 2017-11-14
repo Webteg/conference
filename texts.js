@@ -165,7 +165,7 @@ var menu = {
 		"eibaisPresentation":{"name":"Presentación","url":"eibais"},
 		"eibaisTutorials":{"name":"Tutoriales"},
 		"eibaisTutorials1":{"name": "Pruebas Automatizadas"},
-		"eibaisTutorials2":{"name": "Dueda Técnica"},
+		"eibaisTutorials2":{"name": "Deuda Técnica"},
 		"eibaisTutorials3":{"name": "Modelado"},
 		"eibaisTutorials4":{"name": "Estudios de casos cualitativos en la industria"},
 		"hackaton":{"name":"Hackaton", "url":"hackaton"},
