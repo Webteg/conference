@@ -122,12 +122,16 @@
 	
 						<ul class="dropdown-menu" role="menu">
 								<li id="eibais"><a id="eibaisMenu" href=""> </a> <script>
-										document.getElementById("eibaisMenu").innerHTML = 'Presentation';
+										document.getElementById("eibaisMenu").innerHTML = menu[lang]["eibaisPresentation"]["name"];
 										document.getElementById("eibaisMenu").href = menu[lang]["eibais"]["url"]+ sufhtml;
 									</script>
 								</li>
 								<li>
-									<a id="eibaisTutorials" href="./eibaisTutorials.html">Tutorials</a>
+									<a id="eibaisTutorials" href="./eibaisTutorials.html">
+										<script>
+											document.getElementById("eibaisTutorials").innerHTML = menu[lang]["eibaisTutorials"]["name"];
+										</script>
+									</a>
 								</li>
 								
 						</ul>
@@ -220,7 +224,7 @@
 									+ sufhtml;
 						</script>
 						</a></li>
-						<li>
+						<!--<li>
 							<a id="accomodation" href="">
 								<script>
 									document.getElementById("accomodation").innerHTML = menu[lang]["accomodation"]["name"];
@@ -228,7 +232,7 @@
 									+ sufhtml;
 								</script>
 							</a>
-						</li>
+						</li>-->
 						<li>
 							<a id="volunteers" href="">
 								<script>
@@ -261,8 +265,12 @@
 						</script>
 						</a></li>
 						<li>
-							<a href="./aboutBogota.html">
-								About Bogotá
+							<a id="about_bogota" href="./aboutBogota.html">
+								<script>
+									document.getElementById("about_bogota").innerHTML = menu[lang]["about_bogota"]["name"];
+								document.getElementById("about_bogota").href = menu[lang]["about_bogota"]["url"]
+										+ sufhtml;
+								</script>
 							</a>
 						</li>
 						<li><a id="sponsors" href=""> <script>
