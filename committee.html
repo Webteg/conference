@@ -178,6 +178,26 @@
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
+					<h3 id="docSympProgramChairs_st">
+						<script>
+							document
+									.getElementById("docSympProgramChairs_st").innerHTML = menu[lang]["tracks"]["6"]["longName"] + " - " + menu[lang]["pchairs"]["name"];
+						</script>
+					</h3>
+					<div>
+						<table id="docSympProgramChairs" style="width: 100%">
+							<script>
+								$(function() {
+									$("#docSympProgramChairs").load(
+											"./texts/pchairs6_text" + ".html")
+								});
+							</script>
+						</table>
+					</div>
+					</div>
+				</div>
+				<div class="jumbotron jumbotron-fluid">
+					<div class="container">
 					<h3 id="iberoAmericanSchoolChair_st">
 						<script>
 							document
@@ -219,7 +239,7 @@
 					<div class="container">
 					<h3 id="industryExhibitionChairs_st">
 						<script>
-							document.getElementById("industryExhibitionChairs_st").innerHTML = menu[lang]["tracks"]["4"]["longName"] + menu[lang]["pchairs"]["name"];
+							document.getElementById("industryExhibitionChairs_st").innerHTML = menu[lang]["tracks"]["4"]["longName"] + " - " + menu[lang]["pchairs"]["name"];
 						</script>
 					</h3>
 					<div>
