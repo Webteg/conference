@@ -121,7 +121,7 @@
 					<h3 id="setProgramChairs_st">
 						<script>
 							document
-									.getElementById("setProgramChairs_st").innerHTML = menu[lang]["tracks"]["1"]["name"] + " - "+ menu[lang]["pchairs"]["name"];
+									.getElementById("setProgramChairs_st").innerHTML = "<strong>"+menu[lang]["tracks"]["1"]["name"]+"</strong>" + "<br><br>"+ menu[lang]["pchairs"]["name"];
 						</script>
 					</h3>
 					<div>
@@ -133,6 +133,23 @@
 								});
 							</script>
 						</table>
+						<br>
+						<h3 id="track_pc_set">
+							<script>
+								document.getElementById("track_pc_set").innerHTML = menu[lang]["pc"]["name"];
+							</script>
+						</h3>
+						<div>
+							<ul id="track_pc_set_members">
+								<script>
+									$(function() {
+										$("#track_pc_set_members").load(
+												"./texts/pc" + "1"
+														+ "_text_"+lang+".html");
+									});
+								</script>
+							</ul>
+						</div>
 					</div>
 				 </div>
 				</div>
@@ -141,7 +158,7 @@
 					<h3 id="werProgramChairs_st">
 						<script>
 							document
-									.getElementById("werProgramChairs_st").innerHTML = menu[lang]["tracks"]["2"]["name"] + " - "+ menu[lang]["pchairs"]["name"];
+									.getElementById("werProgramChairs_st").innerHTML = "<strong>"+menu[lang]["tracks"]["2"]["name"]+"</strong>" + "<br><br>"+ menu[lang]["pchairs"]["name"];
 						</script>
 					</h3>
 					<div>
@@ -153,6 +170,23 @@
 								});
 							</script>
 						</table>
+						<br>
+						<h3 id="track_pc_wer">
+							<script>
+								document.getElementById("track_pc_wer").innerHTML = menu[lang]["pc"]["name"];
+							</script>
+						</h3>
+						<div>
+							<ul id="track_pc_wer_members">
+								<script>
+									$(function() {
+										$("#track_pc_wer_members").load(
+											"./texts/pc" + "2"
+											+ "_text_"+lang+".html");
+									});
+								</script>
+							</ul>
+						</div>
 					</div>
 					</div>
 				</div>
@@ -161,7 +195,7 @@
 					<h3 id="eselawProgramChairs_st">
 						<script>
 							document
-									.getElementById("eselawProgramChairs_st").innerHTML = menu[lang]["tracks"]["3"]["name"] + " - " + menu[lang]["pchairs"]["name"];
+									.getElementById("eselawProgramChairs_st").innerHTML = "<strong>"+menu[lang]["tracks"]["3"]["name"]+"</strong>" + "<br><br>"+menu[lang]["pchairs"]["name"];
 						</script>
 					</h3>
 					<div>
@@ -173,6 +207,23 @@
 								});
 							</script>
 						</table>
+						<br>
+						<h3 id="track_pc_eselaw">
+							<script>
+								document.getElementById("track_pc_eselaw").innerHTML = menu[lang]["pc"]["name"];
+							</script>
+						</h3>
+						<div>
+							<ul id="track_pc_esela">
+								<script>
+									$(function() {
+										$("#track_pc_esela").load(
+											"./texts/pc" + "3"
+														+ "_text_"+lang+".html");
+									});
+								</script>
+							</ul>
+						</div>
 					</div>
 					</div>
 				</div>
