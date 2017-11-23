@@ -175,6 +175,7 @@ var menu = {
 		"hackaton":{"name":"Hackaton", "url":"hackaton"},
 		"volunteers": {"name":"Voluntarios", "url":"volunteers"},
 		"about_bogota":{"name":"Acerca de Bogotá", "url":"aboutBogota"},
+		"accomodation":{"name":"Acomodación", "url":"accomodation"},
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -241,6 +242,7 @@ var menu = {
 		"hackaton":{"name":"Hackaton", "url":"hackaton"},
 		"volunteers": {"name":"Voluntários", "url":"volunteers"},
 		"about_bogota":{"name":"Sobre Bogotá", "url":"aboutBogota"},
+		"accomodation":{"name":"Acomodação", "url":"accomodation"},
 	},
 	"shortTitle": "CIbSE",
 	"date": {"year":"2018", "days":"26-30", "edition": "XXI"},
