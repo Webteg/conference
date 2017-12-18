@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description"
-	content="CIBCSE XXI 2018 -  Bogota, Colombia 2018 April 23 to 27">
-<meta name="keywords" content="CIBSE">
-<meta name="author"
-	content="Universidad de los Andes - Departamento de Ingenieria de Sistemas y Computacion">
-<link rel="icon" href="favicon.ico">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="CIBCSE XXI 2018 -  Bogota, Colombia 2018 April 23 to 27">
+	<meta name="keywords" content="CIBSE">
+	<meta name="author" content="Universidad de los Andes - Departamento de Ingenieria de Sistemas y Computacion">
+	<link rel="icon" href="favicon.ico">
 
-<!-- Bootstrap core CSS -->
-<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<link href="offcanvas.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="offcanvas.css" rel="stylesheet">
 
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="./texts.js"></script>
-<script>
-	document.title = menu[lang]["title"]
-</script>
-<script>
-	var page = "track1";
-	var lang = localStorage.getItem('lang');
-	var trackNumber = 4;
-	$(function() {
-		$("#footer").load("./components/footer.html");
-	});
-</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./texts.js"></script>
+	<script>
+		document.title = menu[lang]["title"]
+	</script>
+	<script>
+		var page = "track1";
+		var lang = localStorage.getItem('lang');
+		var trackNumber = 4;
+		$(function () {
+			$("#footer").load("./components/footer.html");
+		});
+	</script>
 </head>
 
 <body>
 	<div id="navbar_t1">
 		<script>
-			$(function() {
+			$(function () {
 				$("#navbar_t1").load("./components/navbar.html");
 			});
 		</script>
@@ -46,7 +44,7 @@
 		<div class="row row-offcanvas row-offcanvas-right">
 			<div id="banner" class="container-fluid">
 				<script>
-					$(function() {
+					$(function () {
 						$("#banner").load("./banner/banner_en.html");
 					});
 				</script>
@@ -56,11 +54,10 @@
 
 				<div class="jumbotron">
 					<div class="col-xs-2 col-lg-2">
-						<img id="ft_img" src="" alt="" width="100"
-							style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
+						<img id="ft_img" src="" alt="" width="100" style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
 						<script>
 							document.getElementById("ft_img").src = "trackicons/icono2"
-									+ ".png";
+								+ ".png";
 							document.getElementById("ft_img").alt = menu[lang]["foundationsTracks"]["name"];
 						</script>
 					</div>
@@ -74,10 +71,10 @@
 
 					<div id="ftText" class="jumbotron">
 						<script>
-							$(function() {
+							$(function () {
 								$("#ftText").load(
-										"./texts/" + lang + "/foundationstracks" + "_text_"
-												+ lang + ".html");
+									"./texts/" + lang + "/foundationstracks" + "_text_"
+									+ lang + ".html");
 							});
 						</script>
 					</div>
@@ -91,15 +88,15 @@
 					<div>
 						<ul id="ftScope_text">
 							<script>
-								$(function() {
+								$(function () {
 									$("#ftScope_text").load(
-											"./texts/" + lang + "/ftScope" +"_text_"+ lang
-													+ ".html")
+										"./texts/" + lang + "/ftScope" + "_text_" + lang
+										+ ".html")
 								});
 							</script>
 						</ul>
 					</div>
-					<h4 id="ftTracks_subtitle" style ="text-indent:40px">
+					<h4 id="ftTracks_subtitle" style="text-indent:40px">
 						<script>
 							document.getElementById("ftTracks_subtitle").innerHTML = "<strong>" + menu[lang]["trackst"]["name"] + "</strong>";
 						</script>
@@ -107,46 +104,69 @@
 					<div>
 						<ul id="ftTracks_text">
 							<script>
-								$(function() {
+								$(function () {
 									$("#ftTracks_text").load(
-											"./texts/" + lang + "/fttracks_" + lang
-													+ ".html")
+										"./texts/" + lang + "/fttracks_" + lang
+										+ ".html")
 								});
 							</script>
 						</ul>
 					</div>
-<!-- 					<div class="jumbotron"> -->
-					<h4 id="categories" style ="text-indent:40px">
+					<!-- 					<div class="jumbotron"> -->
+					<h4 id="categories" style="text-indent:40px">
 						<script>
-							document.getElementById("categories").innerHTML = "<strong>" +  menu[lang]["categories"]["name"] + "</strong>"  ;
+							document.getElementById("categories").innerHTML = "<strong>" + menu[lang]["categories"]["name"] + "</strong>";
 						</script>
 					</h4>
 					<div>
 						<ul id="ft_categories">
 							<script>
-								$(function() {
+								$(function () {
 									$("#ft_categories").load(
-											"./texts/" + lang + "/ftcategories_" + lang
-													+ ".html")
+										"./texts/" + lang + "/ftcategories_" + lang
+										+ ".html")
 								});
 							</script>
 						</ul>
 					</div>
-<!-- 				</div> -->
+					<!-- 				</div> -->
 				</div>
-				
+
 				<div class="jumbotron">
 					<h3 id="ftDates">
 						<script>
 							document.getElementById("ftDates").innerHTML = menu[lang]["importantDates"]["name"];
 						</script>
 					</h3>
+					<br>
+					<h4 id="ftTITitleDate" style="margin-left:3em">
+							<script>
+								document.getElementById("ftTITitleDate").innerHTML = menu[lang]["technicalAndEmergingPapers"]["name"];
+							</script>
+					</h4>
 					<div>
 						<ul id="ftDatesText">
 							<script>
-								$(function() {
+								$(function () {
 									$("#ftDatesText").load(
-											"./texts/" + lang + "/ftDates_"+ [ lang ] + ".html");
+										"./texts/" + lang + "/ftDates_" + [lang] + ".html");
+								});
+							</script>
+						</ul>
+					</div>
+					<br>
+					<h4 id="ftTTitleDate" style="margin-left:3em">
+							<script>
+								document.getElementById("ftTTitleDate").innerHTML = menu[lang]["toolsPapers"]["name"];
+							</script>
+					</h4>
+					<div>
+						<ul id="track_dates">
+							<script>
+								$(function () {
+									$("#track_dates").load(
+										"./texts/" + lang + "/impDates6"
+										+ "_" + lang + ".html")
 								});
 							</script>
 						</ul>
@@ -154,20 +174,20 @@
 				</div>
 				<div class="jumbotron container-fluid">
 					<h3 id="track_pc">
-							<script>
-								document.getElementById("track_pc").innerHTML = menu[lang]["pc"]["name"];
-							</script>
+						<script>
+							document.getElementById("track_pc").innerHTML = menu[lang]["pc"]["name"];
+						</script>
 					</h3>
 					<div id="program">
 						<script>
-							$(function(){
+							$(function () {
 								$("#program").load(
-									"./texts/" + lang +"/ftprogramCommitte" + "_text_" + lang + ".html"
+									"./texts/" + lang + "/ftprogramCommitte" + "_text_" + lang + ".html"
 								);
 							});
 						</script>
 					</div>
-			</div>
+				</div>
 				<div class="jumbotron">
 					<h3 id="ftSubmissions">
 						<script>
@@ -177,10 +197,10 @@
 					<div>
 						<ul id="submissionsText">
 							<script>
-								$(function() {
+								$(function () {
 									$("#submissionsText").load(
-											"./texts/" + lang + "/ftsubmi" + "_text_"
-													+ [ lang ] + ".html");
+										"./texts/" + lang + "/ftsubmi" + "_text_"
+										+ [lang] + ".html");
 								});
 							</script>
 						</ul>
@@ -195,10 +215,10 @@
 					<div>
 						<ul id="evalProcText">
 							<script>
-								$(function() {
+								$(function () {
 									$("#evalProcText").load(
-											"./texts/" + lang +"/ftevalprocess" + "_text_"
-													+ [ lang ] + ".html");
+										"./texts/" + lang + "/ftevalprocess" + "_text_"
+										+ [lang] + ".html");
 								});
 							</script>
 						</ul>
@@ -213,10 +233,10 @@
 					<div>
 						<ul id="ftDownloadPdfText">
 							<script>
-								$(function() {
+								$(function () {
 									$("#ftDownloadPdfText").load(
-											"./texts/" + lang +"/ftDownload" + "_text_"
-													+ [ lang ] + ".html");
+										"./texts/" + lang + "/ftDownload" + "_text_"
+										+ [lang] + ".html");
 								});
 							</script>
 						</ul>
@@ -227,7 +247,7 @@
 
 			<div id="sidebar">
 				<script>
-					$(function() {
+					$(function () {
 						$("#sidebar").load("./components/sidebar.html");
 					});
 				</script>
@@ -246,15 +266,15 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 	<div id="google">
 		<script>
-			$(function() {
+			$(function () {
 				$("#google").load("./components/google.html");
 			});
 		</script>
 	</div>
 </body>
+
 </html>
