@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description"
-	content="CIBCSE XXI 2018 -  Bogota, Colombia 2018 April 23 to 27">
-<meta name="keywords" content="CIBSE">
-<meta name="author"
-	content="Universidad de los Andes - Departamento de Ingenieria de Sistemas y Computacion">
-<link rel="icon" href="favicon.ico">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="CIBCSE XXI 2018 -  Bogota, Colombia 2018 April 23 to 27">
+	<meta name="keywords" content="CIBSE">
+	<meta name="author" content="Universidad de los Andes - Departamento de Ingenieria de Sistemas y Computacion">
+	<link rel="icon" href="favicon.ico">
 
-<!-- Bootstrap core CSS -->
-<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom styles for this template -->
-<link href="offcanvas.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="offcanvas.css" rel="stylesheet">
 
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="./texts.js"></script>
-<script>
-	document.title = menu[lang]["title"]
-</script>
-<script>
-	var page = "track1";
-	var lang = localStorage.getItem('lang');
-	var trackNumber = 1;
-	$(function() {
-		$("#footer").load("./components/footer.html");
-	});
-</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./texts.js"></script>
+	<script>
+		document.title = menu[lang]["title"]
+	</script>
+	<script>
+		var page = "track1";
+		var lang = localStorage.getItem('lang');
+		var trackNumber = 1;
+		$(function () {
+			$("#footer").load("./components/footer.html");
+		});
+	</script>
 </head>
 
 <body>
 	<div id="navbar_t1">
 		<script>
-			$(function() {
+			$(function () {
 				$("#navbar_t1").load("./components/navbar.html");
 			});
 		</script>
@@ -46,7 +44,7 @@
 		<div class="row row-offcanvas row-offcanvas-right">
 			<div id="banner" class="container-fluid">
 				<script>
-					$(function() {
+					$(function () {
 						$("#banner").load("./banner/banner_en.html");
 					});
 				</script>
@@ -56,13 +54,12 @@
 
 				<div class="jumbotron container-fluid">
 					<div class="col-xs-2 col-lg-2">
-						<img id="committee_img" src="" alt="" width="90"
-							style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
+						<img id="committee_img" src="" alt="" width="90" style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
 						<script>
-  							document.getElementById("committee_img").src = "trackicons/icono7" 
-  									+ ".png"; 
-  							document.getElementById("committee_img").alt = menu[lang]["generalCommittee"]["name"]; 
- 						</script>
+							document.getElementById("committee_img").src = "trackicons/icono7"
+								+ ".png";
+							document.getElementById("committee_img").alt = menu[lang]["generalCommittee"]["name"]; 
+						</script>
 					</div>
 					<div class="col-xs-10 col-lg-7">
 						<h2 id="committee_title">
@@ -73,301 +70,318 @@
 					</div>
 
 					<div id="committeeText" class="jumbotron">
- 				  </div>
+					</div>
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-					<h3 id="generalConferenceChairs_st">
-						<script>
-							document
+						<h3 id="generalConferenceChairs_st">
+							<script>
+								document
 									.getElementById("generalConferenceChairs_st").innerHTML = menu[lang]["genConfeChairs"]["name"];
-						</script>
-					</h3>
-					<div>
-						<table id="generalConferenceChairs" style="width: 100%" align="center" valign="center">
-							<script>
-								$(function() {
-									$("#generalConferenceChairs").load(
-											"./texts/committee_gcc" + ".html")
-								});
 							</script>
-						</table>
-					</div>
+						</h3>
+						<div>
+							<table id="generalConferenceChairs" style="width: 100%" align="center" valign="center">
+								<script>
+									$(function () {
+										$("#generalConferenceChairs").load(
+											"./texts/committee_gcc" + ".html")
+									});
+								</script>
+							</table>
+						</div>
 					</div>
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-					<h3 id="generalProgramChairs_st">
-						<script>
-							document
-									.getElementById("generalProgramChairs_st").innerHTML = menu[lang]["genProgChairs"]["name"];
-						</script>
-					</h3>
-					<div>
-						<table id="generalProgramChairs" style="width: 100%">
+						<h3 id="generalProgramChairs_st">
 							<script>
-								$(function() {
-									$("#generalProgramChairs").load(
-											"./texts/committee_gpc" + ".html")
-								});
+								document
+									.getElementById("generalProgramChairs_st").innerHTML = menu[lang]["genProgChairs"]["name"];
 							</script>
-						</table>
-					</div>
+						</h3>
+						<div>
+							<table id="generalProgramChairs" style="width: 100%">
+								<script>
+									$(function () {
+										$("#generalProgramChairs").load(
+											"./texts/committee_gpc" + ".html")
+									});
+								</script>
+							</table>
+						</div>
 					</div>
 				</div>
 
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-					<h3 id="setProgramChairs_st">
-						<script>
-							document
-									.getElementById("setProgramChairs_st").innerHTML = "<strong>"+menu[lang]["tracks"]["1"]["name"]+"</strong>" + "<br><br>"+ menu[lang]["pchairs"]["name"];
-						</script>
-					</h3>
-					<div>
-						<table id="setProgramChairs" style="width: 100%">
+						<h3 id="setProgramChairs_st">
 							<script>
-								$(function() {
-									$("#setProgramChairs").load(
+								document
+									.getElementById("setProgramChairs_st").innerHTML = "<strong>" + menu[lang]["tracks"]["1"]["name"] + "</strong>" + "<br><br>" + menu[lang]["pchairs"]["name"];
+							</script>
+						</h3>
+						<div>
+							<table id="setProgramChairs" style="width: 100%">
+								<script>
+									$(function () {
+										$("#setProgramChairs").load(
 											"./texts/pchairs1_text" + ".html")
-								});
-							</script>
-						</table>
-						<br>
-						<h3 id="track_pc_set">
-							<script>
-								document.getElementById("track_pc_set").innerHTML = menu[lang]["pc"]["name"];
-							</script>
-						</h3>
-						<div>
-							<ul id="track_pc_set_members">
+									});
+								</script>
+							</table>
+							<br>
+							<h3 id="track_pc_set">
 								<script>
-									$(function() {
-										$("#track_pc_set_members").load(
+									document.getElementById("track_pc_set").innerHTML = menu[lang]["pc"]["name"];
+								</script>
+							</h3>
+							<div>
+								<ul id="track_pc_set_members">
+									<script>
+										$(function () {
+											$("#track_pc_set_members").load(
 												"./texts/pc" + "1"
-														+ "_text_"+lang+".html");
-									});
-								</script>
-							</ul>
+												+ "_text_" + lang + ".html");
+										});
+									</script>
+								</ul>
+							</div>
 						</div>
 					</div>
-				 </div>
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-					<h3 id="werProgramChairs_st">
-						<script>
-							document
-									.getElementById("werProgramChairs_st").innerHTML = "<strong>"+menu[lang]["tracks"]["2"]["name"]+"</strong>" + "<br><br>"+ menu[lang]["pchairs"]["name"];
-						</script>
-					</h3>
-					<div>
-						<table id="werProgramChairs" style="width: 100%">
+						<h3 id="werProgramChairs_st">
 							<script>
-								$(function() {
-									$("#werProgramChairs").load(
+								document
+									.getElementById("werProgramChairs_st").innerHTML = "<strong>" + menu[lang]["tracks"]["2"]["name"] + "</strong>" + "<br><br>" + menu[lang]["pchairs"]["name"];
+							</script>
+						</h3>
+						<div>
+							<table id="werProgramChairs" style="width: 100%">
+								<script>
+									$(function () {
+										$("#werProgramChairs").load(
 											"./texts/pchairs2_text" + ".html")
-								});
-							</script>
-						</table>
-						<br>
-						<h3 id="track_pc_wer">
-							<script>
-								document.getElementById("track_pc_wer").innerHTML = menu[lang]["pc"]["name"];
-							</script>
-						</h3>
-						<div>
-							<ul id="track_pc_wer_members">
-								<script>
-									$(function() {
-										$("#track_pc_wer_members").load(
-											"./texts/pc" + "2"
-											+ "_text_"+lang+".html");
 									});
 								</script>
-							</ul>
+							</table>
+							<br>
+							<h3 id="track_pc_wer">
+								<script>
+									document.getElementById("track_pc_wer").innerHTML = menu[lang]["pc"]["name"];
+								</script>
+							</h3>
+							<div>
+								<ul id="track_pc_wer_members">
+									<script>
+										$(function () {
+											$("#track_pc_wer_members").load(
+												"./texts/pc" + "2"
+												+ "_text_" + lang + ".html");
+										});
+									</script>
+								</ul>
+							</div>
 						</div>
-					</div>
 					</div>
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-					<h3 id="eselawProgramChairs_st">
-						<script>
-							document
-									.getElementById("eselawProgramChairs_st").innerHTML = "<strong>"+menu[lang]["tracks"]["3"]["name"]+"</strong>" + "<br><br>"+menu[lang]["pchairs"]["name"];
-						</script>
-					</h3>
-					<div>
-						<table id="eselawProgramChairs" style="width: 100%">
+						<h3 id="eselawProgramChairs_st">
 							<script>
-								$(function() {
-									$("#eselawProgramChairs").load(
+								document
+									.getElementById("eselawProgramChairs_st").innerHTML = "<strong>" + menu[lang]["tracks"]["3"]["name"] + "</strong>" + "<br><br>" + menu[lang]["pchairs"]["name"];
+							</script>
+						</h3>
+						<div>
+							<table id="eselawProgramChairs" style="width: 100%">
+								<script>
+									$(function () {
+										$("#eselawProgramChairs").load(
 											"./texts/pchairs3_text" + ".html")
-								});
-							</script>
-						</table>
-						<br>
-						<h3 id="track_pc_eselaw">
+									});
+								</script>
+							</table>
+							<br>
+							<h3 id="track_pc_eselaw">
+								<script>
+									document.getElementById("track_pc_eselaw").innerHTML = menu[lang]["pc"]["name"];
+								</script>
+							</h3>
+							<div>
+								<ul id="track_pc_esela">
+									<script>
+										$(function () {
+											$("#track_pc_esela").load(
+												"./texts/pc" + "3"
+												+ "_text_" + lang + ".html");
+										});
+									</script>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="jumbotron jumbotron-fluid">
+					<div class="container">
+						<h3 id="docSympProgramChairs_st">
 							<script>
-								document.getElementById("track_pc_eselaw").innerHTML = menu[lang]["pc"]["name"];
+								document
+									.getElementById("docSympProgramChairs_st").innerHTML = menu[lang]["tracks"]["6"]["longName"] + " - " + menu[lang]["pchairs"]["name"];
 							</script>
 						</h3>
 						<div>
-							<ul id="track_pc_esela">
+							<table id="docSympProgramChairs" style="width: 100%">
 								<script>
-									$(function() {
-										$("#track_pc_esela").load(
-											"./texts/pc" + "3"
-														+ "_text_"+lang+".html");
+									$(function () {
+										$("#docSympProgramChairs").load(
+											"./texts/pchairs6_text" + ".html")
 									});
 								</script>
-							</ul>
+							</table>
+							<br>
+							<h3 id="track_pc_docSymp">
+								<script>
+									document.getElementById("track_pc_docSymp").innerHTML = menu[lang]["pc"]["name"];
+								</script>
+							</h3>
+							<div>
+								<ul id="track_pc_docSym">
+									<script>
+										$(function () {
+											$("#track_pc_docSym").load(
+												"./texts/" + lang + "/pc" + "10"
+												+ "_text_" + lang + ".html");
+										});
+									</script>
+								</ul>
+							</div>
 						</div>
 					</div>
-					</div>
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-					<h3 id="docSympProgramChairs_st">
-						<script>
-							document
-									.getElementById("docSympProgramChairs_st").innerHTML = menu[lang]["tracks"]["6"]["longName"] + " - " + menu[lang]["pchairs"]["name"];
-						</script>
-					</h3>
-					<div>
-						<table id="docSympProgramChairs" style="width: 100%">
+						<h3 id="iberoAmericanSchoolChair_st">
 							<script>
-								$(function() {
-									$("#docSympProgramChairs").load(
-											"./texts/pchairs6_text" + ".html")
-								});
-							</script>
-						</table>
-					</div>
-					</div>
-				</div>
-				<div class="jumbotron jumbotron-fluid">
-					<div class="container">
-					<h3 id="iberoAmericanSchoolChair_st">
-						<script>
-							document
+								document
 									.getElementById("iberoAmericanSchoolChair_st").innerHTML = menu[lang]["iberoASchoolChair"]["name"];
-						</script>
-					</h3>
-					<div>
-						<table id="iberoAmericanSchoolChair" style="width: 100%">
-							<script>
-								$(function() {
-									$("#iberoAmericanSchoolChair").load(
+							</script>
+						</h3>
+						<div>
+							<table id="iberoAmericanSchoolChair" style="width: 100%">
+								<script>
+									$(function () {
+										$("#iberoAmericanSchoolChair").load(
 											"./texts/committee_iasc" + ".html")
-								});
-							</script>
-						</table>
-					</div>
+									});
+								</script>
+							</table>
+						</div>
 					</div>
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-					<h3 id="toolsPaperChair_st">
-						<script>
-							document.getElementById("toolsPaperChair_st").innerHTML = menu[lang]["toolsPaperChair"]["name"];
-						</script>
-					</h3>
-					<div>
-						<table id="toolsPaperChair" style="width: 100%">
+						<h3 id="toolsPaperChair_st">
 							<script>
-								$(function() {
-									$("#toolsPaperChair").load(
+								document.getElementById("toolsPaperChair_st").innerHTML = menu[lang]["toolsPaperChair"]["name"];
+							</script>
+						</h3>
+						<div>
+							<table id="toolsPaperChair" style="width: 100%">
+								<script>
+									$(function () {
+										$("#toolsPaperChair").load(
 											"./texts/committee_tpc" + ".html")
-								});
-							</script>
-						</table>
-					</div>
+									});
+								</script>
+							</table>
+						</div>
 					</div>
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-					<h3 id="industryExhibitionChairs_st">
-						<script>
-							document.getElementById("industryExhibitionChairs_st").innerHTML = menu[lang]["tracks"]["4"]["longName"] + " - " + menu[lang]["pchairs"]["name"];
-						</script>
-					</h3>
-					<div>
-						<table id="industryExhibitionChairs" style="width: 100%">
+						<h3 id="industryExhibitionChairs_st">
 							<script>
-								$(function() {
-									$("#industryExhibitionChairs").load(
+								document.getElementById("industryExhibitionChairs_st").innerHTML = menu[lang]["tracks"]["4"]["longName"] + " - " + menu[lang]["pchairs"]["name"];
+							</script>
+						</h3>
+						<div>
+							<table id="industryExhibitionChairs" style="width: 100%">
+								<script>
+									$(function () {
+										$("#industryExhibitionChairs").load(
 											"./texts/committee_iec" + ".html")
-								});
-							</script>
-						</table>
-					</div>
+									});
+								</script>
+							</table>
+						</div>
 					</div>
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-					<h3 id="proceedingsStuVolChair_st">
-						<script>
-							document.getElementById("proceedingsStuVolChair_st").innerHTML = menu[lang]["proStuVolunChair"]["name"];
-						</script>
-					</h3>
-					<div>
-						<table id="proceedingsStuVolChair" style="width: 100%">
+						<h3 id="proceedingsStuVolChair_st">
 							<script>
-								$(function() {
-									$("#proceedingsStuVolChair").load(
+								document.getElementById("proceedingsStuVolChair_st").innerHTML = menu[lang]["proStuVolunChair"]["name"];
+							</script>
+						</h3>
+						<div>
+							<table id="proceedingsStuVolChair" style="width: 100%">
+								<script>
+									$(function () {
+										$("#proceedingsStuVolChair").load(
 											"./texts/committee_psvc" + ".html")
-								});
-							</script>
-						</table>
-					</div>
+									});
+								</script>
+							</table>
+						</div>
 					</div>
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-					<h3 id="publicityCoChair_st">
-						<script>
-							document.getElementById("publicityCoChair_st").innerHTML = menu[lang]["publicityCoChairs"]["name"];
-						</script>
-					</h3>
-					<div>
-						<table id="publicityCoChair" style="width: 100%">
+						<h3 id="publicityCoChair_st">
 							<script>
-								$(function() {
-									$("#publicityCoChair").load(
+								document.getElementById("publicityCoChair_st").innerHTML = menu[lang]["publicityCoChairs"]["name"];
+							</script>
+						</h3>
+						<div>
+							<table id="publicityCoChair" style="width: 100%">
+								<script>
+									$(function () {
+										$("#publicityCoChair").load(
 											"./texts/committee_pcc" + ".html")
-								});
-							</script>
-						</table>
-					</div>
+									});
+								</script>
+							</table>
+						</div>
 					</div>
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-					<h3 id="webChair_st">
-						<script>
-							document.getElementById("webChair_st").innerHTML = menu[lang]["webChair"]["name"];
-						</script>
-					</h3>
-					<div>
-						<table id="webChair" style="width: 100%">
+						<h3 id="webChair_st">
 							<script>
-								$(function() {
-									$("#webChair").load(
-											"./texts/committee_wc" + ".html")
-								});
+								document.getElementById("webChair_st").innerHTML = menu[lang]["webChair"]["name"];
 							</script>
-						</table>
+						</h3>
+						<div>
+							<table id="webChair" style="width: 100%">
+								<script>
+									$(function () {
+										$("#webChair").load(
+											"./texts/committee_wc" + ".html")
+									});
+								</script>
+							</table>
+						</div>
 					</div>
-				</div>
 				</div>
 			</div>
 			<!--/.col-xs-12.col-sm-9-->
 
 			<div id="sidebar">
 				<script>
-					$(function() {
+					$(function () {
 						$("#sidebar").load("./components/sidebar.html");
 					});
 				</script>
@@ -386,15 +400,15 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 	<div id="google">
 		<script>
-			$(function() {
+			$(function () {
 				$("#google").load("./components/google.html");
 			});
 		</script>
 	</div>
 </body>
+
 </html>
