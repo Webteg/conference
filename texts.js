@@ -225,7 +225,7 @@ var menu = {
 		"pchairs":{"name":"Coordenadores do comitê de programa"},
 		"pchair":{"name":"Coordenação do programa"},
 		"pchairEibais":{"name":"Coordenador de EIbAiS"},
-		"pc": {"name":"Coordenadores do comitê de programa"},
+		"pc": {"name":"Comitê de programa"},
 		"generalCommittee": {"name":"Comitê geral de oranização"},
 		"genConfeChairs": {"name":"Coordenadores do Comitê Geral"},
 		"genProgChairs": {"name":"Coordenação de Programa Geral"},
