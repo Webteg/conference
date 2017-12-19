@@ -119,6 +119,43 @@
 						</ul>
 					</div>
 				</div>
+				<div class="jumbotron jumbotron-fluid">
+					<div class="container">
+					<h3 id="docSympProgramChairs_st">
+						<script>
+							document
+									.getElementById("docSympProgramChairs_st").innerHTML = menu[lang]["tracks"]["6"]["longName"] + "<br><br> " + menu[lang]["pchairs"]["name"];
+						</script>
+					</h3>
+					<div>
+						<table id="docSympProgramChairs" style="width: 100%">
+							<script>
+								$(function() {
+									$("#docSympProgramChairs").load(
+											"./texts/pchairs6_text" + ".html")
+								});
+							</script>
+						</table>
+						<br>
+						<h3 id="track_pc_docSymp">
+							<script>
+								document.getElementById("track_pc_docSymp").innerHTML = menu[lang]["pc"]["name"];
+							</script>
+						</h3>
+						<div>
+							<ul id="track_pc_docSym">
+								<script>
+									$(function () {
+										$("#track_pc_docSym").load(
+											"./texts/" + lang + "/pc" + "10"
+											+ "_text_" + lang + ".html");
+									});
+								</script>
+							</ul>
+						</div>
+					</div>
+					</div>
+				</div>
 				<div class="jumbotron">
 					<h3 id="dsEvalProcess_title">
 						<script>

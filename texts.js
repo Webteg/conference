@@ -108,7 +108,9 @@ var menu = {
 		"eibaisTutorials1":{"name": "Automated testing"},
 		"eibaisTutorials2":{"name": "Technical debt"},
 		"eibaisTutorials3":{"name": "Modeling"},
-		"eibaisTutorials4":{"name": "Qualitative case studies in industry"}
+		"eibaisTutorials4":{"name": "Qualitative case studies in industry"},
+		"toolsPapers": {"name":"Tools papers"},
+		"technicalAndEmergingPapers": {"name":"Technical and emerging ideas papers"},
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
@@ -176,6 +178,8 @@ var menu = {
 		"volunteers": {"name":"Voluntarios", "url":"volunteers"},
 		"about_bogota":{"name":"Acerca de Bogotá", "url":"aboutBogota"},
 		"accomodation":{"name":"Acomodación", "url":"accomodation"},
+		"toolsPapers": {"name":"Trabajos de herramientas"},
+		"technicalAndEmergingPapers": {"name":"Trabajos técnicos e ideas emergentes"},
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -221,7 +225,7 @@ var menu = {
 		"pchairs":{"name":"Coordenadores do comitê de programa"},
 		"pchair":{"name":"Coordenação do programa"},
 		"pchairEibais":{"name":"Coordenador de EIbAiS"},
-		"pc": {"name":"Coordenadores do comitê de programa"},
+		"pc": {"name":"Comitê de programa"},
 		"generalCommittee": {"name":"Comitê geral de oranização"},
 		"genConfeChairs": {"name":"Coordenadores do Comitê Geral"},
 		"genProgChairs": {"name":"Coordenação de Programa Geral"},
@@ -243,6 +247,8 @@ var menu = {
 		"volunteers": {"name":"Voluntários", "url":"volunteers"},
 		"about_bogota":{"name":"Sobre Bogotá", "url":"aboutBogota"},
 		"accomodation":{"name":"Acomodação", "url":"accomodation"},
+		"toolsPapers": {"name":"Trabalhos de ferramentas"},
+		"technicalAndEmergingPapers": {"name":"Trabalhos técnicos e idéias emergentes"},
 	},
 	"shortTitle": "CIbSE",
 	"date": {"year":"2018", "days":"26-30", "edition": "XXI"},
