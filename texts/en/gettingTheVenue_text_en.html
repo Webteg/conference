@@ -10,9 +10,7 @@
     <br>
 </p>
 
-<!-- <br>
-
-<iframe
+<!-- <iframe
   width="100%"
   height="450"
   frameborder="0" style="border:0"
@@ -81,12 +79,15 @@
     </script>
     
     
-
+   
 
 
 <br>
 <br> -->
 
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6aHJrFnqrvB91LXOvVbEtRRUaFShDSn8&callback=initMap">
+</script>s
 <style>
     #map {
         height: 450px;
@@ -104,13 +105,13 @@
 </style>
 
 <div id="floating-panel">
-    <b>Start: </b>
+    <b>A: </b>
     <select id="start">
         <option value="4.602773,-74.064894">Edificio Mario Laserna</option>
         <option value="4.605304,-74.066959">Estación Universidades</option>
 
     </select>
-    <b>End: </b>
+    <b>B: </b>
     <select id="end">
         <option value="4.602773,-74.064894">Edificio Mario Laserna</option>
         <option value="4.605304,-74.066959">Estación Universidades</option>
@@ -127,8 +128,7 @@
 
 <div id="map"></div>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6aHJrFnqrvB91LXOvVbEtRRUaFShDSn8&callback=initMap">
-</script>
+
 
 <script>
     var ml = { lat: 4.602773, lng: -74.064894 };
