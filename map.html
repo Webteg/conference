@@ -44,10 +44,10 @@
             var directionsService = new google.maps.DirectionsService;
     
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 17,
+                zoom: 13,
                 center: {
-                    lat: 4.603751,
-                    lng: -74.066383
+                    lat: 4.623125, 
+                    lng: -74.062757
                 }
             });
     
@@ -99,17 +99,17 @@
             var marker1 = new google.maps.Marker({
                 position: ml1,
                 map: map,
-                title: "Edificio Mario Laserna",
+                title: "Mario Laserna Building",
                 icon: uniandes
             });
             var contentString1 = '<div id="content">' +
                 '<div id="siteNotice">' +
                 '</div>' +
                 '<h5 id="firstHeading" class="firstHeading">Universidad de los Andes</h5>' +
-                '<h5 id="firstHeading" class="firstHeading">Edificio Mario Laserna</h5>' +
+                '<h5 id="firstHeading" class="firstHeading">Mario Laserna building</h5>' +
                 '<div id="bodyContent">' +
-                '<p style="font-size:13px">Lugar de la conferencia</p>' +
-                '<p style="font-size:12px">Auditorios A, B y C</p>' +
+                '<p style="font-size:13px">Conference venue</p>' +
+                '<p style="font-size:12px">Auditoriums A, B and C</p>' +
                 '<p style="font-size:12px">Bogotá, Colombia</p>' +
                 '<p style="font-size:13px"><br></p>' +
                 '<p style="font-size:12px"><a href="https://www.google.com/maps/place/Universidad+de+los+Andes+-+Edificio+Mario+Laserna/@4.6027795,-74.0649023,15z/data=!4m2!3m1!1s0x0:0x1da99c6575ca804b?sa=X&ved=0ahUKEwib17zB1OLYAhUI0VMKHWNNBoYQ_BIIgwEwDg">' +
@@ -135,7 +135,7 @@
                 '</div>' +
                 '<h5 id="firstHeading" class="firstHeading">Universidades</h5>' +
                 '<div id="bodyContent">' +
-                '<p style="font-size:13px">Transmilenio</p>' +
+                '<p style="font-size:13px">Transmilenio station</p>' +
                 '<p style="font-size:13px"><br></p>' +
                 '<p style="font-size:12px"><a href="https://www.google.com/maps/place/Estaci%C3%B3n+Transmilenio+Troncal+Universidades/@4.6053075,-74.0669535,15z/data=!4m2!3m1!1s0x0:0xc81cd77b2be83833?sa=X&ved=0ahUKEwjM9veU2eLYAhUDt1MKHXcPD60Q_BIIfDAK">' +
                 'Google Maps</a> </p>' +
@@ -153,14 +153,14 @@
                 icon: bus,
                 position: aguas,
                 map: map,
-                title: "Aguas"
+                title: "Las Aguas"
             });
             var contentString3 = '<div id="content">' +
                 '<div id="siteNotice">' +
                 '</div>' +
                 '<h5 id="firstHeading" class="firstHeading">Las Aguas</h5>' +
                 '<div id="bodyContent">' +
-                '<p style="font-size:13px">Transmilenio</p>' +
+                '<p style="font-size:13px">Transmilenio station</p>' +
                 '<p style="font-size:13px"><br></p>' +
                 '<p style="font-size:12px"><a href="https://www.google.com/maps/place/Estaci%C3%B3n+de+transmilenio+Las+aguas/@4.6025689,-74.0683846,15z/data=!4m2!3m1!1s0x0:0x73f5879baab3dd5f?sa=X&ved=0ahUKEwijkKb71-LYAhWE7lMKHd-KBhkQ_BIIiAEwDg">' +
                 'Google Maps</a> </p>' +
