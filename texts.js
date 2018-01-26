@@ -118,6 +118,11 @@ var menu = {
 		"getting_here": { "name": "Getting here", "url": "gettingHere" },
 		"getting_the_venue": { "name": "Getting the Venue" },
 		"getting_bogota": { "name": "Getting Bogota" },
+		"fees": { "name": "Fees", "url": "fees" },
+		"fees1": { "name": "Fees"},
+		"process": { "name": "Process", "url": "paymentProcess" },
+		"payment": { "name": "Payment Process"},
+
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
@@ -192,6 +197,10 @@ var menu = {
 		"getting_here": { "name": "Llegando aquí", "url": "gettingHere" },
 		"getting_the_venue": { "name": "Llegando al lugar" },
 		"getting_bogota": { "name": "Llegando a Bogotá" },
+		"fees": { "name": "Costos", "url": "fees" },
+		"fees1": { "name": "Costos de Inscripción"},
+		"process": { "name": "Proceso", "url": "paymentProcess" },
+		"payment": { "name": "Proceso de Pago"}
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -266,6 +275,11 @@ var menu = {
 		"getting_here": { "name": "Chegando aqui", "url": "gettingHere" },
 		"getting_the_venue": { "name": "Chegando ao lugar" },
 		"getting_bogota": { "name": "Chegando a Bogotá" },
+		"fees": { "name": "Custos", "url": "fees" },
+		"fees1": { "name": "Custos de inscrição"},
+		"process": { "name": "Processo", "url": "paymentProcess"},
+		"payment": { "name": "Processo de pagamento"}
+
 	},
 	"shortTitle": "CIbSE",
 	"date": { "year": "2018", "days": "26-30", "edition": "XXI" },
