@@ -1,0 +1,356 @@
+<style>
+        #map {
+            height: 350px;
+            width: 100%;
+        }
+    
+        .letraInfo {
+            font-size: 12px;
+        }
+    </style>
+    
+    <div id="map"></div>
+    
+    <script>
+    
+        //Estaciones
+        var universidades = { lat: 4.605304, lng: -74.066959 };
+        var aguas = { lat: 4.602567, lng: -74.068383 };
+    
+        //Gala
+        var club_de_comercio = { lat: 4.647216, lng: -74.059677 };
+    
+        //Hoteles
+        var cityu = { lat: 4.603224, lng: -74.067375 };
+        var mercure = { lat: 4.649595, lng: -74.059219 };
+        var embassy = { lat: 4.652368, lng: -74.055820 };
+        var four_seasons = { lat: 4.652385, lng: -74.056452 };
+        var holiday = { lat: 4.651025, lng: -74.057997 };
+    
+        //Rutas
+        var ml = { lat: 4.602919, lng: -74.065151 };
+        var ml1 = {lat: 4.602788, lng: -74.064902};
+        var destino = { lat: 4.603001, lng: -74.065280 };
+        var origenes = [universidades, aguas];
+    
+        //Iconos
+        var bus = '../../map_icons/bus.png';
+        var hotel = '../../map_icons/building.png';
+        var gala = '../../map_icons/glass.png';
+        var uniandes = '../../map_icons/uniandes.png';
+    
+        function initMap() {
+    
+            var directionsService = new google.maps.DirectionsService;
+    
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: {
+                    lat: 4.627691, 
+                    lng: -74.065857
+                }
+            });
+    
+            var directionsDisplay = new google.maps.DirectionsRenderer({
+                map: map
+            });
+            calculateAndDisplayRoute(directionsDisplay, directionsService, map);
+        }
+    
+        function calculateAndDisplayRoute(directionsDisplay, directionsService, map) {
+            var wayPoint = '4.603250, -74.066088';
+    
+            for (var j = 0; j < origenes.length; j++) {
+                var origen = origenes[j];
+    
+                if (j == 1) {
+                    wayPoint = '4.602822, -74.065890';
+                }
+    
+                directionsService.route({
+                    origin: origen,
+                    destination: destino,
+                    travelMode: 'WALKING',
+                    waypoints: [
+                        { location: wayPoint, stopover: false }]
+    
+                }, function (response, status) {
+                    if (status === 'OK') {
+    
+                        var dirDisplay = new google.maps.DirectionsRenderer({
+                            map: map,
+                            preserveViewport: true,
+                            suppressMarkers: true
+                        });
+    
+                        dirDisplay.setDirections(response);
+    
+    
+                    } else {
+                        window.alert('Directions request failed due to ' + status);
+                    }
+                });
+            }
+            crearMarcadores(map);
+        }
+    
+        function crearMarcadores(map) {
+    
+            var marker1 = new google.maps.Marker({
+                position: ml1,
+                map: map,
+                title: "Mario Laserna Building",
+                icon: uniandes
+            });
+            var contentString1 = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h5 id="firstHeading" class="firstHeading"><a href="http://uniandes.edu.co">Universidad de los Andes</a></h5>' +
+                '<h5 id="firstHeading" class="firstHeading">Mario Laserna building</h5>' +
+                '<div id="bodyContent">' +
+                '<p style="font-size:13px">Conference venue</p>' +
+                '<p style="font-size:12px">Auditoriums A, B and C</p>' +
+                '<p style="font-size:12px">Bogotá, Colombia</p>' +
+                '<p style="font-size:13px"><br></p>' +
+                '<p style="font-size:12px"><a href="https://www.google.com/maps/place/Universidad+de+los+Andes+-+Edificio+Mario+Laserna/@4.6027795,-74.0649023,15z/data=!4m2!3m1!1s0x0:0x1da99c6575ca804b?sa=X&ved=0ahUKEwib17zB1OLYAhUI0VMKHWNNBoYQ_BIIgwEwDg">' +
+                'Google Maps</a> </p>' +
+                '</div>' +
+                '</div>';
+            var infowindow1 = new google.maps.InfoWindow({
+                content: contentString1,
+                maxWidth: 230
+            });
+            marker1.addListener('click', function () {
+                infowindow1.open(map, marker1);
+            });
+    
+            var marker2 = new google.maps.Marker({
+                position: universidades,
+                map: map,
+                title: "Universidades",
+                icon: bus
+            });
+            var contentString2 = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h5 id="firstHeading" class="firstHeading">Universidades</h5>' +
+                '<div id="bodyContent">' +
+                '<p style="font-size:13px">Transmilenio station</p>' +
+                '<p style="font-size:13px"><br></p>' +
+                '<p style="font-size:12px"><a href="https://www.google.com/maps/place/Estaci%C3%B3n+Transmilenio+Troncal+Universidades/@4.6053075,-74.0669535,15z/data=!4m2!3m1!1s0x0:0xc81cd77b2be83833?sa=X&ved=0ahUKEwjM9veU2eLYAhUDt1MKHXcPD60Q_BIIfDAK">' +
+                'Google Maps</a> </p>' +
+                '</div>' +
+                '</div>';
+            var infowindow2 = new google.maps.InfoWindow({
+                content: contentString2,
+                maxWidth: 230
+            });
+            marker2.addListener('click', function () {
+                infowindow2.open(map, marker2);
+            });
+    
+            var marker3 = new google.maps.Marker({
+                icon: bus,
+                position: aguas,
+                map: map,
+                title: "Las Aguas"
+            });
+            var contentString3 = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h5 id="firstHeading" class="firstHeading">Las Aguas</h5>' +
+                '<div id="bodyContent">' +
+                '<p style="font-size:13px">Transmilenio station</p>' +
+                '<p style="font-size:13px"><br></p>' +
+                '<p style="font-size:12px"><a href="https://www.google.com/maps/place/Estaci%C3%B3n+de+transmilenio+Las+aguas/@4.6025689,-74.0683846,15z/data=!4m2!3m1!1s0x0:0x73f5879baab3dd5f?sa=X&ved=0ahUKEwijkKb71-LYAhWE7lMKHd-KBhkQ_BIIiAEwDg">' +
+                'Google Maps</a> </p>' +
+                '</div>' +
+                '</div>';
+            var infowindow3 = new google.maps.InfoWindow({
+                content: contentString3,
+                maxWidth: 230
+            });
+            marker3.addListener('click', function () {
+                infowindow3.open(map, marker3);
+            });
+    
+            var marker4 = new google.maps.Marker({
+                position: club_de_comercio,
+                map: map,
+                title: "Club del Comercio",
+                icon: gala
+            });
+            var contentString4 = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h5 id="firstHeading" class="firstHeading"><a href="http://clubdelcomerciobogota.com/club-del-comercio">Club del Comercio</a></h5>' +
+                '<div id="bodyContent">' +
+                '<p style="font-size:13px">Gala dinner venue</p>' +
+                '<p style="font-size:13px"><br></p>' +
+                '<p style="font-size:12px"><a href="https://www.google.com/maps/place/Club+del+Comercio/@4.6472252,-74.0596801,15z/data=!4m2!3m1!1s0x0:0xffb008653c0d73d7?sa=X&ved=0ahUKEwjN57rl2OLYAhXI7VMKHdGpCDMQ_BIIiwEwDg">' +
+                'Google Maps</a> </p>' +
+                '</div>' +
+                '</div>';
+            var infowindow4 = new google.maps.InfoWindow({
+                content: contentString4,
+                maxWidth: 230
+            });
+            marker4.addListener('click', function () {
+                infowindow4.open(map, marker4);
+            });
+    
+            var marker5 = new google.maps.Marker({
+                position: cityu,
+                map: map,
+                title: "CityU",
+                icon: hotel
+            });
+            var contentString5 = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h5 id="firstHeading" class="firstHeading"><a href="https://vivienda.uniandes.edu.co/index.php/cityu-torre-2">CityU</a></h5>' +
+                '<div id="bodyContent">' +
+                '<p style="font-size:13px">Hotel</p>' +
+                '<p style="font-size:13px"><br></p>' +
+                '<p style="font-size:12px"><a href="https://www.google.com/maps/place/City+U/@4.6032112,-74.0673722,15z/data=!4m2!3m1!1s0x0:0x1c4ef355ef573c5?sa=X&ved=0ahUKEwj2xZui2-LYAhUJzVMKHUidCk4Q_BIIfTAM">' +
+                'Google Maps</a> </p>' +
+                '</div>' +
+                '</div>';
+            var infowindow5 = new google.maps.InfoWindow({
+                content: contentString5,
+                maxWidth: 230
+            });
+            marker5.addListener('click', function () {
+                infowindow5.open(map, marker5);
+            });
+    
+            var marker6 = new google.maps.Marker({
+                position: mercure,
+                map: map,
+                title: "Mercure Bogota bh Zona financiera",
+                icon: hotel
+            });
+            var contentString6 = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h5 id="firstHeading" class="firstHeading"><a href="http://www.bhhoteles.com/en/hotels">Mercure Bogota bh Zona financiera</a></h5>' +
+                '<div id="bodyContent">' +
+                '<p style="font-size:13px">Hotel</p>' +
+                '<p style="font-size:13px"><br></p>' +
+                '<p style="font-size:12px"><a href="https://www.google.com/maps/place/Mercure+Bogota+bh+Zona+Financiera/@4.64957,-74.059223,15z/data=!4m2!3m1!1s0x0:0xd00d01af804827d9?sa=X&ved=0ahUKEwjIg57b3OLYAhVCt1MKHVn-ANUQ_BIIiAEwCg">' +
+                'Google Maps</a> </p>' +
+                '</div>' +
+                '</div>';
+            var infowindow6 = new google.maps.InfoWindow({
+                content: contentString6,
+                maxWidth: 230
+            });
+            marker6.addListener('click', function () {
+                infowindow6.open(map, marker6);
+            });
+    
+            var marker7 = new google.maps.Marker({
+                position: embassy,
+                map: map,
+                title: "Embassy Suites by Hilton",
+                icon: hotel
+            });
+            var contentString7 = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h5 id="firstHeading" class="firstHeading"><a href="http://embassysuites3.hilton.com/en/hotels/colombia/embassy-suites-by-hilton-bogota-rosales-BOGESES/index.html">Embassy Suites by Hilton</a></h5>' +
+                '<div id="bodyContent">' +
+                '<p style="font-size:13px">Hotel</p>' +
+                '<p style="font-size:13px"><br></p>' +
+                '<p style="font-size:12px"><a href="https://www.google.com/maps/place/Embassy+Suites+by+Hilton+Bogot%C3%A1+-+Rosales/@4.652354,-74.055822,15z/data=!4m2!3m1!1s0x0:0xfdfd0a3fbd1a504c?sa=X&ved=0ahUKEwjBn4CR3uLYAhXMu1MKHY_tC8MQ_BIIjAEwCg">' +
+                'Google Maps</a> </p>' +
+                '</div>' +
+                '</div>';
+            var infowindow7 = new google.maps.InfoWindow({
+                content: contentString7,
+                maxWidth: 230
+            });
+            marker7.addListener('click', function () {
+                infowindow7.open(map, marker7);
+            });
+    
+            var marker8 = new google.maps.Marker({
+                position: four_seasons,
+                map: map,
+                title: "Four Seasons Hotel Casa Medina",
+                icon: hotel
+            });
+            var contentString8 = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h5 id="firstHeading" class="firstHeading"><a href="https://www.fourseasons.com/bogotacm/">Four Seasons Hotel Casa Medina</a></h5>' +
+                '<div id="bodyContent">' +
+                '<p style="font-size:13px">Hotel</p>' +
+                '<p style="font-size:13px"><br></p>' +
+                '<p style="font-size:12px"><a href="https://www.google.com/maps/place/Four+Seasons/@4.652378,-74.056452,15z/data=!4m2!3m1!1s0x0:0x7aa985a0ed305297?sa=X&ved=0ahUKEwj6gsus3-LYAhWBvVMKHVHBDMAQ_BIIlQEwEA">' +
+                'Google Maps</a> </p>' +
+                '</div>' +
+                '</div>';
+            var infowindow8 = new google.maps.InfoWindow({
+                content: contentString8,
+                maxWidth: 230
+            });
+            marker8.addListener('click', function () {
+                infowindow8.open(map, marker8);
+            });
+    
+    
+    
+            var marker9 = new google.maps.Marker({
+                position: holiday,
+                map: map,
+                title: "Holiday Inn Express & Suites",
+                icon: hotel
+            });
+            var contentString9 = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h5 id="firstHeading" class="firstHeading"><a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/bogota/bogbo/hoteldetail">Holiday Inn Express & Suites</a></h5>' +
+                '<div id="bodyContent">' +
+                '<p style="font-size:13px">Hotel</p>' +
+                '<p style="font-size:13px"><br></p>' +
+                '<p style="font-size:12px"><a href="https://www.google.com/maps/place/Holiday+Inn+Express+%26+Suites+Bogota+DC/@4.650999,-74.057995,15z/data=!4m2!3m1!1s0x0:0x8811ef743bf8a55c?sa=X&ved=0ahUKEwjD8u-P4OLYAhUE3FMKHXrzAfQQ_BIIlwEwCg">' +
+                'Google Maps</a> </p>' +
+                '</div>' +
+                '</div>';
+            var infowindow9 = new google.maps.InfoWindow({
+                content: contentString9,
+                maxWidth: 230
+            });
+            marker9.addListener('click', function () {
+                infowindow9.open(map, marker9);
+            });
+    
+    
+    
+    
+            var lineSymbol = {
+                path: 'M 0,-1 0,1',
+                strokeOpacity: 1,
+                scale: 4
+            };
+    
+            var line = new google.maps.Polyline({
+                path: [ml, destino],
+                strokeOpacity: 0,
+                icons: [{
+                    icon: lineSymbol,
+                    offset: '0',
+                    repeat: '20px'
+                }],
+                map: map
+            });
+        }
+    
+    
+    
+    </script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6aHJrFnqrvB91LXOvVbEtRRUaFShDSn8&callback=initMap">
+    </script>
+    
