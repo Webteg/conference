@@ -331,46 +331,17 @@
 						</li>
 					</ul>
 				</li>
-				
+
 				<!-- REGISTRATION -->
 				<li>
-					<a id="dropdownRegistration" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+					<a id="registration" href="">
 						<script>
-							document.getElementById("dropdownRegistration").innerHTML = menu[lang]["registration"]["name"];
+							document.getElementById("registration").innerHTML = menu[lang]["registration"]["name"];
+							document.getElementById("registration").href = menu[lang]["registration"]["url"]
+								+ sufhtml;
 						</script>
-						<span class="caret"></span>
 					</a>
-					<ul class="dropdown-menu" role="menu">
-						<li>
-							<a id="fees" href="">
-								<script>
-									document.getElementById("fees").innerHTML = menu[lang]["fees"]["name"];
-									document.getElementById("fees").href = menu[lang]["fees"]["url"]
-										+ sufhtml;
-								</script>
-							</a>
-						</li>
-						<li>
-							<a id="process" href="">
-								<script>
-									document.getElementById("process").innerHTML = menu[lang]["process"]["name"];
-									document.getElementById("process").href = menu[lang]["process"]["url"]
-										+ sufhtml;
-								</script>
-							</a>
-						</li> 
-					<!--<li>
-							<a id="registration" href="">
-								<script>
-									document.getElementById("registration").innerHTML = menu[lang]["registration"]["name"];
-									document.getElementById("registration").href = menu[lang]["registration"]["url"]
-										+ sufhtml;
-								</script>
-							</a>
-						</li>-->
-					</ul>
 				</li>
-
 				<!-- CONTACT -->
 				<li id="contact">
 					<a id="contactMenu" href=""> </a>
