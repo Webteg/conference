@@ -122,7 +122,12 @@ var menu = {
 		"fees1": { "name": "Fees"},
 		"process": { "name": "Process", "url": "paymentProcess" },
 		"payment": { "name": "Payment Process"},
-
+		"accepted": { "name": "Accepted Papers", "url": "acceptedPapers" },
+		"acceptedTitle": {"name": "Title"},
+		"acceptedAuthor": {"name": "Author(s)"},
+		"accepted_ESELAW": {"name": "ESELAW Accepted papers"},
+		"accepted_SET": {"name": "SET Accepted papers"},
+		"accepted_WER": {"name": "WER Accepted papers"}
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
@@ -200,7 +205,13 @@ var menu = {
 		"fees": { "name": "Costos", "url": "fees" },
 		"fees1": { "name": "Costos de Inscripción"},
 		"process": { "name": "Proceso", "url": "paymentProcess" },
-		"payment": { "name": "Proceso de Pago"}
+		"payment": { "name": "Proceso de Pago"},
+		"accepted": { "name": "Trabajos aceptados", "url": "acceptedPapers" },
+		"acceptedTitle": {"name": "Título"},
+		"acceptedAuthor": {"name": "Autor(es)"},
+		"accepted_ESELAW": {"name": "ESELAW Trabajos aceptados"},
+		"accepted_SET": {"name": "SET Trabajos aceptados"},
+		"accepted_WER": {"name": "WER Trabajos aceptados"}
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -278,7 +289,13 @@ var menu = {
 		"fees": { "name": "Custos", "url": "fees" },
 		"fees1": { "name": "Custos de inscrição"},
 		"process": { "name": "Processo", "url": "paymentProcess"},
-		"payment": { "name": "Processo de pagamento"}
+		"payment": { "name": "Processo de pagamento"},
+		"accepted": { "name": "Trabalhos Aceitos", "url": "acceptedPapers" },
+		"acceptedTitle": {"name": "Título"},
+		"acceptedAuthor": {"name": "Autor(es)"},
+		"accepted_ESELAW": {"name": "ESELAW Trabalhos Aceitos"},
+		"accepted_SET": {"name": "SET Trabalhos Aceitos"},
+		"accepted_WER": {"name": "WER Trabalhos Aceitos"}
 
 	},
 	"shortTitle": "CIbSE",

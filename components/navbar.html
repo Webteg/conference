@@ -182,6 +182,15 @@
 							</a>
 						</li>
 						<li>
+							<a id="accepted" href="">
+								<script>
+									document.getElementById("accepted").innerHTML = menu[lang]["accepted"]["name"];
+									document.getElementById("accepted").href = menu[lang]["accepted"]["url"]
+										+ sufhtml;
+								</script>
+							</a>
+						</li>
+						<li>
 							<a id="timetable" href="">
 								<script>
 									document.getElementById("timetable").innerHTML = menu[lang]["generalProgram"]["name"];
