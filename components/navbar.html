@@ -60,6 +60,15 @@
 								</script>
 							</a>
 						</li>
+						<li>
+							<a id="volunteers" href="">
+								<script>
+									document.getElementById("volunteers").innerHTML = menu[lang]["volunteers"]["name"];
+									document.getElementById("volunteers").href = menu[lang]["volunteers"]["url"]
+										+ sufhtml;
+								</script>
+							</a>
+						</li>
 
 					</ul>
 				</li>
@@ -261,15 +270,6 @@
 								<script>
 									document.getElementById("committee").innerHTML = menu[lang]["committee"]["name"];
 									document.getElementById("committee").href = menu[lang]["committee"]["url"]
-										+ sufhtml;
-								</script>
-							</a>
-						</li>
-						<li>
-							<a id="volunteers" href="">
-								<script>
-									document.getElementById("volunteers").innerHTML = menu[lang]["volunteers"]["name"];
-									document.getElementById("volunteers").href = menu[lang]["volunteers"]["url"]
 										+ sufhtml;
 								</script>
 							</a>
