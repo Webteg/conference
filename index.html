@@ -50,6 +50,22 @@
 
       <div class="col-xs-12 col-md-9">
 
+          <div class="jumbotron">
+            
+              <div>
+                <ul id="announcements_text">
+                  <script>
+                    $(function () {
+                      $("#announcements_text").load(
+                        "./texts/" + lang + "/announcements" + "_text_"
+                        + [lang] + ".html");
+                    });
+                  </script>
+                </ul>
+              </div>
+
+          </div>
+
         <div id="generalDescription" class="jumbotron container-fluid">
           <script>
             $(function(){
@@ -58,17 +74,11 @@
               console.log("./texts/"+lang+"/cibse-intro" + suffixh);
             });
           </script>
+        </div>
+
+        
+
       </div>
-
-<!--         <div id="keynotes" class="jumbotron"> -->
-<!--           <script> -->
-<!-- //             $(function(){ -->
-<!-- //               $("#keynotes").load("./texts/keynotes-text" + suffixh); -->
-<!-- //             }); -->
-<!--           </script> -->
-<!--         </div> -->
-
-      </div><!--/.col-xs-12.col-sm-9-->
 
       <div id="sidebar">
         <script>
