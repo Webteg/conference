@@ -219,7 +219,7 @@ var menu = {
 		"accepted_WER": {"name": "WER Trabajos aceptados"},
 		"benefits": {"name": "Beneficios"},
 		"responsibilities": {"name": "Responsabilidades"},
-		"submissionsVol": { "name": "Aplicaciones" }
+		"submissionsVol": { "name": "Envío de solicitudes" }
 
 	},
 	"br": {
@@ -308,7 +308,7 @@ var menu = {
 		"accepted_WER": {"name": "WER Trabalhos Aceitos"},
 		"benefits": {"name": "Benefícios"},
 		"responsibilities": {"name": "Responsabilidades"},
-		"submissionsVol": { "name": "Aplicativos" }
+		"submissionsVol": { "name": "Submissões" }
 
 	},
 	"shortTitle": "CIbSE",
