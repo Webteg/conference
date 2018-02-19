@@ -80,7 +80,8 @@ var menu = {
 		"submission": { "name": "Submission" },
 		"evaluationProcess": { "name": "Evaluation process" },
 		"organization": { "name": "Organization", "url": "organization" },
-		"volunteers": { "name": "Volunteers", "url": "volunteers" },
+		"volunteers": { "name": "Volunteers", "url": "studentVolunteers" },
+		"volunteersST": { "name": "Student Volunteers" },
 		"committee": { "name": "Committee", "url": "committee" },
 		"generalCommittee": { "name": "General Organization Committee" },
 		"genConfeChairs": { "name": "General Conference Chairs" },
@@ -122,7 +123,15 @@ var menu = {
 		"fees1": { "name": "Fees"},
 		"process": { "name": "Process", "url": "paymentProcess" },
 		"payment": { "name": "Payment Process"},
-
+		"accepted": { "name": "Accepted Papers", "url": "acceptedPapers" },
+		"acceptedTitle": {"name": "Title"},
+		"acceptedAuthor": {"name": "Author(s)"},
+		"accepted_ESELAW": {"name": "ESELAW Accepted papers"},
+		"accepted_SET": {"name": "SET Accepted papers"},
+		"accepted_WER": {"name": "WER Accepted papers"},
+		"benefits": {"name": "Benefits"},
+		"responsibilities": {"name": "Responsibilities"},
+		"submissionsVol": { "name": "Submissions" }
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
@@ -189,7 +198,8 @@ var menu = {
 		"eibaisTutorials5": { "name": "Ingeniería de Requerimientos" },
 		"eibaisTutorials6": { "name": "Ingeniería de Software para IoT" },
 		"hackaton": { "name": "Hackaton", "url": "hackaton" },
-		"volunteers": { "name": "Voluntarios", "url": "volunteers" },
+		"volunteers": { "name": "Voluntarios", "url": "studentVolunteers" },
+		"volunteersST": { "name": "Estudiantes Voluntarios" },
 		"about_bogota": { "name": "Acerca de Bogotá", "url": "aboutBogota" },
 		"accomodation": { "name": "Acomodación", "url": "accomodation" },
 		"toolsPapers": { "name": "Trabajos de herramientas" },
@@ -200,7 +210,17 @@ var menu = {
 		"fees": { "name": "Costos", "url": "fees" },
 		"fees1": { "name": "Costos de Inscripción"},
 		"process": { "name": "Proceso", "url": "paymentProcess" },
-		"payment": { "name": "Proceso de Pago"}
+		"payment": { "name": "Proceso de Pago"},
+		"accepted": { "name": "Trabajos aceptados", "url": "acceptedPapers" },
+		"acceptedTitle": {"name": "Título"},
+		"acceptedAuthor": {"name": "Autor(es)"},
+		"accepted_ESELAW": {"name": "ESELAW Trabajos aceptados"},
+		"accepted_SET": {"name": "SET Trabajos aceptados"},
+		"accepted_WER": {"name": "WER Trabajos aceptados"},
+		"benefits": {"name": "Beneficios"},
+		"responsibilities": {"name": "Responsabilidades"},
+		"submissionsVol": { "name": "Envío de solicitudes" }
+
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -267,7 +287,8 @@ var menu = {
 		"eibaisTutorials5": { "name": "Engenharia de Requisitos" },
 		"eibaisTutorials6": { "name": "Engenharia de Software para IoT" },
 		"hackaton": { "name": "Hackaton", "url": "hackaton" },
-		"volunteers": { "name": "Voluntários", "url": "volunteers" },
+		"volunteers": { "name": "Voluntários", "url": "studentVolunteers" },
+		"volunteersST": { "name": "Estudantes Voluntários" },
 		"about_bogota": { "name": "Sobre Bogotá", "url": "aboutBogota" },
 		"accomodation": { "name": "Acomodação", "url": "accomodation" },
 		"toolsPapers": { "name": "Trabalhos de ferramentas" },
@@ -278,7 +299,16 @@ var menu = {
 		"fees": { "name": "Custos", "url": "fees" },
 		"fees1": { "name": "Custos de inscrição"},
 		"process": { "name": "Processo", "url": "paymentProcess"},
-		"payment": { "name": "Processo de pagamento"}
+		"payment": { "name": "Processo de pagamento"},
+		"accepted": { "name": "Trabalhos Aceitos", "url": "acceptedPapers" },
+		"acceptedTitle": {"name": "Título"},
+		"acceptedAuthor": {"name": "Autor(es)"},
+		"accepted_ESELAW": {"name": "ESELAW Trabalhos Aceitos"},
+		"accepted_SET": {"name": "SET Trabalhos Aceitos"},
+		"accepted_WER": {"name": "WER Trabalhos Aceitos"},
+		"benefits": {"name": "Benefícios"},
+		"responsibilities": {"name": "Responsabilidades"},
+		"submissionsVol": { "name": "Submissões" }
 
 	},
 	"shortTitle": "CIbSE",

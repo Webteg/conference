@@ -60,6 +60,15 @@
 								</script>
 							</a>
 						</li>
+						<li>
+							<a id="volunteers" href="">
+								<script>
+									document.getElementById("volunteers").innerHTML = menu[lang]["volunteers"]["name"];
+									document.getElementById("volunteers").href = menu[lang]["volunteers"]["url"]
+										+ sufhtml;
+								</script>
+							</a>
+						</li>
 
 					</ul>
 				</li>
@@ -182,6 +191,15 @@
 							</a>
 						</li>
 						<li>
+							<a id="accepted" href="">
+								<script>
+									document.getElementById("accepted").innerHTML = menu[lang]["accepted"]["name"];
+									document.getElementById("accepted").href = menu[lang]["accepted"]["url"]
+										+ sufhtml;
+								</script>
+							</a>
+						</li>
+						<li>
 							<a id="timetable" href="">
 								<script>
 									document.getElementById("timetable").innerHTML = menu[lang]["generalProgram"]["name"];
@@ -252,15 +270,6 @@
 								<script>
 									document.getElementById("committee").innerHTML = menu[lang]["committee"]["name"];
 									document.getElementById("committee").href = menu[lang]["committee"]["url"]
-										+ sufhtml;
-								</script>
-							</a>
-						</li>
-						<li>
-							<a id="volunteers" href="">
-								<script>
-									document.getElementById("volunteers").innerHTML = menu[lang]["volunteers"]["name"];
-									document.getElementById("volunteers").href = menu[lang]["volunteers"]["url"]
 										+ sufhtml;
 								</script>
 							</a>

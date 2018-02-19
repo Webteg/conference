@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="CIBCSE XXI 2018 -  Bogota, Colombia 2018 April 23 to 27">
+	<meta name="keywords" content="CIBSE">
+	<meta name="author" content="Universidad de los Andes - Departamento de Ingenieria de Sistemas y Computacion">
+	<link rel="icon" href="favicon.ico">
+
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="offcanvas.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./texts.js"></script>
+	<script>
+		document.title = menu[lang]["title"]
+	</script>
+	<script>
+		var page = "track1";
+		var lang = localStorage.getItem('lang');
+		var trackNumber = 4;
+		$(function () {
+			$("#footer").load("./components/footer.html");
+		});
+	</script>
+</head>
+
+<body>
+	<div id="navbar_t1">
+		<script>
+			$(function () {
+				$("#navbar_t1").load("./components/navbar.html");
+			});
+		</script>
+	</div>
+
+	<div class="container">
+		<div class="row row-offcanvas row-offcanvas-right">
+			<div id="banner" class="container-fluid">
+				<script>
+					$(function () {
+						$("#banner").load("./banner/banner_en.html");
+					});
+				</script>
+			</div>
+
+			<div class="col-xs-12 col-md-9">
+
+				<div class="jumbotron">
+					<div class="col-xs-3 col-lg-3" align="center">
+						<img id="vol_img" class="img-responsive" src="" alt="" width="100"/>
+						<script>
+							document.getElementById("vol_img").src = "trackicons/icono7" 
+  									+ ".png";
+  							document.getElementById("vol_img").alt = menu[lang]["volunteers"]["name"];
+						</script>
+					</div>
+					<div class="col-xs-9 col-lg-9">
+						<h2 id="volunteers_title">
+							<script>
+								document.getElementById("volunteers_title").innerHTML = menu[lang]["volunteersST"]["name"];
+							</script>
+						</h2>
+					</div>
+
+					<div id="volunteersIntro" class="jumbotron">
+						<script>
+							$(function () {
+								$("#volunteersIntro").load(
+									"./texts/" + lang + "/volunteers_intro" + "_text_"
+									+ lang + ".html");
+							});
+						</script>
+					</div>
+				</div>
+				<div class="jumbotron">
+					<h3 id="benefits_title">
+						<script>
+							document.getElementById("benefits_title").innerHTML = menu[lang]["benefits"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="benefits_text">
+							<script>
+								$(function () {
+									$("#benefits_text").load(
+										"./texts/" + lang + "/volunteers_benefits" + "_text_" + lang
+										+ ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+
+				<div class="jumbotron">
+					<h3 id="responsibilities_title">
+						<script>
+							document.getElementById("responsibilities_title").innerHTML = menu[lang]["responsibilities"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="responsibilities_text">
+							<script>
+								$(function () {
+									$("#responsibilities_text").load(
+										"./texts/" + lang + "/volunteers_responsibilities" + "_text_" + lang
+										+ ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+
+				<div class="jumbotron">
+					<h3 id="volunteers_dates">
+						<script>
+							document.getElementById("volunteers_dates").innerHTML = menu[lang]["importantDates"]["name"];
+						</script>
+					</h3>
+					
+					<div>
+						<ul id="volunteers_dates_text">
+							<script>
+								$(function () {
+									$("#volunteers_dates_text").load(
+										"./texts/" + lang + "/volunteers_dates_text_" + [lang] + ".html");
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+
+				<div class="jumbotron">
+					<h3 id="volunteers_committee">
+						<script>
+							document.getElementById("volunteers_committee").innerHTML = menu[lang]["committee"]["name"];
+						</script>
+					</h3>
+					
+					<div>
+						<ul id="volunteers_committee_text">
+							<script>
+								$(function () {
+									$("#volunteers_committee_text").load(
+										"./texts/" + lang + "/volunteers_committee_text_" + [lang] + ".html");
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+
+				<div class="jumbotron">
+					<h3 id="volunteers_submissions">
+						<script>
+							document.getElementById("volunteers_submissions").innerHTML = menu[lang]["submissionsVol"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="volunteers_submissions_text">
+							<script>
+								$(function () {
+									$("#volunteers_submissions_text").load(
+										"./texts/" + lang + "/volunteers_submissions" + "_text_"
+										+ [lang] + ".html");
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+
+				<div class="jumbotron">
+					<h3 id="eval_volunteers">
+						<script>
+							document.getElementById("eval_volunteers").innerHTML = menu[lang]["evaluationProcess"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="eval_volunteers_text">
+							<script>
+								$(function () {
+									$("#eval_volunteers_text").load(
+										"./texts/" + lang + "/volunteers_eval" + "_text_"
+										+ [lang] + ".html");
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="jumbotron">
+					<h3 id="volunteers_download_pdf">
+						<script>
+							document.getElementById("volunteers_download_pdf").innerHTML = menu[lang]["download"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="volunteers_download_pdf_text">
+							<script>
+								$(function () {
+									$("#volunteers_download_pdf_text").load(
+										"./texts/" + lang + "/volunteer_download" + "_text_"
+										+ [lang] + ".html");
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+
+			<div id="sidebar">
+				<script>
+					$(function () {
+						$("#sidebar").load("./components/sidebar.html");
+					});
+				</script>
+			</div>
+		</div>
+		<!--/row-->
+
+		<hr>
+
+		<div id="footer"></div>
+
+	</div>
+	<!--/.container-->
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+	<div id="google">
+		<script>
+			$(function () {
+				$("#google").load("./components/google.html");
+			});
+		</script>
+	</div>
+</body>
+
+</html>
