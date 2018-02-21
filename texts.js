@@ -84,7 +84,7 @@ var menu = {
 		"volunteersST": { "name": "Student Volunteers" },
 		"committee": { "name": "Committee" },
 		"generalCommittee": { "name": "General Organization Committee", "url": "generalCommittee" },
-		"steeringCommittee":{ "name": "Steering Committe", "url": "steeringCommittee"},
+		"steeringCommittee":{ "name": "Steering Committee", "url": "steeringCommittee"},
 		"genConfeChairs": { "name": "General Conference Chairs" },
 		"genProgChairs": { "name": "General Program Chairs" },
 		"iberoASchoolChair": { "name": "Ibero-American School Chair" },
