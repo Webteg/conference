@@ -273,10 +273,19 @@
 						<!--               </a> -->
 						<!--             </li> -->
 						<li>
-							<a id="committee" href="">
+							<a id="general_committee" href="">
 								<script>
-									document.getElementById("committee").innerHTML = menu[lang]["committee"]["name"];
-									document.getElementById("committee").href = menu[lang]["committee"]["url"]
+									document.getElementById("general_committee").innerHTML = menu[lang]["generalCommittee"]["name"];
+									document.getElementById("general_committee").href = menu[lang]["generalCommittee"]["url"]
+										+ sufhtml;
+								</script>
+							</a>
+						</li>
+						<li>
+							<a id="steering_committee" href="">
+								<script>
+									document.getElementById("steering_committee").innerHTML = menu[lang]["steeringCommittee"]["name"];
+									document.getElementById("steering_committee").href = menu[lang]["steeringCommittee"]["url"]
 										+ sufhtml;
 								</script>
 							</a>
