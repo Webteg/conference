@@ -112,7 +112,7 @@ var menu = {
 		"eibaisTutorials1": { "name": "Design of serious games for software engineering education" },
 		"eibaisTutorials2": { "name": "Articulation of Agile and Experience Design (UX) tools to define digital projects centered on the user" },
 		"eibaisTutorials3": { "name": "Deriving Requirements using e3value and e3fraud techniques" },
-		"eibaisTutorials4": { "name": "Qualitative Studies in SE" },
+		"eibaisTutorials4": { "name": "Qualitative Studies in Software Engineering" },
 		"eibaisTutorials5": { "name": "Survey Research in Software Engineering" },		
 		"eibaisTutorials6": { "name": "IoT Systems Engineering" },
 		"toolsPapers": { "name": "Tools papers" },
@@ -132,7 +132,9 @@ var menu = {
 		"accepted_WER": {"name": "WER Accepted papers"},
 		"benefits": {"name": "Benefits"},
 		"responsibilities": {"name": "Responsibilities"},
-		"submissionsVol": { "name": "Submissions" }
+		"submissionsVol": { "name": "Submissions" },
+		"languageSP": {"name":"(Working language: Spanish)"},
+		"languageEN": {"name":"(Working language: English)"}
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
@@ -196,7 +198,7 @@ var menu = {
 		"eibaisTutorials1": { "name": "Diseño de juegos serios para la enseñanza de ingeniería de software" },
 		"eibaisTutorials2": { "name": "Articulación de herramientas Ágiles y de Diseño de experiencia (UX) para definir proyectos digitales centrados en el usuario" },
 		"eibaisTutorials3": { "name": "Derivando Requerimientos utilizando las técnicas de e3value y e3fraud" },
-		"eibaisTutorials4": { "name": "Estudios cualitativos en IS" },
+		"eibaisTutorials4": { "name": "Estudios cualitativos en Ingeniería de Software" },
 		"eibaisTutorials5": { "name": "Encuesta de Investigación en Ingeniería de Software" },
 		"eibaisTutorials6": { "name": "Ingeniería de sistemas para IoT" },
 		"hackaton": { "name": "Hackaton", "url": "hackaton" },
@@ -221,7 +223,9 @@ var menu = {
 		"accepted_WER": {"name": "WER Trabajos aceptados"},
 		"benefits": {"name": "Beneficios"},
 		"responsibilities": {"name": "Responsabilidades"},
-		"submissionsVol": { "name": "Envío de solicitudes" }
+		"submissionsVol": { "name": "Envío de solicitudes" },
+		"languageSP": {"name":"(Lenguaje de trabajo: Español)"},
+		"languageEN": {"name":"(Lenguaje de trabajo: Inglés)"}
 
 	},
 	"br": {
@@ -286,8 +290,8 @@ var menu = {
 		"eibaisTutorials1": { "name": "Design de jogos sérios para educação em engenharia de software" },
 		"eibaisTutorials2": { "name": "Articulação de ferramentas Agile e Experience Design (UX) para definir projetos digitais centrados no usuário" },
 		"eibaisTutorials3": { "name": "Derivando Requisitos usando as técnicas e3value e e3fraud" },
-		"eibaisTutorials4": { "name": "Estudos Qualitativos em ES" },
-		"eibaisTutorials5": { "name": "Pesquisa de pesquisa em engenharia de software" },
+		"eibaisTutorials4": { "name": "Estudos Qualitativos em Engenharia de software" },
+		"eibaisTutorials5": { "name": "Pesquisa de Pesquisa em Engenharia de Software" },
 		"eibaisTutorials6": { "name": "Engenharia de sistemas para IoT" },
 		"hackaton": { "name": "Hackaton", "url": "hackaton" },
 		"volunteers": { "name": "Voluntários", "url": "studentVolunteers" },
@@ -311,8 +315,9 @@ var menu = {
 		"accepted_WER": {"name": "WER Trabalhos Aceitos"},
 		"benefits": {"name": "Benefícios"},
 		"responsibilities": {"name": "Responsabilidades"},
-		"submissionsVol": { "name": "Submissões" }
-
+		"submissionsVol": { "name": "Submissões" },
+		"languageSP": {"name":"(Linguagem de trabalho: Espanhol)"},
+		"languageEN": {"name":"(Linguagem de trabalho: Inglês)"},
 	},
 	"shortTitle": "CIbSE",
 	"date": { "year": "2018", "days": "26-30", "edition": "XXI" },
