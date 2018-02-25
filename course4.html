@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="CIBCSE XXI 2018 -  Bogota, Colombia 2018 April 23 to 27">
+	<meta name="keywords" content="CIBSE">
+	<meta name="author" content="Universidad de los Andes - Departamento de Ingenieria de Sistemas y Computacion">
+	<link rel="icon" href="favicon.ico">
+
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="offcanvas.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./texts.js"></script>
+	<script>
+		document.title = menu[lang]["title"]
+	</script>
+	<script>
+		var page = "track1";
+		var lang = localStorage.getItem('lang');
+		var trackNumber = 1;
+		$(function () {
+			$("#footer").load("./components/footer.html");
+		});
+	</script>
+</head>
+
+<body>
+	<div id="navbar_t1">
+		<script>
+			$(function () {
+				$("#navbar_t1").load("./components/navbar.html");
+			});
+		</script>
+	</div>
+
+	<div class="container">
+		<div class="row row-offcanvas row-offcanvas-right">
+			<div id="banner" class="container-fluid">
+				<script>
+					$(function () {
+						$("#banner").load("./banner/banner_en.html");
+					});
+				</script>
+			</div>
+
+			<div class="col-xs-12 col-md-9">
+				<div id="C1Box" class="jumbotron" style="text-align:center">
+					<img src="./Keynotes/FabioSilva.jpg" height=200>
+					<span style="text-align: center; font-size: 40px">
+						<b>Fabio Q.B. da Silva</b>
+					</span>
+					<br/>
+					<br/>
+					<div id="C4" class="jumbotron">
+						<script>
+							$(function () {
+								$("#C4").load(
+									"./texts/" + lang + "/C4_" + lang + ".html");
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+			<!--/.col-xs-12.col-sm-9-->
+
+			<div id="sidebar">
+				<script>
+					$(function () {
+						$("#sidebar").load("./components/sidebar.html");
+					});
+				</script>
+			</div>
+		</div>
+		<!--/row-->
+
+		<hr>
+
+		<div id="footer"></div>
+
+	</div>
+	<!--/.container-->
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+	<div id="google">
+		<script>
+			$(function () {
+				$("#google").load("./components/google.html");
+			});
+		</script>
+	</div>
+</body>
+
+</html>
