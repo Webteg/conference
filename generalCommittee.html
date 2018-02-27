@@ -359,20 +359,35 @@
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-						<h3 id="webChair_st">
-							<script>
-								document.getElementById("webChair_st").innerHTML = menu[lang]["webChair"]["name"];
-							</script>
-						</h3>
-						<div>
-							<table id="webChair" style="width: 100%">
-								<script>
-									$(function () {
-										$("#webChair").load(
-											"./texts/committee_wc" + ".html")
-									});
-								</script>
-							</table>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6" style="text-align: center">
+								<h3 id="webChair_st">
+									<script>
+										document.getElementById("webChair_st").innerHTML = menu[lang]["webChair"]["name"];
+									</script>
+								</h3>
+								<div id="webChair">
+										<script>
+											$(function () {
+												$("#webChair").load(
+													"./texts/committee_wc" + ".html")
+											});
+										</script>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6" style="text-align: center">
+								<h3>
+									Webmaster
+								</h3>
+								<div id="webmaster">
+										<script>
+											$(function () {
+												$("#webmaster").load(
+													"./texts/webmaster" + ".html")
+											});
+										</script>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
