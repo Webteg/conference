@@ -130,6 +130,7 @@ var menu = {
 		"accepted_ESELAW": {"name": "ESELAW Accepted papers"},
 		"accepted_SET": {"name": "SET Accepted papers"},
 		"accepted_WER": {"name": "WER Accepted papers"},
+		"accepted_DOCTORAL": {"name": "Doctoral Symposium Accepted papers"},
 		"benefits": {"name": "Benefits"},
 		"responsibilities": {"name": "Responsibilities"},
 		"submissionsVol": { "name": "Submissions" },
@@ -149,7 +150,7 @@ var menu = {
 			"2": { "name": "WER", "longName": "Track de ingeniería de requisitos", "url": "track2", "leader": "NN", "email": "", "image": "2rc.jpg" },
 			"3": { "name": "ESELAW", "longName": "Track de ingeniería de software experimental", "url": "track3", "leader": "NN", "email": "", "image": "3rc.jpg" },
 			"4": { "name": "Industria", "longName": "Presentaciones industriales", "url": "track4", "leader": "NN", "email": "", "image": "4rc.jpg" },
-			"6": { "name": "Simp Doc", "longName": "Simposio doctoral", "url": "track6", "leader": "NN", "email": "", "image": "6rc.jpg" }
+			"6": { "name": "Simp Doc", "longName": "Simposio Doctoral", "url": "track6", "leader": "NN", "email": "", "image": "6rc.jpg" }
 		},
 		"program": { "name": "Programa", "url": "conference" },
 		"keynotes": { "name": "Conferencistas invitados", "url": "keyNotes" },
@@ -221,6 +222,7 @@ var menu = {
 		"accepted_ESELAW": {"name": "ESELAW Trabajos aceptados"},
 		"accepted_SET": {"name": "SET Trabajos aceptados"},
 		"accepted_WER": {"name": "WER Trabajos aceptados"},
+		"accepted_DOCTORAL": {"name": "Simposio Doctoral Trabajos aceptados"},
 		"benefits": {"name": "Beneficios"},
 		"responsibilities": {"name": "Responsabilidades"},
 		"submissionsVol": { "name": "Envío de solicitudes" },
@@ -241,7 +243,7 @@ var menu = {
 			"2": { "name": "WER", "longName": "Engenharia de Requisitos", "url": "track2", "leader": "NN", "email": "", "image": "2rc.jpg" },
 			"3": { "name": "ESELAW", "longName": "Trilha de Engenharia de Software Experimental", "url": "track3", "leader": "NN", "email": "", "image": "3rc.jpg" },
 			"4": { "name": "Indústria", "longName": "Apresentações Industriais", "url": "track4", "leader": "NN", "email": "", "image": "4rc.jpg" },
-			"6": { "name": "Simp Doc", "longName": "Simpósio doutoral", "url": "track6", "leader": "NN", "email": "", "image": "6rc.jpg" }
+			"6": { "name": "Simp Doc", "longName": "Simpósio Doutoral", "url": "track6", "leader": "NN", "email": "", "image": "6rc.jpg" }
 		},
 		"program": { "name": "Programa", "url": "conference" },
 		"keynotes": { "name": "Palestrantes convidados", "url": "keyNotes" },
@@ -313,6 +315,7 @@ var menu = {
 		"accepted_ESELAW": {"name": "ESELAW Trabalhos Aceitos"},
 		"accepted_SET": {"name": "SET Trabalhos Aceitos"},
 		"accepted_WER": {"name": "WER Trabalhos Aceitos"},
+		"accepted_DOCTORAL": {"name": "Simpósio Doutoral Trabalhos Aceitos"},
 		"benefits": {"name": "Benefícios"},
 		"responsibilities": {"name": "Responsabilidades"},
 		"submissionsVol": { "name": "Submissões" },

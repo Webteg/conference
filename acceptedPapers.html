@@ -77,7 +77,24 @@
 								document.getElementById("accepted_title").innerHTML = menu[lang]["accepted"]["name"];
 							</script>
 						</h2>
-                    </div>
+					</div>
+					
+					<div class="col-xs-12 col-lg-12">
+						<h3 id="doctoral_title">
+							<script>
+								document.getElementById("doctoral_title").innerHTML = menu[lang]["simposio"]["name"];
+							</script>
+						</h3>
+					</div>
+
+					<div id="doctoral_text" class="jumbotron">
+						<script>
+							$(function () {
+								$("#doctoral_text").load(
+									"./texts/" + lang + "/doctoral_accepted" + "_text_" + lang + ".html");
+							});
+						</script>
+					</div>
 
                     <div class="col-xs-12 col-lg-12">
                             <h3 id="foundation_title">
