@@ -96,6 +96,23 @@
 						</script>
 					</div>
 
+					<div class="col-xs-12 col-lg-12">
+							<h3 id="tools_title">
+								<script>
+									document.getElementById("tools_title").innerHTML = menu[lang]["toolsPapers"]["name"];
+								</script>
+							</h3>
+						</div>
+	
+						<div id="tools_text" class="jumbotron">
+							<script>
+								$(function () {
+									$("#tools_text").load(
+										"./texts/" + lang + "/tools_accepted" + "_text_" + lang + ".html");
+								});
+							</script>
+						</div>
+
                     <div class="col-xs-12 col-lg-12">
                             <h3 id="foundation_title">
                                 <script>
