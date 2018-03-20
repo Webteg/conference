@@ -19,15 +19,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./texts.js"></script>
 	<script>
-		document.title = menu[lang]["title"]
+		var lang = localStorage.getItem('lang');
 	</script>
 	<script>
-		var page = "track1";
-		var lang = localStorage.getItem('lang');
-		var trackNumber = 4;
-		$(function () {
-			$("#footer").load("./components/footer.html");
-		});
+		document.title = menu[lang]["title"]
 	</script>
 </head>
 
@@ -56,8 +51,8 @@
 					<div class="col-xs-2 col-lg-2">
 						<img id="ft_img" src="" alt="" width="100" style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
 						<script>
-							document.getElementById("ft_img").src = "trackicons/icono2"
-								+ ".png";
+							document.getElementById("ft_img").src = "trackicons/icono2" +
+								".png";
 							document.getElementById("ft_img").alt = menu[lang]["foundationsTracks"]["name"];
 						</script>
 					</div>
@@ -73,8 +68,8 @@
 						<script>
 							$(function () {
 								$("#ftText").load(
-									"./texts/" + lang + "/foundationstracks" + "_text_"
-									+ lang + ".html");
+									"./texts/" + lang + "/foundationstracks" + "_text_" +
+									lang + ".html");
 							});
 						</script>
 					</div>
@@ -90,15 +85,16 @@
 							<script>
 								$(function () {
 									$("#ftScope_text").load(
-										"./texts/" + lang + "/ftScope" + "_text_" + lang
-										+ ".html")
+										"./texts/" + lang + "/ftScope" + "_text_" + lang +
+										".html")
 								});
 							</script>
 						</ul>
 					</div>
 					<h4 id="ftTracks_subtitle" style="text-indent:40px">
 						<script>
-							document.getElementById("ftTracks_subtitle").innerHTML = "<strong>" + menu[lang]["trackst"]["name"] + "</strong>";
+							document.getElementById("ftTracks_subtitle").innerHTML = "<strong>" + menu[lang]["trackst"]["name"] +
+								"</strong>";
 						</script>
 					</h4>
 					<div>
@@ -106,8 +102,8 @@
 							<script>
 								$(function () {
 									$("#ftTracks_text").load(
-										"./texts/" + lang + "/fttracks_" + lang
-										+ ".html")
+										"./texts/" + lang + "/fttracks_" + lang +
+										".html")
 								});
 							</script>
 						</ul>
@@ -123,8 +119,8 @@
 							<script>
 								$(function () {
 									$("#ft_categories").load(
-										"./texts/" + lang + "/ftcategories_" + lang
-										+ ".html")
+										"./texts/" + lang + "/ftcategories_" + lang +
+										".html")
 								});
 							</script>
 						</ul>
@@ -140,9 +136,9 @@
 					</h3>
 					<br>
 					<h4 id="ftTITitleDate" style="margin-left:3em">
-							<script>
-								document.getElementById("ftTITitleDate").innerHTML = menu[lang]["technicalAndEmergingPapers"]["name"];
-							</script>
+						<script>
+							document.getElementById("ftTITitleDate").innerHTML = menu[lang]["technicalAndEmergingPapers"]["name"];
+						</script>
 					</h4>
 					<div>
 						<ul id="ftDatesText">
@@ -156,17 +152,17 @@
 					</div>
 					<br>
 					<h4 id="ftTTitleDate" style="margin-left:3em">
-							<script>
-								document.getElementById("ftTTitleDate").innerHTML = menu[lang]["toolsPapers"]["name"];
-							</script>
+						<script>
+							document.getElementById("ftTTitleDate").innerHTML = menu[lang]["toolsPapers"]["name"];
+						</script>
 					</h4>
 					<div>
 						<ul id="track_dates">
 							<script>
 								$(function () {
 									$("#track_dates").load(
-										"./texts/" + lang + "/impDates6"
-										+ "_" + lang + ".html")
+										"./texts/" + lang + "/impDates6" +
+										"_" + lang + ".html")
 								});
 							</script>
 						</ul>
@@ -199,8 +195,7 @@
 							<script>
 								$(function () {
 									$("#submissionsText").load(
-										"./texts/" + lang + "/ftsubmi" + "_text_"
-										+ [lang] + ".html");
+										"./texts/" + lang + "/ftsubmi" + "_text_" + [lang] + ".html");
 								});
 							</script>
 						</ul>
@@ -217,8 +212,7 @@
 							<script>
 								$(function () {
 									$("#evalProcText").load(
-										"./texts/" + lang + "/ftevalprocess" + "_text_"
-										+ [lang] + ".html");
+										"./texts/" + lang + "/ftevalprocess" + "_text_" + [lang] + ".html");
 								});
 							</script>
 						</ul>
@@ -235,8 +229,7 @@
 							<script>
 								$(function () {
 									$("#ftDownloadPdfText").load(
-										"./texts/" + lang + "/ftDownload" + "_text_"
-										+ [lang] + ".html");
+										"./texts/" + lang + "/ftDownload" + "_text_" + [lang] + ".html");
 								});
 							</script>
 						</ul>
@@ -257,7 +250,13 @@
 
 		<hr>
 
-		 <div id="footer"><script>$(function () {$("#footer").load("./components/footer.html");});</script></div>
+		<div id="footer">
+			<script>
+				$(function () {
+					$("#footer").load("./components/footer.html");
+				});
+			</script>
+		</div>
 
 	</div>
 	<!--/.container-->
@@ -266,7 +265,7 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	 
+
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 	<div id="google">
 		<script>

@@ -19,15 +19,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./texts.js"></script>
 	<script>
-		document.title = menu[lang]["title"]
+		var lang = localStorage.getItem('lang');
 	</script>
 	<script>
-		var page = "track1";
-		var lang = localStorage.getItem('lang');
-		var trackNumber = 1;
-		$(function () {
-			$("#footer").load("./components/footer.html");
-		});
+		document.title = menu[lang]["title"]
 	</script>
 </head>
 
@@ -56,9 +51,9 @@
 					<div class="col-xs-2 col-lg-2">
 						<img id="committee_img" src="" alt="" width="90" style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
 						<script>
-							document.getElementById("committee_img").src = "trackicons/icono7"
-								+ ".png";
-							document.getElementById("committee_img").alt = menu[lang]["generalCommittee"]["name"]; 
+							document.getElementById("committee_img").src = "trackicons/icono7" +
+								".png";
+							document.getElementById("committee_img").alt = menu[lang]["generalCommittee"]["name"];
 						</script>
 					</div>
 					<div class="col-xs-10 col-lg-7">
@@ -118,7 +113,8 @@
 						<h3 id="setProgramChairs_st">
 							<script>
 								document
-									.getElementById("setProgramChairs_st").innerHTML = "<strong>" + menu[lang]["tracks"]["1"]["name"] + "</strong>" + "<br><br>" + menu[lang]["pchairs"]["name"];
+									.getElementById("setProgramChairs_st").innerHTML = "<strong>" + menu[lang]["tracks"]["1"]["name"] +
+									"</strong>" + "<br><br>" + menu[lang]["pchairs"]["name"];
 							</script>
 						</h3>
 						<div>
@@ -141,8 +137,8 @@
 									<script>
 										$(function () {
 											$("#track_pc_set_members").load(
-												"./texts/pc" + "1"
-												+ "_text_" + lang + ".html");
+												"./texts/pc" + "1" +
+												"_text_" + lang + ".html");
 										});
 									</script>
 								</ul>
@@ -155,7 +151,8 @@
 						<h3 id="werProgramChairs_st">
 							<script>
 								document
-									.getElementById("werProgramChairs_st").innerHTML = "<strong>" + menu[lang]["tracks"]["2"]["name"] + "</strong>" + "<br><br>" + menu[lang]["pchairs"]["name"];
+									.getElementById("werProgramChairs_st").innerHTML = "<strong>" + menu[lang]["tracks"]["2"]["name"] +
+									"</strong>" + "<br><br>" + menu[lang]["pchairs"]["name"];
 							</script>
 						</h3>
 						<div>
@@ -178,8 +175,8 @@
 									<script>
 										$(function () {
 											$("#track_pc_wer_members").load(
-												"./texts/pc" + "2"
-												+ "_text_" + lang + ".html");
+												"./texts/pc" + "2" +
+												"_text_" + lang + ".html");
 										});
 									</script>
 								</ul>
@@ -192,7 +189,8 @@
 						<h3 id="eselawProgramChairs_st">
 							<script>
 								document
-									.getElementById("eselawProgramChairs_st").innerHTML = "<strong>" + menu[lang]["tracks"]["3"]["name"] + "</strong>" + "<br><br>" + menu[lang]["pchairs"]["name"];
+									.getElementById("eselawProgramChairs_st").innerHTML = "<strong>" + menu[lang]["tracks"]["3"]["name"] +
+									"</strong>" + "<br><br>" + menu[lang]["pchairs"]["name"];
 							</script>
 						</h3>
 						<div>
@@ -215,8 +213,8 @@
 									<script>
 										$(function () {
 											$("#track_pc_esela").load(
-												"./texts/pc" + "3"
-												+ "_text_" + lang + ".html");
+												"./texts/pc" + "3" +
+												"_text_" + lang + ".html");
 										});
 									</script>
 								</ul>
@@ -229,7 +227,8 @@
 						<h3 id="docSympProgramChairs_st">
 							<script>
 								document
-									.getElementById("docSympProgramChairs_st").innerHTML = menu[lang]["tracks"]["6"]["longName"] + " - " + menu[lang]["pchairs"]["name"];
+									.getElementById("docSympProgramChairs_st").innerHTML = menu[lang]["tracks"]["6"]["longName"] + " - " + menu[
+										lang]["pchairs"]["name"];
 							</script>
 						</h3>
 						<div>
@@ -252,8 +251,8 @@
 									<script>
 										$(function () {
 											$("#track_pc_docSym").load(
-												"./texts/" + lang + "/pc" + "10"
-												+ "_text_" + lang + ".html");
+												"./texts/" + lang + "/pc" + "10" +
+												"_text_" + lang + ".html");
 										});
 									</script>
 								</ul>
@@ -304,7 +303,8 @@
 					<div class="container">
 						<h3 id="industryExhibitionChairs_st">
 							<script>
-								document.getElementById("industryExhibitionChairs_st").innerHTML = menu[lang]["tracks"]["4"]["longName"] + " - " + menu[lang]["pchairs"]["name"];
+								document.getElementById("industryExhibitionChairs_st").innerHTML = menu[lang]["tracks"]["4"]["longName"] +
+									" - " + menu[lang]["pchairs"]["name"];
 							</script>
 						</h3>
 						<div>
@@ -367,12 +367,12 @@
 									</script>
 								</h3>
 								<div id="webChair">
-										<script>
-											$(function () {
-												$("#webChair").load(
-													"./texts/committee_wc" + ".html")
-											});
-										</script>
+									<script>
+										$(function () {
+											$("#webChair").load(
+												"./texts/committee_wc" + ".html")
+										});
+									</script>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6" style="text-align: center">
@@ -380,12 +380,12 @@
 									Webmaster
 								</h3>
 								<div id="webmaster">
-										<script>
-											$(function () {
-												$("#webmaster").load(
-													"./texts/webmaster" + ".html")
-											});
-										</script>
+									<script>
+										$(function () {
+											$("#webmaster").load(
+												"./texts/webmaster" + ".html")
+										});
+									</script>
 								</div>
 							</div>
 						</div>
@@ -406,7 +406,13 @@
 
 		<hr>
 
-		 <div id="footer"><script>$(function () {$("#footer").load("./components/footer.html");});</script></div>
+		<div id="footer">
+			<script>
+				$(function () {
+					$("#footer").load("./components/footer.html");
+				});
+			</script>
+		</div>
 
 	</div>
 	<!--/.container-->
@@ -415,7 +421,7 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	 
+
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 	<div id="google">
 		<script>

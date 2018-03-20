@@ -19,15 +19,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./texts.js"></script>
     <script>
-        document.title = menu[lang]["title"]
+        var lang = localStorage.getItem('lang');
     </script>
     <script>
-        var page = "track1";
-        var lang = localStorage.getItem('lang');
-        var trackNumber = 1;
-        $(function () {
-            $("#footer").load("./components/footer.html");
-        });
+        document.title = menu[lang]["title"]
     </script>
 </head>
 
@@ -101,7 +96,13 @@
 
         <hr>
 
-         <div id="footer"><script>$(function () {$("#footer").load("./components/footer.html");});</script></div>
+        <div id="footer">
+            <script>
+                $(function () {
+                    $("#footer").load("./components/footer.html");
+                });
+            </script>
+        </div>
 
     </div>
     <!--/.container-->

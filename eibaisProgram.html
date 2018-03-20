@@ -36,16 +36,12 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./texts.js"></script>
+
 	<script>
-		document.title = menu[lang]["title"]
+		var lang = localStorage.getItem('lang');
 	</script>
 	<script>
-		var page = "track1";
-		var lang = localStorage.getItem('lang');
-		var trackNumber = 1;
-		$(function () {
-			$("#footer").load("./components/footer.html");
-		});
+		document.title = menu[lang]["title"]
 	</script>
 </head>
 
@@ -68,31 +64,31 @@
 				</script>
 			</div>
 
-            <div class="col-xs-12 col-md-9">
+			<div class="col-xs-12 col-md-9">
 
 				<div class="jumbotron">
 					<div class="col-xs-12 col-lg-12">
-                        <h2 id="eibais_program_title">
+						<h2 id="eibais_program_title">
 							<script>
 								document.getElementById("eibais_program_title").innerHTML = menu[lang]["program"]["name"];
 							</script>
 						</h2>
-                    </div>
+					</div>
 
-                    <div id="eibais_program_text" class="jumbotron">
-                            <script>
-                                $(function () {
-                                    $("#eibais_program_text").load(
-                                        "./texts/" + lang + "/eibais_program" + "_text_" + lang + ".html");
-                                });
-                            </script>
-                    </div>
-                    
-                            
-                </div>
-            </div>
-			
-			
+					<div id="eibais_program_text" class="jumbotron">
+						<script>
+							$(function () {
+								$("#eibais_program_text").load(
+									"./texts/" + lang + "/eibais_program" + "_text_" + lang + ".html");
+							});
+						</script>
+					</div>
+
+
+				</div>
+			</div>
+
+
 			<!--/.col-xs-12.col-sm-9-->
 
 			<div id="sidebar">
@@ -107,7 +103,13 @@
 
 		<hr>
 
-		 <div id="footer"><script>$(function () {$("#footer").load("./components/footer.html");});</script></div>
+		<div id="footer">
+			<script>
+				$(function () {
+					$("#footer").load("./components/footer.html");
+				});
+			</script>
+		</div>
 
 	</div>
 	<!--/.container-->
@@ -116,7 +118,7 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	 
+
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 	<div id="google">
 		<script>

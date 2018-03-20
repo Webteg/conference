@@ -19,17 +19,16 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./texts.js"></script>
-    <script>
-        document.title = menu[lang]["title"]
-    </script>
+
     <script>
         var page = "track3";
         var lang = localStorage.getItem('lang');
         var trackNumber = 3;
-        $(function () {
-            $("#footer").load("./components/footer.html");
-        });
     </script>
+    <script>
+        document.title = menu[lang]["title"]
+    </script>
+
 </head>
 
 <body>
@@ -168,7 +167,13 @@
 
         <hr>
 
-         <div id="footer"><script>$(function () {$("#footer").load("./components/footer.html");});</script></div>
+        <div id="footer">
+            <script>
+                $(function () {
+                    $("#footer").load("./components/footer.html");
+                });
+            </script>
+        </div>
 
     </div>
     <!--/.container-->
