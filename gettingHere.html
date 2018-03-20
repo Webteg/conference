@@ -54,8 +54,10 @@
 
                 <div class="jumbotron">
                     <h3 id="gettingBogota_title">
-                        <script> 
-                            document.getElementById("gettingBogota_title").innerHTML = menu[lang]["getting_bogota"]["name"];
+                        <script>
+                            document.getElementById("gettingBogota_title").innerHTML = menu[lang]["getting_bogota"][
+                                "name"
+                            ];
                         </script>
                     </h3>
                     <div id="gettingBogota_Text" class="jumbotron" style="text-align: justify">
@@ -68,20 +70,21 @@
                     </div>
                 </div>
                 <div class="jumbotron">
-                        <h3 id="gettingTheVenue_title">
-                                <script> 
-                                    document.getElementById("gettingTheVenue_title").innerHTML = menu[lang]["getting_the_venue"]["name"];
-                                </script>
-                            </h3>
-                            <div id="gettingTheVenue_Text" class="jumbotron" style="text-align: justify">
-                                <script>
-                                    $(function () {
-                                        $("#gettingTheVenue_Text").load(
-                                            "./texts/" + lang + "/gettingTheVenue" + "_text_" + lang + ".html");
-                                    });
-                                </script>
-                            </div>
-                            <br>
+                    <h3 id="gettingTheVenue_title">
+                        <script>
+                            document.getElementById("gettingTheVenue_title").innerHTML = menu[lang]["getting_the_venue"]
+                                ["name"];
+                        </script>
+                    </h3>
+                    <div id="gettingTheVenue_Text" class="jumbotron" style="text-align: justify">
+                        <script>
+                            $(function () {
+                                $("#gettingTheVenue_Text").load(
+                                    "./texts/" + lang + "/gettingTheVenue" + "_text_" + lang + ".html");
+                            });
+                        </script>
+                    </div>
+                    <br>
                 </div>
 
             </div>
@@ -107,7 +110,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    
+
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <div id="google">
         <script>

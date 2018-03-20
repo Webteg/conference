@@ -57,10 +57,11 @@
                     <div class="col-xs-4 col-lg-2">
                         <img id="track_img" src="" alt="" width="90" style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
                         <script>
-                            document.getElementById("track_img").src = "trackicons/icono7"
-                                + ".png";
+                            document.getElementById("track_img").src = "trackicons/icono7" +
+                                ".png";
                             document.getElementById("track_img").alt = menu[lang]["tracks"][trackNumber
-                                .toString()]["name"];
+                                .toString()
+                            ]["name"];
                         </script>
                     </div>
                     <br>
@@ -68,8 +69,8 @@
                         <script>
                             $(function () {
                                 $("#symposiumText").load(
-                                    "./texts/" + lang + "/symposiumCommittee"
-                                    + "_text_" + lang + ".html");
+                                    "./texts/" + lang + "/symposiumCommittee" +
+                                    "_text_" + lang + ".html");
                             });
                         </script>
                     </div>
@@ -176,7 +177,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    
+
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <div id="google">
         <script>
