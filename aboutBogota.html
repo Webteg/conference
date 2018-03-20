@@ -18,17 +18,15 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./texts.js"></script>
+
+	<script>
+		var lang = localStorage.getItem('lang');
+	</script>
+
 	<script>
 		document.title = menu[lang]["title"]
 	</script>
-	<script>
-		var page = "track1";
-		var lang = localStorage.getItem('lang');
-		var trackNumber = 1;
-		$(function () {
-			$("#footer").load("./components/footer.html");
-		});
-	</script>
+
 </head>
 
 <body>
@@ -53,7 +51,7 @@
 			<div class="col-xs-12 col-md-9">
 
 				<div class="jumbotron">
-					<div class="col-xs-2 col-lg-2">
+					<div class="col-xs-4 col-lg-2">
 						<img id="confeVenue_img" src="" alt="" width="90" style="margin-top: auto; margin-bottom: auto; vertical-align: middle;"
 						/>
 						<script>
@@ -62,6 +60,7 @@
 							document.getElementById("confeVenue_img").alt = menu[lang]["about_bogota"]["name"];
 						</script>
 					</div>
+
 					<div class="col-xs-10 col-lg-3">
 						<h2 id="conferenceVenue_title">
 							<script>
@@ -79,64 +78,7 @@
 						</script>
 					</div>
 				</div>
-				<!-- 				<div class="jumbotron"> -->
-				<!-- 					<h3 id="topics"> -->
-				<!-- 						<script> -->
-				<!-- // 							document.getElementById("topics").innerHTML = menu[lang]["topics"]["name"]; -->
-				<!-- 						</script> -->
-				<!-- 					</h3> -->
-				<!-- 					<div> -->
-				<!-- 						<ul id="track_topics"> -->
-				<!-- 							<script> -->
-				<!-- // 								$(function() { -->
-				<!-- // 									$("#track_topics").load( -->
-				<!-- // 											"./texts/topics" + trackNumber -->
-				<!-- // 													+ "_text_" + lang + ".html") -->
-				<!-- // 								}); -->
-				<!-- 							</script> -->
-				<!-- 						</ul> -->
-				<!-- 					</div> -->
-				<!-- 				</div> -->
-				<!-- 				<div class="jumbotron"> -->
-				<!-- 					<h3 id="pchairs"> -->
-				<!-- 						<script> -->
-				<!-- // 							document.getElementById("pchairs").innerHTML = menu[lang]["pchairs"]["name"]; -->
-				<!-- 						</script> -->
-				<!-- 					</h3> -->
-				<!-- 					<div> -->
-				<!-- 						<ul id="track_pchairs"> -->
-				<!-- 							<script> -->
-				<!-- // 								$(function() { -->
-				<!-- // 									$("#track_pchairs").load( -->
-				<!-- // 											"./texts/pchairs" + trackNumber -->
-				<!-- // 													+ "_text.html") -->
-				<!-- // 								}); -->
-				<!-- 							</script> -->
-				<!-- 						</ul> -->
-				<!-- 					</div> -->
-				<!-- 				</div> -->
-
-				<!-- 				<div class="jumbotron"> -->
-				<!-- 					<h3 id="track_pc"> -->
-				<!-- 						<script> -->
-				<!-- // 							document.getElementById("track_pc").innerHTML = menu[lang]["pc"]; -->
-				<!-- 						</script> -->
-				<!-- 					</h3> -->
-				<!-- 					<div> -->
-				<!-- 						<ul id="track_pc_members"> -->
-				<!-- 							<script> -->
-				<!-- // 								$(function() { -->
-				<!-- // 									$("#track_pc_members").load( -->
-				<!-- // 											"./texts/pc" + trackNumber -->
-				<!-- // 													+ "_text.html"); -->
-				<!-- // 								}); -->
-				<!-- 							</script> -->
-				<!-- 						</ul> -->
-				<!-- 					</div> -->
-				<!-- 				</div> -->
-
 			</div>
-			<!--/.col-xs-12.col-sm-9-->
 
 			<div id="sidebar">
 				<script>
@@ -146,28 +88,26 @@
 				</script>
 			</div>
 		</div>
-		<!--/row-->
+
 
 		<hr>
 
-		<div id="footer"></div>
+		<div id="footer">
+			<script>
+				$(function () {
+					$("#footer").load("./components/footer.html");
+				});
+			</script>
+		</div>
 
 	</div>
-	<!--/.container-->
-
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
-	<div id="google">
-		<script>
-			$(function () {
-				$("#google").load("./components/google.html");
-			});
-		</script>
-	</div>
+
 </body>
 
 </html>
