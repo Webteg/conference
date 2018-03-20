@@ -1,111 +1,109 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="CIBCSE XXI 2018 -  Bogota, Colombia 2018 April 23 to 27">
-  <meta name="keywords"
-       content="CIbSE">
+  <meta name="keywords" content="CIbSE">
   <meta http-equiv="expires" content="0">
   <meta name="author" content="Universidad de los Andes - Departamento de Ingenieria de Sistemas y Computacion">
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="./texts.js"></script>
-  
-  <script>
-  $(document).ready(function(){
-	  document.title = menu[lang]["title"];
-	});
-  </script>
-  
   <!-- Bootstrap core CSS -->
   <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="offcanvas.css" rel="stylesheet">
 
+  <script>
+    var lang = localStorage.getItem('lang');
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      document.title = menu[lang]["title"];
+    });
+  </script>
+
 </head>
 
 <body>
+
   <div id="navbar_t1">
-		<script>
-			$(function () {
-				$("#navbar_t1").load("./components/navbar.html");
-			});
-		</script>
-	</div>
+    <script>
+      $(function () {
+        $("#navbar_t1").load("./components/navbar.html");
+      });
+    </script>
+  </div>
 
   <div class="container">
+
     <div class="row row-offcanvas row-offcanvas-right">
 
       <div class="container-fluid">
         <div class="col-md-12" style="margin-left: 0; margin-right: 0; padding-left: 0px; padding-right: 0px; padding-top: 20px; padding-bottom: 10px;">
           <img class="img-responsive" src="./banner/banner5_58.png" alt="">
-			  </div>
+        </div>
       </div>
 
 
       <div class="col-xs-12 col-md-9">
 
-          <div class="jumbotron">
-            
-              <div>
-                <ul id="announcements_text">
-                  <script>
-                    $(function () {
-                      $("#announcements_text").load(
-                        "./texts/" + lang + "/announcements" + "_text_"
-                        + [lang] + ".html");
-                    });
-                  </script>
-                </ul>
-              </div>
-
+        <div class="jumbotron">
+          <div>
+            <ul id="announcements_text">
+              <script>
+                $(function () {
+                  $("#announcements_text").load(
+                    "./texts/" + lang + "/announcements" + "_text_" + [lang] + ".html");
+                });
+              </script>
+            </ul>
           </div>
+        </div>
 
         <div id="generalDescription" class="jumbotron container-fluid">
           <script>
-            $(function(){
-              $("#generalDescription").load("./texts/"+lang+"/cibse-intro" + suffixh);
-              console.log("generalDescription");
-              console.log("./texts/"+lang+"/cibse-intro" + suffixh);
+            $(function () {
+              $("#generalDescription").load("./texts/" + lang + "/cibse-intro" + suffixh);
             });
           </script>
         </div>
-
-        
 
       </div>
 
       <div id="sidebar">
         <script>
-          $(function(){
+          $(function () {
             $("#sidebar").load("./components/sidebar.html");
-            console.log("sidebar");
           });
         </script>
       </div>
-    </div><!--/row-->
+
+    </div>
 
     <hr>
+
     <div id="footer">
-    <script>
-      $(function() {
-        $("#footer").load("./components/footer.html");
-      });
-    </script>
+      <script>
+        $(function () {
+          $("#footer").load("./components/footer.html");
+        });
+      </script>
+    </div>
+
   </div>
 
-  </div><!--/.container-->
-
-
-<!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
