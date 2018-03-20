@@ -36,17 +36,15 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./texts.js"></script>
+    
+    <script>
+        var lang = localStorage.getItem('lang');
+    </script>
+
     <script>
         document.title = menu[lang]["title"]
     </script>
-    <script>
-        var page = "track1";
-        var lang = localStorage.getItem('lang');
-        var trackNumber = 1;
-        $(function () {
-            $("#footer").load("./components/footer.html");
-        });
-    </script>
+
 </head>
 
 <body>
@@ -74,7 +72,9 @@
                     <div class="col-xs-12 col-lg-12">
                         <h2 id="accepted_ESELAW">
                             <script>
-                                document.getElementById("accepted_ESELAW").innerHTML = menu[lang]["accepted_ESELAW"]["name"];
+                                document.getElementById("accepted_ESELAW").innerHTML = menu[lang]["accepted_ESELAW"][
+                                    "name"
+                                ];
                             </script>
                         </h2>
                     </div>
@@ -82,7 +82,7 @@
                     <br>
                     <br>
                     <br>
-                    
+
                     <div id="accepted_text_ESELAW" class="jumbotron">
                         <script>
                             $(function () {
@@ -111,7 +111,13 @@
 
         <hr>
 
-        <div id="footer"></div>
+        <div id="footer">
+            <script>
+                $(function () {
+                    $("#footer").load("./components/footer.html");
+                });
+            </script>
+        </div>
 
     </div>
     <!--/.container-->
@@ -120,7 +126,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    
+
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <div id="google">
         <script>
