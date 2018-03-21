@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="CIBCSE XXI 2018 -  Bogota, Colombia 2018 April 23 to 27">
+	<meta name="keywords" content="CIBSE">
+	<meta name="author" content="Universidad de los Andes - Departamento de Ingenieria de Sistemas y Computacion">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="offcanvas.css" rel="stylesheet">
+	<style>
+		.foo {
+			float: left;
+			width: 20px;
+			height: 20px;
+			margin: 5px;
+			border: 1px solid rgba(0, 0, 0, .2);
+		}
+
+		.blue {
+			background: #13b4ff;
+		}
+
+		.wine {
+			background: #ae163e;
+		}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./texts.js"></script>
+	<script>
+		var lang = localStorage.getItem('lang');
+	</script>
+
+	<script>
+		document.title = menu[lang]["title"]
+	</script>
+</head>
+
+<body>
+	<div id="navbar_t1">
+		<script>
+			$(function () {
+				$("#navbar_t1").load("./components/navbar.html");
+			});
+		</script>
+	</div>
+
+	<div class="container">
+		<div class="row row-offcanvas row-offcanvas-right">
+			<div id="banner" class="container-fluid">
+				<script>
+					$(function () {
+						$("#banner").load("./banner/banner_en.html");
+					});
+				</script>
+			</div>
+
+			<div class="col-xs-12 col-md-9">
+
+				<div class="jumbotron">
+					<div class="col-xs-12 col-lg-12">
+						<h2 id="program_title" class="text-center">
+							<script>
+								document.getElementById("program_title").innerHTML = menu[lang]["werPInf"]["name"];
+							</script>
+						</h2>
+                    </div>
+                    
+					<div id="program_text" class="jumbotron">
+						<script>
+							$(function () {
+								$("#program_text").load(
+									"./texts/" + lang + "/werProgramInfo" + "_text_" + lang + ".html");
+							});
+						</script>
+                    </div>
+                    
+				</div>
+			</div>
+
+
+			<!--/.col-xs-12.col-sm-9-->
+
+			<div id="sidebar">
+				<script>
+					$(function () {
+						$("#sidebar").load("./components/sidebar.html");
+					});
+				</script>
+			</div>
+		</div>
+		<!--/row-->
+
+		<hr>
+
+		<div id="footer">
+			<script>
+				$(function () {
+					$("#footer").load("./components/footer.html");
+				});
+			</script>
+		</div>
+
+	</div>
+	<!--/.container-->
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+	<div id="google">
+		<script>
+			$(function () {
+				$("#google").load("./components/google.html");
+			});
+		</script>
+	</div>
+</body>
+
+</html>

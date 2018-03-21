@@ -137,7 +137,11 @@ var menu = {
 		"submissionsVol": { "name": "Submissions" },
 		"languageSP": {"name":"(Working language: Spanish)"},
 		"languageEN": {"name":"(Working language: English)"},
-		"mainProgram": {"name":"Main Conference Program"}
+		"mainProgram": {"name":"Main Conference Program"},
+		"setPInf":{"name":"CIbSE 2018 - SET<br>Program"},
+		"werPInf":{"name":"CIbSE 2018 - WER<br>Program"},
+		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Program"},
+		"dsPInf":{"name":"CIbSE 2018 - Doctoral Symposium<br>Program"}
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
@@ -231,7 +235,11 @@ var menu = {
 		"submissionsVol": { "name": "Envío de solicitudes" },
 		"languageSP": {"name":"(Lenguaje de trabajo: Español)"},
 		"languageEN": {"name":"(Lenguaje de trabajo: Inglés)"},
-		"mainProgram": {"name":"Programa de la Conferencia Principal"}
+		"mainProgram": {"name":"Programa de la Conferencia Principal"},
+		"setPInf":{"name":"CIbSE 2018 - SET<br>Programa"},
+		"werPInf":{"name":"CIbSE 2018 - WER<br>Programa"},
+		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Programa"},
+		"dsPInf":{"name":"CIbSE 2018 - Simposio Doctoral<br>Programa"}
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -325,7 +333,11 @@ var menu = {
 		"submissionsVol": { "name": "Submissões" },
 		"languageSP": {"name":"(Linguagem de trabalho: Espanhol)"},
 		"languageEN": {"name":"(Linguagem de trabalho: Inglês)"},
-		"mainProgram": {"name":"Programa Principal da Conferência"}
+		"mainProgram": {"name":"Programa Principal da Conferência"},
+		"setPInf":{"name":"CIbSE 2018 - SET<br>Programa"},
+		"werPInf":{"name":"CIbSE 2018 - WER<br>Programa"},
+		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Programa"},
+		"dsPInf":{"name":"CIbSE 2018 - Simpósio Doutoral"}
 	},
 	"shortTitle": "CIbSE",
 	"date": { "year": "2018", "days": "26-30", "edition": "XXI" },
