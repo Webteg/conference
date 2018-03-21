@@ -136,7 +136,8 @@ var menu = {
 		"responsibilities": {"name": "Responsibilities"},
 		"submissionsVol": { "name": "Submissions" },
 		"languageSP": {"name":"(Working language: Spanish)"},
-		"languageEN": {"name":"(Working language: English)"}
+		"languageEN": {"name":"(Working language: English)"},
+		"mainProgram": {"name":"Main Conference Program"}
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
