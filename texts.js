@@ -230,8 +230,8 @@ var menu = {
 		"responsibilities": {"name": "Responsabilidades"},
 		"submissionsVol": { "name": "Envío de solicitudes" },
 		"languageSP": {"name":"(Lenguaje de trabajo: Español)"},
-		"languageEN": {"name":"(Lenguaje de trabajo: Inglés)"}
-
+		"languageEN": {"name":"(Lenguaje de trabajo: Inglés)"},
+		"mainProgram": {"name":"Programa de la Conferencia Principal"}
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -325,6 +325,7 @@ var menu = {
 		"submissionsVol": { "name": "Submissões" },
 		"languageSP": {"name":"(Linguagem de trabalho: Espanhol)"},
 		"languageEN": {"name":"(Linguagem de trabalho: Inglês)"},
+		"mainProgram": {"name":"Programa Principal da Conferência"}
 	},
 	"shortTitle": "CIbSE",
 	"date": { "year": "2018", "days": "26-30", "edition": "XXI" },
