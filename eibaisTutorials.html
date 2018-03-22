@@ -16,18 +16,13 @@
 	<!-- Custom styles for this template -->
 	<link href="offcanvas.css" rel="stylesheet">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./texts.js"></script>
 	<script>
 		document.title = menu[lang]["title"]
 	</script>
 	<script>
-		var page = "track1";
 		var lang = localStorage.getItem('lang');
-		var trackNumber = 1;
-		$(function () {
-			$("#footer").load("./components/footer.html");
-		});
 	</script>
 </head>
 
@@ -56,8 +51,8 @@
 					<div class="col-xs-2 col-lg-2">
 						<img id="img" src="" alt="" width="90" style="margin-top: auto; margin-bottom: auto; vertical-align: middle;" />
 						<script>
-							document.getElementById("img").src = "trackicons/icono4"
-								+ ".png"; 
+							document.getElementById("img").src = "trackicons/icono4" +
+								".png";
 						</script>
 					</div>
 					<div class="col-xs-10 col-lg-7">
@@ -73,12 +68,16 @@
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-						<a href="../course1.html"><font color="0000FF"><h3 id="j1_title">
-							<script>
-								document
-									.getElementById("j1_title").innerHTML = menu[lang]["eibaisTutorials1"]["name"];
-							</script>
-						</h3></font></a>
+						<a href="../course1.html">
+							<font color="0000FF">
+								<h3 id="j1_title">
+									<script>
+										document
+											.getElementById("j1_title").innerHTML = menu[lang]["eibaisTutorials1"]["name"];
+									</script>
+								</h3>
+							</font>
+						</a>
 						<h4 id="language_1">
 							<script>
 								document
@@ -90,7 +89,7 @@
 								<script>
 									$(function () {
 										$("#j1_content").load(
-											"./texts/"+ "eibaisTutorials1_text" + ".html")
+											"./texts/" + "eibaisTutorials1_text" + ".html")
 									});
 								</script>
 							</table>
@@ -99,62 +98,74 @@
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-						<a href="../course2.html"><font color="0000FF"><h3 id="j2_title">
-						<script>
-							document.getElementById("j2_title").innerHTML = menu[lang]["eibaisTutorials2"]["name"];
-						</script>
-					</h3></font></a>
-					<h4 id="language_2">
-						<script>
-							document
-								.getElementById("language_2").innerHTML = menu[lang]["languageSP"]["name"];
-						</script>
-					</h4>
-					<div>
-						<table id="j2_content" style="width: 100%">
-							<script>
-								$(function() {
-									$("#j2_content").load(
-                                        "./texts/"+"eibaisTutorials2_text"+".html")
-								});
-							</script>
-						</table>
-					</div>
-					</div>
-				</div>
-				<div class="jumbotron jumbotron-fluid">
-					<div class="container">
-					<a href="../course3.html"><font color="0000FF"><h3 id="j3_title">
-						<script>
-							document.getElementById("j3_title").innerHTML = menu[lang]["eibaisTutorials3"]["name"]
-						</script>
-					</h3></font></a>
-					<h4 id="language_3">
-						<script>
-							document
-								.getElementById("language_3").innerHTML = menu[lang]["languageEN"]["name"];
-						</script>
-					</h4>
-					<div>
-						<table id="j3_content" style="width: 100%">
-							<script>
-								$(function() {
-									$("#j3_content").load(
-                                        "./texts/"+"eibaisTutorials3_text"+ ".html")
-								});
-							</script>
-						</table>
-					</div>
-				 </div>
-				</div>
-				<div class="jumbotron jumbotron-fluid">
-					<div class="container">
-						<a href="../course4.html"><font color="0000FF"><h3 id="j4_title">
+						<a href="../course2.html">
+							<font color="0000FF">
+								<h3 id="j2_title">
+									<script>
+										document.getElementById("j2_title").innerHTML = menu[lang]["eibaisTutorials2"]["name"];
+									</script>
+								</h3>
+							</font>
+						</a>
+						<h4 id="language_2">
 							<script>
 								document
-									.getElementById("j4_title").innerHTML = menu[lang]["eibaisTutorials4"]["name"]
+									.getElementById("language_2").innerHTML = menu[lang]["languageSP"]["name"];
 							</script>
-						</h3></font></a>
+						</h4>
+						<div>
+							<table id="j2_content" style="width: 100%">
+								<script>
+									$(function () {
+										$("#j2_content").load(
+											"./texts/" + "eibaisTutorials2_text" + ".html")
+									});
+								</script>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="jumbotron jumbotron-fluid">
+					<div class="container">
+						<a href="../course3.html">
+							<font color="0000FF">
+								<h3 id="j3_title">
+									<script>
+										document.getElementById("j3_title").innerHTML = menu[lang]["eibaisTutorials3"]["name"]
+									</script>
+								</h3>
+							</font>
+						</a>
+						<h4 id="language_3">
+							<script>
+								document
+									.getElementById("language_3").innerHTML = menu[lang]["languageEN"]["name"];
+							</script>
+						</h4>
+						<div>
+							<table id="j3_content" style="width: 100%">
+								<script>
+									$(function () {
+										$("#j3_content").load(
+											"./texts/" + "eibaisTutorials3_text" + ".html")
+									});
+								</script>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="jumbotron jumbotron-fluid">
+					<div class="container">
+						<a href="../course4.html">
+							<font color="0000FF">
+								<h3 id="j4_title">
+									<script>
+										document
+											.getElementById("j4_title").innerHTML = menu[lang]["eibaisTutorials4"]["name"]
+									</script>
+								</h3>
+							</font>
+						</a>
 						<h4 id="language_4">
 							<script>
 								document
@@ -175,12 +186,16 @@
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-						<a href="../course5.html"><font color="0000FF"><h3 id="j5_title">
-							<script>
-								document
-									.getElementById("j5_title").innerHTML = menu[lang]["eibaisTutorials5"]["name"]
-							</script>
-						</h3></font></a>
+						<a href="../course5.html">
+							<font color="0000FF">
+								<h3 id="j5_title">
+									<script>
+										document
+											.getElementById("j5_title").innerHTML = menu[lang]["eibaisTutorials5"]["name"]
+									</script>
+								</h3>
+							</font>
+						</a>
 						<h4 id="language_5">
 							<script>
 								document
@@ -201,12 +216,16 @@
 				</div>
 				<div class="jumbotron jumbotron-fluid">
 					<div class="container">
-						<a href="../course6.html"><font color="0000FF"><h3 id="j6_title">
-							<script>
-								document
-									.getElementById("j6_title").innerHTML = menu[lang]["eibaisTutorials6"]["name"]
-							</script>
-						</h3></font></a>
+						<a href="../course6.html">
+							<font color="0000FF">
+								<h3 id="j6_title">
+									<script>
+										document
+											.getElementById("j6_title").innerHTML = menu[lang]["eibaisTutorials6"]["name"]
+									</script>
+								</h3>
+							</font>
+						</a>
 						<h4 id="language_6">
 							<script>
 								document
@@ -240,7 +259,13 @@
 
 		<hr>
 
-		<div id="footer"></div>
+		<div id="footer">
+			<script>
+				$(function () {
+					$("#footer").load("./components/footer.html");
+				});
+			</script>
+		</div>
 
 	</div>
 	<!--/.container-->
@@ -249,7 +274,7 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 	<div id="google">
 		<script>

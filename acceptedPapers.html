@@ -34,18 +34,14 @@
 		}
 	</style>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./texts.js"></script>
 	<script>
-		document.title = menu[lang]["title"]
-	</script>
-	<script>
-		var page = "track1";
 		var lang = localStorage.getItem('lang');
-		var trackNumber = 1;
-		$(function () {
-			$("#footer").load("./components/footer.html");
-		});
+	</script>
+
+	<script>
+		document.title = menu[lang]["title"]
 	</script>
 </head>
 
@@ -68,17 +64,17 @@
 				</script>
 			</div>
 
-            <div class="col-xs-12 col-md-9">
+			<div class="col-xs-12 col-md-9">
 
 				<div class="jumbotron">
 					<div class="col-xs-12 col-lg-12">
-                        <h2 id="accepted_title">
+						<h2 id="accepted_title">
 							<script>
 								document.getElementById("accepted_title").innerHTML = menu[lang]["accepted"]["name"];
 							</script>
 						</h2>
 					</div>
-					
+
 					<div class="col-xs-12 col-lg-12">
 						<h3 id="doctoral_title">
 							<script>
@@ -97,44 +93,44 @@
 					</div>
 
 					<div class="col-xs-12 col-lg-12">
-							<h3 id="tools_title">
-								<script>
-									document.getElementById("tools_title").innerHTML = menu[lang]["toolsPapers"]["name"];
-								</script>
-							</h3>
-						</div>
-	
-						<div id="tools_text" class="jumbotron">
+						<h3 id="tools_title">
 							<script>
-								$(function () {
-									$("#tools_text").load(
-										"./texts/" + lang + "/tools_accepted" + "_text_" + lang + ".html");
-								});
+								document.getElementById("tools_title").innerHTML = menu[lang]["toolsPapers"]["name"];
 							</script>
-						</div>
+						</h3>
+					</div>
 
-                    <div class="col-xs-12 col-lg-12">
-                            <h3 id="foundation_title">
-                                <script>
-                                    document.getElementById("foundation_title").innerHTML = menu[lang]["foundationsTracks"]["name"];
-                                </script>
-                            </h3>
-                    </div>
+					<div id="tools_text" class="jumbotron">
+						<script>
+							$(function () {
+								$("#tools_text").load(
+									"./texts/" + lang + "/tools_accepted" + "_text_" + lang + ".html");
+							});
+						</script>
+					</div>
 
-                    <div id="accepted_text" class="jumbotron">
-                            <script>
-                                $(function () {
-                                    $("#accepted_text").load(
-                                        "./texts/" + lang + "/accepted" + "_text_" + lang + ".html");
-                                });
-                            </script>
-                    </div>
-                    
-                            
-                </div>
-            </div>
-			
-			
+					<div class="col-xs-12 col-lg-12">
+						<h3 id="foundation_title">
+							<script>
+								document.getElementById("foundation_title").innerHTML = menu[lang]["foundationsTracks"]["name"];
+							</script>
+						</h3>
+					</div>
+
+					<div id="accepted_text" class="jumbotron">
+						<script>
+							$(function () {
+								$("#accepted_text").load(
+									"./texts/" + lang + "/accepted" + "_text_" + lang + ".html");
+							});
+						</script>
+					</div>
+
+
+				</div>
+			</div>
+
+
 			<!--/.col-xs-12.col-sm-9-->
 
 			<div id="sidebar">
@@ -149,7 +145,13 @@
 
 		<hr>
 
-		<div id="footer"></div>
+		<div id="footer">
+			<script>
+				$(function () {
+					$("#footer").load("./components/footer.html");
+				});
+			</script>
+		</div>
 
 	</div>
 	<!--/.container-->
@@ -158,7 +160,7 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 	<div id="google">
 		<script>

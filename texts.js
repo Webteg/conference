@@ -67,7 +67,7 @@ var menu = {
 		"pc": { "name": "Program committee" },
 		"viewDetails": "View details",
 		"title": "Ibero-American Conference on Software Engineering",
-		"organizers": "Organizers",
+		"organizers": {"name":"Organizers"},
 		"university": { "name": "Universidad de los Andes", "web": "https://uniandes.edu.co/en", "url": "university" },
 		"depto": { "name": "Systems and Computing Engineering Department", "url": "http://sistemas.uniandes.edu.co" },
 		"venue": { "name": "Venue", "url": "venue" },
@@ -136,7 +136,12 @@ var menu = {
 		"responsibilities": {"name": "Responsibilities"},
 		"submissionsVol": { "name": "Submissions" },
 		"languageSP": {"name":"(Working language: Spanish)"},
-		"languageEN": {"name":"(Working language: English)"}
+		"languageEN": {"name":"(Working language: English)"},
+		"mainProgram": {"name":"Main Conference Program"},
+		"setPInf":{"name":"CIbSE 2018 - SET<br>Program"},
+		"werPInf":{"name":"CIbSE 2018 - WER<br>Program"},
+		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Program"},
+		"dsPInf":{"name":"CIbSE 2018 - Doctoral Symposium<br>Program"}
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
@@ -176,7 +181,7 @@ var menu = {
 		"datesConf": { "name": "Conference Major Events" },
 		"university": { "name": "Universidad de los Andes", "web": "https://uniandes.edu.co", "url": "university" },
 		"depto": { "name": "Departamento de ingeniería de sistemas y computación", "url": "http://sistemas.uniandes.edu.co" },
-		"organizers": { "namme": "Organizadores" },
+		"organizers": { "name": "Organizadores" },
 		"topics": { "name": "Temas" },
 		"categories": { "name": "Categorías" },
 		"pchairs": { "name": "Coordinadores de programa" },
@@ -229,8 +234,12 @@ var menu = {
 		"responsibilities": {"name": "Responsabilidades"},
 		"submissionsVol": { "name": "Envío de solicitudes" },
 		"languageSP": {"name":"(Lenguaje de trabajo: Español)"},
-		"languageEN": {"name":"(Lenguaje de trabajo: Inglés)"}
-
+		"languageEN": {"name":"(Lenguaje de trabajo: Inglés)"},
+		"mainProgram": {"name":"Programa de la Conferencia Principal"},
+		"setPInf":{"name":"CIbSE 2018 - SET<br>Programa"},
+		"werPInf":{"name":"CIbSE 2018 - WER<br>Programa"},
+		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Programa"},
+		"dsPInf":{"name":"CIbSE 2018 - Simposio Doctoral<br>Programa"}
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -270,7 +279,7 @@ var menu = {
 		"datesConf": { "name": "Conference Major Events" },
 		"university": { "name": "Universidad de los Andes", "web": "https://uniandes.edu.co", "url": "university" },
 		"depto": { "name": "Departamento de ingeniería de sistemas y computación", "url": "http://sistemas.uniandes.edu.co" },
-		"organizers": "Organizadores",
+		"organizers": {"name":"Organizadores"},
 		"topics": { "name": "Tópicos" },
 		"categories": { "name": "Categorias" },
 		"pchairs": { "name": "Coordenadores do comitê de programa" },
@@ -324,6 +333,11 @@ var menu = {
 		"submissionsVol": { "name": "Submissões" },
 		"languageSP": {"name":"(Linguagem de trabalho: Espanhol)"},
 		"languageEN": {"name":"(Linguagem de trabalho: Inglês)"},
+		"mainProgram": {"name":"Programa Principal da Conferência"},
+		"setPInf":{"name":"CIbSE 2018 - SET<br>Programa"},
+		"werPInf":{"name":"CIbSE 2018 - WER<br>Programa"},
+		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Programa"},
+		"dsPInf":{"name":"CIbSE 2018 - Simpósio Doutoral"}
 	},
 	"shortTitle": "CIbSE",
 	"date": { "year": "2018", "days": "26-30", "edition": "XXI" },

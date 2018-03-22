@@ -16,18 +16,13 @@
 	<!-- Custom styles for this template -->
 	<link href="offcanvas.css" rel="stylesheet">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./texts.js"></script>
 	<script>
-		document.title = menu[lang]["title"]
+		var lang = localStorage.getItem('lang');
 	</script>
 	<script>
-		var page = "track1";
-		var lang = localStorage.getItem('lang');
-		var trackNumber = 4;
-		$(function () {
-			$("#footer").load("./components/footer.html");
-		});
+		document.title = menu[lang]["title"]
 	</script>
 </head>
 
@@ -54,11 +49,11 @@
 
 				<div class="jumbotron">
 					<div class="col-xs-3 col-lg-3" align="center">
-						<img id="vol_img" class="img-responsive" src="" alt="" width="100"/>
+						<img id="vol_img" class="img-responsive" src="" alt="" width="100" />
 						<script>
-							document.getElementById("vol_img").src = "trackicons/icono7" 
-  									+ ".png";
-  							document.getElementById("vol_img").alt = menu[lang]["volunteers"]["name"];
+							document.getElementById("vol_img").src = "trackicons/icono7" +
+								".png";
+							document.getElementById("vol_img").alt = menu[lang]["volunteers"]["name"];
 						</script>
 					</div>
 					<div class="col-xs-9 col-lg-9">
@@ -73,8 +68,8 @@
 						<script>
 							$(function () {
 								$("#volunteersIntro").load(
-									"./texts/" + lang + "/volunteers_intro" + "_text_"
-									+ lang + ".html");
+									"./texts/" + lang + "/volunteers_intro" + "_text_" +
+									lang + ".html");
 							});
 						</script>
 					</div>
@@ -90,8 +85,8 @@
 							<script>
 								$(function () {
 									$("#benefits_text").load(
-										"./texts/" + lang + "/volunteers_benefits" + "_text_" + lang
-										+ ".html")
+										"./texts/" + lang + "/volunteers_benefits" + "_text_" + lang +
+										".html")
 								});
 							</script>
 						</ul>
@@ -109,8 +104,8 @@
 							<script>
 								$(function () {
 									$("#responsibilities_text").load(
-										"./texts/" + lang + "/volunteers_responsibilities" + "_text_" + lang
-										+ ".html")
+										"./texts/" + lang + "/volunteers_responsibilities" + "_text_" + lang +
+										".html")
 								});
 							</script>
 						</ul>
@@ -123,7 +118,7 @@
 							document.getElementById("volunteers_dates").innerHTML = menu[lang]["importantDates"]["name"];
 						</script>
 					</h3>
-					
+
 					<div>
 						<ul id="volunteers_dates_text">
 							<script>
@@ -142,7 +137,7 @@
 							document.getElementById("volunteers_committee").innerHTML = menu[lang]["committee"]["name"];
 						</script>
 					</h3>
-					
+
 					<div>
 						<ul id="volunteers_committee_text">
 							<script>
@@ -166,8 +161,7 @@
 							<script>
 								$(function () {
 									$("#volunteers_submissions_text").load(
-										"./texts/" + lang + "/volunteers_submissions" + "_text_"
-										+ [lang] + ".html");
+										"./texts/" + lang + "/volunteers_submissions" + "_text_" + [lang] + ".html");
 								});
 							</script>
 						</ul>
@@ -185,14 +179,13 @@
 							<script>
 								$(function () {
 									$("#eval_volunteers_text").load(
-										"./texts/" + lang + "/volunteers_eval" + "_text_"
-										+ [lang] + ".html");
+										"./texts/" + lang + "/volunteers_eval" + "_text_" + [lang] + ".html");
 								});
 							</script>
 						</ul>
 					</div>
 				</div>
-				
+
 				<div class="jumbotron">
 					<h3 id="volunteers_download_pdf">
 						<script>
@@ -204,15 +197,14 @@
 							<script>
 								$(function () {
 									$("#volunteers_download_pdf_text").load(
-										"./texts/" + lang + "/volunteer_download" + "_text_"
-										+ [lang] + ".html");
+										"./texts/" + lang + "/volunteer_download" + "_text_" + [lang] + ".html");
 								});
 							</script>
 						</ul>
 					</div>
 				</div>
 			</div>
-			
+
 
 			<div id="sidebar">
 				<script>
@@ -226,7 +218,13 @@
 
 		<hr>
 
-		<div id="footer"></div>
+		<div id="footer">
+			<script>
+				$(function () {
+					$("#footer").load("./components/footer.html");
+				});
+			</script>
+		</div>
 
 	</div>
 	<!--/.container-->
@@ -235,7 +233,7 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 	<div id="google">
 		<script>

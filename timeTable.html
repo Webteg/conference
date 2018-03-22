@@ -16,18 +16,13 @@
 	<!-- Custom styles for this template -->
 	<link href="offcanvas.css" rel="stylesheet">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./texts.js"></script>
 	<script>
-		document.title = menu[lang]["title"]
+		var lang = localStorage.getItem('lang');
 	</script>
 	<script>
-		var page = "track1";
-		var lang = localStorage.getItem('lang');
-		var trackNumber = 1;
-		$(function () {
-			$("#footer").load("./components/footer.html");
-		});
+		document.title = menu[lang]["title"]
 	</script>
 </head>
 
@@ -53,28 +48,53 @@
 			<div class="col-xs-12 col-md-9">
 
 				<div class="jumbotron">
-					<div class="col-xs-2 col-lg-2">
-						<img id="generalProgram_img" src="" alt="" width="90" style="margin-top: auto; margin-bottom: auto; vertical-align: middle;"
-						/>
+					<div class="col-xs-12 col-lg-12">
+						<img id="generalProgram_img" class="center-block img-responsive" src="" alt="" width="120" />
 						<script>
-							document.getElementById("generalProgram_img").src = "trackicons/icono4"
-								+ ".png";
-							document.getElementById("generalProgram_img").alt = menu[lang]["generalProgram"]["name"];  
+							document.getElementById("generalProgram_img").src = "trackicons/icono4" +
+								".png";
+							document.getElementById("generalProgram_img").alt = menu[lang]["generalProgram"]["name"];
 						</script>
 					</div>
-					<div class="col-xs-10 col-lg-3">
-						<h2 id="timeTable_title">
+
+					<div class="col-xs-12 col-lg-12" style="text-align: center">
+						<h2 id="generalP_title">
 							<script>
-								document.getElementById("timeTable_title").innerHTML = menu[lang]["generalProgram"]["name"];
+								document.getElementById("generalP_title").innerHTML = menu[lang]["generalProgram"]["name"];
 							</script>
 						</h2>
 					</div>
 
-					<div id="timeTableText" class="jumbotron">
+					<div class="col-xs-12 col-lg-12" style="text-align: center">
+						<br>
+					</div>
+
+					<div id="generalPText" class="jumbotron">
 						<script>
 							$(function () {
-								$("#timeTableText").load(
+								$("#generalPText").load(
 									"./texts/" + lang + "/timeTable" + "_text_" + lang + ".html");
+							});
+						</script>
+					</div>
+
+					<div class="col-xs-12 col-lg-12" style="text-align: center">
+						<h2 id="mainP_title">
+							<script>
+								document.getElementById("mainP_title").innerHTML = menu[lang]["mainProgram"]["name"];
+							</script>
+						</h2>
+					</div>
+
+					<div class="col-xs-12 col-lg-12" style="text-align: center">
+						<br>
+					</div>
+
+					<div id="mainPText" class="jumbotron">
+						<script>
+							$(function () {
+								$("#mainPText").load(
+									"./texts/" + lang + "/program" + "_text_" + lang + ".html");
 							});
 						</script>
 					</div>
@@ -84,7 +104,7 @@
 			<!-- <div class="col-xs-12 col-md-9">
 
 				<div class="jumbotron"> -->
-					<!-- <div class="col-xs-10 col-lg-3">
+			<!-- <div class="col-xs-10 col-lg-3">
 						<h2 id="timeTable_title">
 							<script>
 								document.getElementById("timeTable_title").innerHTML = menu[lang]["generalProgram"]["name"];
@@ -92,7 +112,7 @@
 						</h2>
 					</div> -->
 
-					<!-- <div id="programText" class="jumbotron">
+			<!-- <div id="programText" class="jumbotron">
 						<script>
 							$(function () {
 								$("#programText").load(
@@ -117,7 +137,13 @@
 
 		<hr>
 
-		<div id="footer"></div>
+		<div id="footer">
+			<script>
+				$(function () {
+					$("#footer").load("./components/footer.html");
+				});
+			</script>
+		</div>
 
 	</div>
 	<!--/.container-->
@@ -126,7 +152,7 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 	<div id="google">
 		<script>

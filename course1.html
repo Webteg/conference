@@ -16,18 +16,14 @@
 	<!-- Custom styles for this template -->
 	<link href="offcanvas.css" rel="stylesheet">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./texts.js"></script>
 	<script>
-		document.title = menu[lang]["title"]
-	</script>
-	<script>
-		var page = "track1";
 		var lang = localStorage.getItem('lang');
-		var trackNumber = 1;
-		$(function () {
-			$("#footer").load("./components/footer.html");
-		});
+	</script>
+
+	<script>
+		document.title = menu[lang]["title"]
 	</script>
 </head>
 
@@ -54,18 +50,18 @@
 				<div id="C1Box" class="jumbotron" style="text-align:center">
 					<div class="row">
 						<div class="col-lg-6 col-xs-12">
-								<img src="./Keynotes/Carlos.jpg" height=180>
-								<span style="text-align: center; font-size: 25px">
-									<b>Carlos Zapata</b>
-								</span>
-								<br>
-								<br>
+							<img src="./Keynotes/Carlos.jpg" height=180>
+							<span style="text-align: center; font-size: 25px">
+								<b>Carlos Zapata</b>
+							</span>
+							<br>
+							<br>
 						</div>
 						<div class="col-lg-6 col-xs-12">
-								<img src="./Keynotes/Hernan.jpg" height=180 width="180">
-								<span style="text-align: center; font-size: 25px">
-									<b>Hernán Astudillo</b>
-								</span>
+							<img src="./Keynotes/Hernan.jpg" height=180 width="180">
+							<span style="text-align: center; font-size: 25px">
+								<b>Hernán Astudillo</b>
+							</span>
 						</div>
 					</div>
 					<div id="C1" class="jumbotron">
@@ -92,7 +88,13 @@
 
 		<hr>
 
-		<div id="footer"></div>
+		<div id="footer">
+			<script>
+				$(function () {
+					$("#footer").load("./components/footer.html");
+				});
+			</script>
+		</div>
 
 	</div>
 	<!--/.container-->
@@ -101,7 +103,7 @@
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
 	<div id="google">
 		<script>
