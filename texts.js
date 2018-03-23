@@ -336,7 +336,7 @@ var menu = {
 		"submissionsVol": { "name": "Submissões" },
 		"languageSP": {"name":"(Linguagem de trabalho: Espanhol)"},
 		"languageEN": {"name":"(Linguagem de trabalho: Inglês)"},
-		"mainProgram": {"name":"Programa Principal da Conferência"},
+		"mainProgram": {"name":"Programa da Conferência Principal "},
 		"setPInf":{"name":"CIbSE 2018 - SET<br>Programa"},
 		"werPInf":{"name":"CIbSE 2018 - WER<br>Programa"},
 		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Programa"},
