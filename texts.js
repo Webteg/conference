@@ -142,7 +142,8 @@ var menu = {
 		"setPInf":{"name":"CIbSE 2018 - SET<br>Program"},
 		"werPInf":{"name":"CIbSE 2018 - WER<br>Program"},
 		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Program"},
-		"dsPInf":{"name":"CIbSE 2018 - Doctoral Symposium<br>Program"}
+		"dsPInf":{"name":"CIbSE 2018 - Doctoral Symposium<br>Program"},
+		"bestTitle":{"name":"Best Papers"}
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
@@ -171,7 +172,6 @@ var menu = {
 		"venue": { "name": "Lugar", "url": "venue" },
 		"conferenceVenue": { "name": "Lugar de la conferencia", "url": "conferenceVenue" },
 		"contact": { "name": "Contacto", "url": "contact" },
-
 		"scope": { "name": "Alcance" },
 		"structure": { "name": "Estructura" },
 		"importantDates": { "name": "Fechas importantes", "url": "importantDatesMain" },
@@ -241,7 +241,8 @@ var menu = {
 		"setPInf":{"name":"CIbSE 2018 - SET<br>Programa"},
 		"werPInf":{"name":"CIbSE 2018 - WER<br>Programa"},
 		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Programa"},
-		"dsPInf":{"name":"CIbSE 2018 - Simposio Doctoral<br>Programa"}
+		"dsPInf":{"name":"CIbSE 2018 - Simposio Doctoral<br>Programa"},
+		"bestTitle":{"name":"Mejores Artículos"}
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -270,7 +271,6 @@ var menu = {
 		"venue": { "name": "Lugar", "url": "venue" },
 		"conferenceVenue": { "name": "Lugar da conferência", "url": "conferenceVenue" },
 		"contact": { "name": "Contato", "url": "contact" },
-
 		"scope": { "name": "Alcance" },
 		"structure": { "name": "Estrutura" },
 		"importantDates": { "name": "Datas importantes", "url": "importantDatesMain" },
@@ -340,7 +340,8 @@ var menu = {
 		"setPInf":{"name":"CIbSE 2018 - SET<br>Programa"},
 		"werPInf":{"name":"CIbSE 2018 - WER<br>Programa"},
 		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Programa"},
-		"dsPInf":{"name":"CIbSE 2018 - Simpósio Doutoral"}
+		"dsPInf":{"name":"CIbSE 2018 - Simpósio Doutoral"},
+		"bestTitle":{"name":"Melhores Trabalhos"}
 	},
 	"shortTitle": "CIbSE",
 	"date": { "year": "2018", "days": "26-30", "edition": "XXI" },
