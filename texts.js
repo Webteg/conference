@@ -132,7 +132,7 @@ var menu = {
 		"accepted_SET": {"name": "SET Accepted papers"},
 		"accepted_WER": {"name": "WER Accepted papers"},
 		"accepted_DOCTORAL": {"name": "Doctoral Symposium Accepted papers"},
-		"accepted_TOOLS": {"name": "Accepted tools papers"},
+		"accepted_TOOLS": {"name": "Tools Accepted Papers"},
 		"benefits": {"name": "Benefits"},
 		"responsibilities": {"name": "Responsibilities"},
 		"submissionsVol": { "name": "Submissions" },
