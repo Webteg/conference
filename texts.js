@@ -144,7 +144,8 @@ var menu = {
 		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Program"},
 		"dsPInf":{"name":"CIbSE 2018 - Doctoral Symposium<br>Program"},
 		"bestTitle":{"name":"Best Papers"},
-		"selectedVolunteers":{"name":"Selected volunteers"}
+		"selectedVolunteers":{"name":"Selected volunteers"},
+		"indPInf":{"name":"CIbSE 2018 - Industry Presentations<br>Program"}
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
@@ -244,7 +245,8 @@ var menu = {
 		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Programa"},
 		"dsPInf":{"name":"CIbSE 2018 - Simposio Doctoral<br>Programa"},
 		"bestTitle":{"name":"Mejores Artículos"},
-		"selectedVolunteers":{"name":"Voluntarios seleccionados"}
+		"selectedVolunteers":{"name":"Voluntarios seleccionados"},
+		"indPInf":{"name":"CIbSE 2018 - Presentaciones Industriales<br>Programa"}
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -344,7 +346,8 @@ var menu = {
 		"eselawPInf":{"name":"CIbSE 2018 - ESELAW<br>Programa"},
 		"dsPInf":{"name":"CIbSE 2018 - Simpósio Doutoral"},
 		"bestTitle":{"name":"Melhores Trabalhos"},
-		"selectedVolunteers":{"name":"Voluntários selecionados"}
+		"selectedVolunteers":{"name":"Voluntários selecionados"},
+		"indPInf":{"name":"CIbSE 2018 - Apresentações Industriais<br>Programa"}
 	},
 	"shortTitle": "CIbSE",
 	"date": { "year": "2018", "days": "26-30", "edition": "XXI" },
