@@ -22,7 +22,7 @@ function changeLanguage(element) {
 var menu = {
 	"en": {
 		"tracks": {
-			"1": { "name": "SET", "longName": "Software Engineering and Tools", "url": "track1", "leader": "NN", "email": "", "image": "1cr.jpg" },
+			"1": { "name": "SET", "longName": "Software Engineering Track", "url": "track1", "leader": "NN", "email": "", "image": "1cr.jpg" },
 			"2": { "name": "WER", "longName": "Requirements Engineering", "url": "track2", "leader": "NN", "email": "", "image": "2rc.jpg" },
 			"3": { "name": "ESELAW", "longName": "Experimental Software Engineering", "url": "track3", "leader": "NN", "email": "", "image": "3rc.jpg" },
 			"4": { "name": "Industry", "longName": "Industry Presentations", "url": "track4", "leader": "NN", "email": "", "image": "4rc.jpg" },
