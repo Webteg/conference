@@ -75,6 +75,24 @@
 					</div>
 				</div>
 				<div class="jumbotron">
+					<h3 id="selected_title">
+						<script>
+							document.getElementById("selected_title").innerHTML = menu[lang]["selectedVolunteers"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="selected_text">
+							<script>
+								$(function () {
+									$("#selected_text").load(
+										"./texts/" + lang + "/volunteers_selected" + "_text_" + lang +
+										".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
 					<h3 id="benefits_title">
 						<script>
 							document.getElementById("benefits_title").innerHTML = menu[lang]["benefits"]["name"];

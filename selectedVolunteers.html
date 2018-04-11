@@ -68,18 +68,18 @@
 
 				<div class="jumbotron">
 					<div class="col-xs-12 col-lg-12">
-						<h2 id="eibais_program_title">
+						<h2 id="selected_volunteers_title">
 							<script>
-								document.getElementById("eibais_program_title").innerHTML = menu[lang]["eibaisProgram"]["name"];
+								document.getElementById("selected_volunteers_title").innerHTML = menu[lang]["selectedVolunteers"]["name"];
 							</script>
 						</h2>
 					</div>
 
-					<div id="eibais_program_text" class="jumbotron">
+					<div id="selected_volunteers_text" class="jumbotron">
 						<script>
 							$(function () {
-								$("#eibais_program_text").load(
-									"./texts/en/eibais_program" + "_text_en.html");
+								$("#selected_volunteers_text").load(
+									"./texts/" + lang + "/selected_volunteers" + "_text_" + lang + ".html");
 							});
 						</script>
 					</div>

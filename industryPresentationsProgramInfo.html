@@ -36,10 +36,10 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./texts.js"></script>
-
 	<script>
 		var lang = localStorage.getItem('lang');
 	</script>
+
 	<script>
 		document.title = menu[lang]["title"]
 	</script>
@@ -68,23 +68,22 @@
 
 				<div class="jumbotron">
 					<div class="col-xs-12 col-lg-12">
-						<h2 id="eibais_program_title">
+						<h2 id="program_title" class="text-center">
 							<script>
-								document.getElementById("eibais_program_title").innerHTML = menu[lang]["eibaisProgram"]["name"];
+								document.getElementById("program_title").innerHTML = menu[lang]["indPInf"]["name"];
 							</script>
 						</h2>
-					</div>
-
-					<div id="eibais_program_text" class="jumbotron">
+                    </div>
+                    
+					<div id="program_text" class="jumbotron">
 						<script>
 							$(function () {
-								$("#eibais_program_text").load(
-									"./texts/en/eibais_program" + "_text_en.html");
+								$("#program_text").load(
+									"./texts/en" + "/industryPresentationsProgramInfo" + "_text_en"+ ".html");
 							});
 						</script>
-					</div>
-
-
+                    </div>
+                    
 				</div>
 			</div>
 
