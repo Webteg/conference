@@ -22,10 +22,10 @@ function changeLanguage(element) {
 var menu = {
 	"en": {
 		"tracks": {
-			"1": { "name": "SET", "longName": "Software Engineering and Tools", "url": "track1", "leader": "NN", "email": "", "image": "1cr.jpg" },
+			"1": { "name": "SET", "longName": "Software Engineering Track", "url": "track1", "leader": "NN", "email": "", "image": "1cr.jpg" },
 			"2": { "name": "WER", "longName": "Requirements Engineering", "url": "track2", "leader": "NN", "email": "", "image": "2rc.jpg" },
 			"3": { "name": "ESELAW", "longName": "Experimental Software Engineering", "url": "track3", "leader": "NN", "email": "", "image": "3rc.jpg" },
-			"4": { "name": "Industry", "longName": "Industry Presentations", "url": "track4", "leader": "NN", "email": "", "image": "4rc.jpg" },
+			"4": { "name": "Industry", "longName": "Industry Track", "url": "track4", "leader": "NN", "email": "", "image": "4rc.jpg" },
 			"5": { "name": "Tools", "longName": "Tools and Demos Track", "url": "track5", "leader": "NN", "email": "", "image": "5rc.jpg" },
 			"6": { "name": "Doc Symp", "longName": "Doctoral Symposium", "url": "track6", "leader": "NN", "email": "", "image": "6rc.jpg" }
 		},
@@ -145,7 +145,7 @@ var menu = {
 		"dsPInf":{"name":"CIbSE 2018 - Doctoral Symposium<br>Program"},
 		"bestTitle":{"name":"Best Papers"},
 		"selectedVolunteers":{"name":"Selected volunteers"},
-		"indPInf":{"name":"CIbSE 2018 - Industry Presentations<br>Program"}
+		"indPInf":{"name":"CIbSE 2018 - Industry Track<br>Program"}
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
@@ -159,7 +159,7 @@ var menu = {
 			"1": { "name": "SET", "longName": "Track de ingeniería de software", "url": "track1", "leader": "NN", "email": "", "image": "1cr.jpg" },
 			"2": { "name": "WER", "longName": "Track de ingeniería de requisitos", "url": "track2", "leader": "NN", "email": "", "image": "2rc.jpg" },
 			"3": { "name": "ESELAW", "longName": "Track de ingeniería de software experimental", "url": "track3", "leader": "NN", "email": "", "image": "3rc.jpg" },
-			"4": { "name": "Industria", "longName": "Presentaciones industriales", "url": "track4", "leader": "NN", "email": "", "image": "4rc.jpg" },
+			"4": { "name": "Industria", "longName": "Track de la industria", "url": "track4", "leader": "NN", "email": "", "image": "4rc.jpg" },
 			"6": { "name": "Simp Doc", "longName": "Simposio Doctoral", "url": "track6", "leader": "NN", "email": "", "image": "6rc.jpg" }
 		},
 		"program": { "name": "Programa", "url": "conference" },
@@ -246,7 +246,7 @@ var menu = {
 		"dsPInf":{"name":"CIbSE 2018 - Simposio Doctoral<br>Programa"},
 		"bestTitle":{"name":"Mejores Artículos"},
 		"selectedVolunteers":{"name":"Voluntarios seleccionados"},
-		"indPInf":{"name":"CIbSE 2018 - Presentaciones Industriales<br>Programa"}
+		"indPInf":{"name":"CIbSE 2018 - Track de la industria<br>Programa"}
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -260,7 +260,7 @@ var menu = {
 			"1": { "name": "SET", "longName": "Trilha de Engenharia de Software", "url": "track1", "leader": "NN", "email": "", "image": "1cr.jpg" },
 			"2": { "name": "WER", "longName": "Engenharia de Requisitos", "url": "track2", "leader": "NN", "email": "", "image": "2rc.jpg" },
 			"3": { "name": "ESELAW", "longName": "Trilha de Engenharia de Software Experimental", "url": "track3", "leader": "NN", "email": "", "image": "3rc.jpg" },
-			"4": { "name": "Indústria", "longName": "Apresentações Industriais", "url": "track4", "leader": "NN", "email": "", "image": "4rc.jpg" },
+			"4": { "name": "Indústria", "longName": "Trilha da indústria", "url": "track4", "leader": "NN", "email": "", "image": "4rc.jpg" },
 			"6": { "name": "Simp Doc", "longName": "Simpósio Doutoral", "url": "track6", "leader": "NN", "email": "", "image": "6rc.jpg" }
 		},
 		"program": { "name": "Programa", "url": "conference" },
@@ -347,7 +347,7 @@ var menu = {
 		"dsPInf":{"name":"CIbSE 2018 - Simpósio Doutoral"},
 		"bestTitle":{"name":"Melhores Trabalhos"},
 		"selectedVolunteers":{"name":"Voluntários selecionados"},
-		"indPInf":{"name":"CIbSE 2018 - Apresentações Industriais<br>Programa"}
+		"indPInf":{"name":"CIbSE 2018 - Trilha da indústria<br>Programa"}
 	},
 	"shortTitle": "CIbSE",
 	"date": { "year": "2018", "days": "26-30", "edition": "XXI" },
