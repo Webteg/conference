@@ -145,7 +145,8 @@ var menu = {
 		"dsPInf":{"name":"CIbSE 2018 - Doctoral Symposium<br>Program"},
 		"bestTitle":{"name":"Best Papers"},
 		"selectedVolunteers":{"name":"Selected volunteers"},
-		"indPInf":{"name":"CIbSE 2018 - Industry Track<br>Program"}
+		"indPInf":{"name":"CIbSE 2018 - Industry Track<br>Program"},
+		"workingRules":{"name":"Working rules"}
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
@@ -246,7 +247,8 @@ var menu = {
 		"dsPInf":{"name":"CIbSE 2018 - Simposio Doctoral<br>Programa"},
 		"bestTitle":{"name":"Mejores Artículos"},
 		"selectedVolunteers":{"name":"Voluntarios seleccionados"},
-		"indPInf":{"name":"CIbSE 2018 - Track de la industria<br>Programa"}
+		"indPInf":{"name":"CIbSE 2018 - Track de la industria<br>Programa"},
+		"workingRules":{"name":"Reglas de funcionamiento"}
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -347,7 +349,8 @@ var menu = {
 		"dsPInf":{"name":"CIbSE 2018 - Simpósio Doutoral"},
 		"bestTitle":{"name":"Melhores Trabalhos"},
 		"selectedVolunteers":{"name":"Voluntários selecionados"},
-		"indPInf":{"name":"CIbSE 2018 - Trilha da indústria<br>Programa"}
+		"indPInf":{"name":"CIbSE 2018 - Trilha da indústria<br>Programa"},
+		"workingRules":{"name":"Regras de operação"}
 	},
 	"shortTitle": "CIbSE",
 	"date": { "year": "2018", "days": "26-30", "edition": "XXI" },
