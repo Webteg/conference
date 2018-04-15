@@ -147,7 +147,8 @@ var menu = {
 		"selectedVolunteers":{"name":"Selected volunteers"},
 		"indPInf":{"name":"CIbSE 2018 - Industry Track<br>Program"},
 		"workingRules":{"name":"Working rules"},
-		"generalRecommendations":{"name":"General recommendations for CIbSE"}
+		"generalRecommendations":{"name":"General recommendations for CIbSE"},
+		"generalRecommendation":{"name":"General recommendations","url":"generalRecommendations"}
 	},
 	"sp": {
 		"title": "Conferencia Iberoamericana de Ingeniería de Software",
@@ -250,7 +251,8 @@ var menu = {
 		"selectedVolunteers":{"name":"Voluntarios seleccionados"},
 		"indPInf":{"name":"CIbSE 2018 - Track de la industria<br>Programa"},
 		"workingRules":{"name":"Reglas de funcionamiento"},
-		"generalRecommendations":{"name":"Recomendaciones generales para CIbSE"}
+		"generalRecommendations":{"name":"Recomendaciones generales para CIbSE"},
+		"generalRecommendation":{"name":"Recomendaciones generales","url":"generalRecommendations"}
 	},
 	"br": {
 		"title": "Congresso Ibero-Americano de Engenharia de Software",
@@ -353,7 +355,8 @@ var menu = {
 		"selectedVolunteers":{"name":"Voluntários selecionados"},
 		"indPInf":{"name":"CIbSE 2018 - Trilha da indústria<br>Programa"},
 		"workingRules":{"name":"Regras de operação"},
-		"generalRecommendations":{"name":"Recomendações gerais para o CIbSE"}
+		"generalRecommendations":{"name":"Recomendações gerais para o CIbSE"},
+		"generalRecommendation":{"name":"Recomendações gerais","url":"generalRecommendations"}
 	},
 	"shortTitle": "CIbSE",
 	"date": { "year": "2018", "days": "26-30", "edition": "XXI" },
