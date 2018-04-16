@@ -191,6 +191,22 @@
 					</div>
 				</div>
 				<div class="jumbotron">
+					<h3 id="workingRules_title">
+						<script>
+							document.getElementById("workingRules_title").innerHTML = menu[lang]["workingRules"]["name"];
+						</script>
+					</h3>
+					<div>
+						<ul id="workingRules">
+							<script>
+								$(function () {
+									$("#workingRules").load("./texts/" + lang + "/workingRulesDS" + "_text_" + lang + ".html")
+								});
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="jumbotron">
 					<h3 id="dsDownloadable_title">
 						<script>
 							document.getElementById("dsDownloadable_title").innerHTML = menu[lang]["download"]["name"];
